@@ -15,7 +15,9 @@ class addPatient(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
-        cls.driver.quit()
+        # end the session
+        # cls.driver.quit()
+        pass
 
     def test_b_add_patient(self):
         self.driver.wait_activity("com.conlin360.medical.activity.HomePageActivity", 10)
@@ -47,7 +49,7 @@ class addPatient(unittest.TestCase):
                 toast_dele = WebDriverWait(self.driver, 5).until \
                     (EC.presence_of_element_located((By.XPATH, delemessage)))
                 print("获取到的删除就诊人提示信息：", toast_dele.text)
-                flag=self.assertTrue("删除成功", toast_dele.text)
+                flag=self.assertTrue("删除就诊人成功", toast_dele.text)
                 if flag:  # 如果删除成功后再执行添加就诊人从操作
                     """点击添加按钮"""
                     self.driver.find_element_by_id("com.conlin360.medical:id/aq").click()
@@ -94,10 +96,11 @@ class addPatient(unittest.TestCase):
                         toast_add = WebDriverWait(self.driver, 5).until \
                             (EC.presence_of_element_located((By.XPATH, message)))
                         print("添加就诊人获取到的toast信息：", toast_add.text)
-                        if "添加就诊人成功" in toast_add.text:
-                            print("添加就诊人成功")
-                        else:
-                            print("添加失败，获取到的toast消息为：", toast_add.text)
+                        self.assertEqual("添加成功", toast_add.text)
+                        # if "添加就诊人成功" in toast_add.text:
+                        #     print("添加就诊人成功")
+                        # else:
+                        #     print("添加失败，获取到的toast消息为：", toast_add.text)
                     except:
                         print("没有获取到返回信息")
                 else:
@@ -154,7 +157,7 @@ class addPatient(unittest.TestCase):
                     #     print("添加失败:", toast_add.text)
                     self.assertEquals("添加成功", toast_add.text)
                 except:
-                    pass
+                    print("没有获取到toast消息")
         except:
             print("操作失败")
 

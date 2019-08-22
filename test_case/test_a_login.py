@@ -5,9 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import re
 from Utils import publicConfig
-# from Utils.publicConfig import driverClient
 from Utils.appium_config import DriverClient
-from time import sleep
 
 
 """
@@ -27,6 +25,7 @@ class login_apps(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls):
+        # end the session
         # cls.driver.quit()
         pass
 
