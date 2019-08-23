@@ -4,6 +4,7 @@ import HTMLTestRunner
 import coverage
 import os
 
+# case_dir = os.path.join(os.getcwd(), "test_case")
 case_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_case') #获取当前目录下的case目录
 
 def run_all():

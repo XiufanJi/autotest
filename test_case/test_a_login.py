@@ -4,6 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import re
+import time
 from Utils import publicConfig
 from Utils.appium_config import DriverClient
 
@@ -42,16 +43,21 @@ class login_apps(unittest.TestCase):
             # 等待页面活动切换点击页面下方菜单进行过页面切换，
             # 切换至登录页面（"我的"和"登录按钮点击"）
             self.driver.wait_activity("com.conlin360.medical.activity.HomePageActivity", 10)
-            self.driver.find_element_by_id("com.conlin360.medical:id/vh").click()
-            self.driver.find_element_by_id("com.conlin360.medical:id/a0w").click()
-
+            mine = self.driver.find_element_by_id("com.conlin360.medical:id/vh")
+            self.assertEqual("我的", mine.text)
+            mine.click()
+            login = self.driver.find_element_by_id("com.conlin360.medical:id/a0w")
+            self.assertIn("登录", login.text)
+            login.click()
             # 等待切换至当前活动页面
             self.driver.wait_activity("com.conlin360.medical.activity.mine.LoginActivity", 10)
             currentnew = self.driver.current_activity
             print("当前页面的活动名称：", currentnew)
 
             # 清空输入栏，输入账号密码
-            self.driver.find_element_by_id("com.conlin360.medical:id/fx").clear()
+            account = self.driver.find_element_by_id("com.conlin360.medical:id/fx")
+            self.assertEqual("请输入您的手机号码", account.text)
+            account.clear()
             """验证输入是否合法"""
             # account = str(input("请输入账号："))
             accountResult = re.compile(publicConfig.accountRegx).match('18557539532')
@@ -65,7 +71,9 @@ class login_apps(unittest.TestCase):
 
             # password = str(input("请输入密码："))
             passwordResult = re.compile(publicConfig.passregx).match('123456')
-            self.driver.find_element_by_id("com.conlin360.medical:id/fy").clear()
+            password = self.driver.find_element_by_id("com.conlin360.medical:id/fy")
+            self.assertEqual("请输入您的密码", password.text)
+            password.clear()
             if passwordResult != None:
                 # print("输入的密码为：",passwordResult.group())
                 self.driver.find_element_by_id("com.conlin360.medical:id/fy") \
@@ -74,7 +82,9 @@ class login_apps(unittest.TestCase):
                 print("不合法的密码，请重新输入！")
                 input("请输入正确的密码：")
             # 点击登录按钮
-            self.driver.find_element_by_id("com.conlin360.medical:id/d2").click()
+            loginbutton= self.driver.find_element_by_id("com.conlin360.medical:id/d2")
+            self.assertEqual("登录", loginbutton.text)
+            loginbutton.click()
             # self.driver.find_element_by_link_text()
 
             # 获取toast提示信息:一般页面显示的只出现几秒的提示框都是toast类型，
@@ -87,26 +97,28 @@ class login_apps(unittest.TestCase):
             信息，希望他们看到。而且Toast显示的时间有限，Toast会根据用
             户设置的显示时间后自动消失。
             """
-            try:
-                # 用于生成xpath定位 相当于 "//*[@text='没有找到用户名或密码']",
-                # 这种方法为精确匹配的方法
-                # xpath提取toast信息，//*表示页面上的所有元素，下面的表达式为
-                # ：提取页面上所有文字类型信息，且文字中包含“用户”或者“成功”
-                message = "//*[contains(@text,'用户') or contains(@text,'成功')]"
-
-                # 获取toast提示框内容
-                toast_element = WebDriverWait(self.driver, 5).until \
-                    (EC.presence_of_element_located((By.XPATH, message)))
-                print("登录获取到的toast信息：", toast_element.text)
-                self.assertEquals("登录成功", toast_element.text)
-                # if toast_element.text == "登录成功":
-                #     print("登录成功")
-                # else:
-                #     print("登录失败:", toast_element.text)
-            except:
-                print("没有获取到返回信息")
-        except:
-            print("无法定位到该元素")
+            # try:
+            # 用于生成xpath定位 相当于 "//*[@text='没有找到用户名或密码']",
+            # 这种方法为精确匹配的方法
+            # xpath提取toast信息，//*表示页面上的所有元素，下面的表达式为
+            # ：提取页面上所有文字类型信息，且文字中包含“用户”或者“成功”
+            message = "//*[contains(@text,'用户') or contains(@text,'成功')]"
+            # 获取toast提示框内容
+            toast_element = WebDriverWait(self.driver, 5).until \
+                (EC.presence_of_element_located((By.XPATH, message)))
+            print("登录获取到的toast信息：", toast_element.text)
+            # if toast_element.text == "登录成功":
+            #     print("登录成功")
+            # else:
+            #     print("登录失败:", toast_element.text)
+            self.assertEqual("登录成功", toast_element.text)
+            # except Exception as msg:
+            #     raise msg
+        except Exception as msg:
+            raise msg
+            print("异常原因：%s" % msg)
+            nowdate = time.strftime("%Y%m%d.%H.%M.%S")
+            self.driver.get_screenshot_as_file("Img/%s.png" % nowdate)
 
     # @unittest.skip("skip this testcase")
     # def test_b_add_patient(self):
