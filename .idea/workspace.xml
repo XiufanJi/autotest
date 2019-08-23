@@ -2,23 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Report/Test.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report/Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/publicConfig.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/publicConfig.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_publicConfig_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_publicConfig_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_test_a_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_test_a_login_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_test_b_patient_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_test_b_patient_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_test_c_regSchedule_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_test_c_regSchedule_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_a_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_a_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_b_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_b_patient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/test_c_regSchedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/test_c_regSchedule.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -267,7 +251,7 @@
       <option name="presentableId" value="Default" />
       <updated>1566288425503</updated>
       <workItem from="1566288529168" duration="35621000" />
-      <workItem from="1566437274366" duration="37430000" />
+      <workItem from="1566437274366" duration="37443000" />
     </task>
     <servers />
   </component>
@@ -304,18 +288,17 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="73051000" />
+    <option name="totallyTimeSpent" value="73064000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17401215" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17401215" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.35573772" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35573772" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
