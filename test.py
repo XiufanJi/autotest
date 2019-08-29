@@ -1,3 +1,4 @@
+import math
 #判断某个数是否为素数
 def primeNum(n):
     flag=True
