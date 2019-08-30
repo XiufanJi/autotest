@@ -10,3 +10,4 @@ class editPatient(unittest.TestCase):
         cls.driver.quit()
     def test_editPatient(self):
         pass
+
