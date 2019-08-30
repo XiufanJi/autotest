@@ -15,7 +15,7 @@ def primeNum(n):
           #print('%d 是素数'%n)
           flag=True
     else:
-      print("请重新输入数据，数据要大于1！")
+      print("请重新输入数据，素数的计算最小从2开始")
     return flag
 #判断某个范围内的素数的个数并进行数据输出
 def primeNums(n,m):
