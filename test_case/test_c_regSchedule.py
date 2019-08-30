@@ -2,7 +2,7 @@ import unittest
 from Utils.appium_config import DriverClient
 import time
 from time import sleep
-from random import randrange
+from random import choice
 
 # time for waiting change action
 THINK_TIME = 5
@@ -32,7 +32,7 @@ class regSchedule(unittest.TestCase):
             self.driver.wait_activity(".hospital.HospitalListActivity", THINK_TIME)
             hospitallists = self.driver.find_elements_by_class_name("android.widget.LinearLayout")
             # hospitalLists[0].click()
-            goal = randrange(0,len(hospitallists))
+            goal = choice(len(hospitallists))
             hospitallists[goal].click()
             print("选择的医院名称为：", hospitallists[goal].text)
             self.driver.wait_activity(".hospital.DeptListActivity", THINK_TIME)
@@ -46,7 +46,7 @@ class regSchedule(unittest.TestCase):
                 self.driver.wait_activity(".hospital.DeptListActivity", THINK_TIME)
             # find depts list
             deptlists = self.driver.find_elements_by_id("com.conlin360.medical:id/ex")
-            dept = randint(len(deptlists))
+            dept = choice(len(deptlists))
             deptlists[dept].click()
             self.driver.wait_activity(".hospital.DoctorScheduleListActivity", THINK_TIME)
 
@@ -70,6 +70,7 @@ class regSchedule(unittest.TestCase):
                 else:
                     print("没有号源信息")
         except Exception as msg:
+            print("无法定位元素")
             print("异常原因：%s" % msg)
             nowdate = time.strftime("%Y%m%d.%H.%M.%S")
             self.driver.get_screenshot_as_file("Img/%s.png" % nowdate)
