@@ -6,7 +6,6 @@ import re
 import time
 from time import sleep
 from Utils import publicConfig
-# from Utils.publicConfig import driverClient
 from Utils.appium_config import DriverClient
 
 class addPatient(unittest.TestCase):
