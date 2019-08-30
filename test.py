@@ -23,7 +23,7 @@ def primeNums(n,m):
     for i in range(n,m+1):
       # print('范围内输出的数据为：',i)
       if(primeNum(i)==True):
-        print(i,end="")
+        print(i,end=" ")
 
 if __name__ == '__main__':
     primeNums(2,20)
