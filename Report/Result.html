@@ -420,9 +420,9 @@ function hide_img(obj){
 </script>
 <div class='heading'>
 <h1>autotest_app test </h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-08-23 15:27:42</p>
-<p class='attribute'><strong>耗时:</strong> 0:01:41.580470</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:3 <span class="tj">通过率</span>:100.0%</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-09-06 16:34:38</p>
+<p class='attribute'><strong>耗时:</strong> 0:01:01.292410</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:1 <span class="tj">通过率</span>:100.0%</p>
 
 <p class='description'>test report</p>
 </div>
@@ -436,11 +436,11 @@ function hide_img(obj){
 
 <div id='show_detail_line' style=" float: left;  width: 100%;">
 <a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[100.00%]</a>
-<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[3]</a>
+<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[1]</a>
 <a class="failed  detail_button" href='javascript:showCase(2,1)'>失败[0]</a>
 <a class="errored  detail_button" href='javascript:showCase(3,1)'>错误[0]</a>
 <a class="skiped  detail_button"  href='javascript:showCase(4,1)'>跳过[0]</a>
-<a class="all detail_button" href='javascript:showCase(5,1)'>所有[3]</a>
+<a class="all detail_button" href='javascript:showCase(5,1)'>所有[1]</a>
 </div>
 
 <table id='result_table'>
@@ -464,7 +464,7 @@ function hide_img(obj){
 </tr>
 
 <tr class='passClass'>
-    <td>test_b_patient.addPatient</td>
+    <td>netease_login.login</td>
     <td>1</td>
     <td>1</td>
     <td>0</td>
@@ -474,7 +474,7 @@ function hide_img(obj){
 </tr>
 
 <tr id='pt1.1.1' class='hiddenRow'>
-    <td ><div class='testcase'>test_b_add_patient</div></td>
+    <td ><div class='testcase'>test_a_login</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
@@ -489,136 +489,10 @@ function hide_img(obj){
         </div>
         <pre>
         
-pt1.1.1: 当前页面的activity名称： .activity.mine.PatientManagementActivity
-页面就诊人数： 4
-addpage页面的activity名称： .activity.mine.AddOrEditPatientActivity
-添加就诊人获取到的toast信息： 添加
-目前的活动名称是： .activity.mine.PatientManagementActivity
-添加完成
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-    <td>无截图</td>
-</tr>
-
-<tr class='passClass'>
-    <td>test_a_login.login_apps</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.2',1)">详情</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.2.1' class='hiddenRow'>
-    <td ><div class='testcase'>test_a_login</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <span class='status passCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.2.1')" >
-        通过</a></span>
-
-    <div id='div_pt1.2.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.2.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.2.1: 当前项目页面的活动名称： .permission.ui.GrantPermissionsActivity
-当前页面的活动名称： .activity.mine.LoginActivity
-登录获取到的toast信息： 登录成功
-
-
-        </pre>
-    </div>
-    <!--css div popup end-->
-
-    </td>
-    <td>无截图</td>
-</tr>
-
-<tr class='passClass'>
-    <td>test_c_regSchedule.regSchedule</td>
-    <td>1</td>
-    <td>1</td>
-    <td>0</td>
-    <td>0</td>
-    <td><a href="javascript:showClassDetail('c1.3',1)">详情</a></td>
-    <td>&nbsp;</td>
-</tr>
-
-<tr id='pt1.3.1' class='hiddenRow'>
-    <td ><div class='testcase'>test_c_regSchedule</div></td>
-    <td colspan='5' align='center'>
-
-    <!--css div popup start-->
-    <span class='status passCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.3.1')" >
-        通过</a></span>
-
-    <div id='div_pt1.3.1' class="popup_window">
-        <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.3.1').style.display = 'none' " >
-           [x]</a>
-        </div>
-        <pre>
-        
-pt1.3.1: 异常原因：Message: androidx.test.uiautomator.StaleObjectException
-	at androidx.test.uiautomator.UiObject2.getAccessibilityNodeInfo(UiObject2.java:647)
-	at androidx.test.uiautomator.UiObject2.hashCode(UiObject2.java:105)
-	at java.lang.Object.toString(Object.java:273)
-	at java.util.Formatter$FormatSpecifier.printString(Formatter.java:2977)
-	at java.util.Formatter$FormatSpecifier.print(Formatter.java:2854)
-	at java.util.Formatter.format(Formatter.java:2523)
-	at java.util.Formatter.format(Formatter.java:2458)
-	at java.lang.String.format(String.java:2770)
-	at io.appium.uiautomator2.utils.ReflectionUtils.invoke(ReflectionUtils.java:71)
-	at io.appium.uiautomator2.core.AccessibilityNodeInfoGetter.fromUiObject(AccessibilityNodeInfoGetter.java:47)
-	at io.appium.uiautomator2.core.AccessibilityNodeInfoGetter.fromUiObject(AccessibilityNodeInfoGetter.java:41)
-	at io.appium.uiautomator2.utils.ElementHelpers.getText(ElementHelpers.java:234)
-	at io.appium.uiautomator2.utils.ElementHelpers.getText(ElementHelpers.java:217)
-	at io.appium.uiautomator2.model.UiObject2Element.getText(UiObject2Element.java:73)
-	at io.appium.uiautomator2.handler.GetText.safeHandle(GetText.java:28)
-	at io.appium.uiautomator2.handler.request.SafeRequestHandler.handle(SafeRequestHandler.java:37)
-	at io.appium.uiautomator2.server.AppiumServlet.handleRequest(AppiumServlet.java:252)
-	at io.appium.uiautomator2.server.AppiumServlet.handleHttpRequest(AppiumServlet.java:243)
-	at io.appium.uiautomator2.http.ServerHandler.channelRead(ServerHandler.java:44)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:435)
-	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:293)
-	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:267)
-	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:250)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:345)
-	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1294)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:366)
-	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:352)
-	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:911)
-	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:131)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:611)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:552)
-	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:466)
-	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:438)
-	at io.netty.util.concurrent.SingleThreadEventExecutor$2.run(SingleThreadEventExecutor.java:140)
-	at io.netty.util.concurrent.DefaultThreadFactory$DefaultRunnableDecorator.run(DefaultThreadFactory.java:144)
-	at java.lang.Thread.run(Thread.java:764)
-
-
-
+pt1.1.1: 当前的页面的活动名称为：.activity.IntroduceActivity
+当前的页面的活动名称为：.activity.LoginActivity
+单选框CheckBox是否被选中：true 
+对应图标的名称为： 对应图标的名称为： 对应图标的名称为： 对应图标的名称为： 对应图标的名称为： 
 
         </pre>
     </div>
@@ -630,8 +504,8 @@ pt1.3.1: 异常原因：Message: androidx.test.uiautomator.StaleObjectException
 
 <tr id='total_row'>
     <th>统计</th>
-    <th>3</th>
-    <th>3</th>
+    <th>1</th>
+    <th>1</th>
     <th>0</th>
     <th>0</th>
     <th>&nbsp;</th>
@@ -640,7 +514,7 @@ pt1.3.1: 异常原因：Message: androidx.test.uiautomator.StaleObjectException
 </table>
 <script>
     showCase(0,1);
-    drawCircle('circle1',3, 0, 0);
+    drawCircle('circle1',1, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

@@ -10,12 +10,19 @@ class Singleton(object):
             orig = super(Singleton, cls)
             # logging.info('-----------------------init driver----------------------')
             config = {
+                # system:android 8.0
+                # "platformName": "Android",
+                # "deviceName": "192.168.251.101:5555",
+                # "platformVersion": "8.0.0",
+                # "automationName": "UiAutomator2",
+                # "appPackage": "com.conlin360.medical",
+                # "appActivity": "com.conlin360.medical.activity.mine.SplashActivity"
                 "platformName": "Android",
-                "deviceName": "192.168.251.101:5555",
-                "platformVersion": "8.0.0",
+                "deviceName": "192.168.210.104:5555",
+                "platformVersion": "9",
                 "automationName": "UiAutomator2",
-                "appPackage": "com.conlin360.medical",
-                "appActivity": "com.conlin360.medical.activity.mine.SplashActivity"
+                "appPackage": "com.netease.cloudmusic",
+                "appActivity": "com.netease.cloudmusic.activity.LoadingActivity"
             # 'autoLaunch':'false'   #appium是否要自动启动或安装APP，默认为ture
             # 'newCommandTimeout':'60'  #设置未接受到新命令的超时时间，默认60s，说明：如果60s内没有接收到新命令，appium会自动断开，
             # 　　　　　　　　　　如果我需要很长时间做driver之外的操作，可设置延长接收新命令的超时时间
