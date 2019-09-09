@@ -7,7 +7,7 @@ from time import sleep
 
 
 THINK_TIME = 3
-WAIT_TIME = 30
+WAIT_TIME = 20
 class getlogin_method():
     def __init__(self):
         self.driver = DriverClient().getDriver()
@@ -43,8 +43,8 @@ class getlogin_method():
         self.driver.wait_activity("com.netease.cloudmusic.activity.MainActivity", THINK_TIME)
         print("当前的页面的活动名称为：%s" % self.driver.current_activity)
         # tap anywhere in home page to avoid click the recommend menu
-        sleep(THINK_TIME)
-        self.driver.tap([(358,2448)],100)
+        # sleep(THINK_TIME)
+        # self.driver.tap([(358,2448)],100)
         sleep(THINK_TIME)
 
 
@@ -73,6 +73,7 @@ class getlogin_method():
     def login_with_wb(self):
         pass
         self.driver.find_element_by_accessibility_id("wb")
+
 
     def forget_password(self):
         authorize().authorize()
@@ -112,6 +113,7 @@ class getlogin_method():
         pass
         sleep(THINK_TIME)
         self.driver.tap([(730,2549)],100)
+
 
     def test(self):
         print("test case")
