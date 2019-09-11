@@ -27,8 +27,7 @@
 #
 # if __name__ == '__main__':
 #     primeNums(2,20)
-if "是否升级" in "是否升级到6.5版本":
-    print("yes")
-else:
-    print("no")
+from random import choice
+list=[1,2,3,4]
 
+print(choice(list))

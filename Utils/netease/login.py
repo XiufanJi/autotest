@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from time import sleep
-
+from appium.webdriver.common.touch_action import TouchAction
 
 THINK_TIME = 3
 WAIT_TIME = 20
@@ -15,7 +15,6 @@ class getlogin_method():
     def login_with_mobile(self):
         # pass
         try:
-            authorize().authorize()
             # sleep(THINK_TIME)
             clickable = authorize().click_agreement()
             if clickable:
@@ -33,12 +32,10 @@ class getlogin_method():
             # self.assertIn(self.driver.current_activity, "com.netease.cloudmusic.activity.MainActivity")
         except TypeError:
             raise TypeError
-            print("can not locate the element")
+            # print("can not locate the element")
 
 
     def login_with_guest(self):
-        authorize().authorize()
-        authorize().click_agreement()
         self.driver.find_element_by_id("com.netease.cloudmusic:id/a82").click()
         self.driver.wait_activity("com.netease.cloudmusic.activity.MainActivity", THINK_TIME)
         print("当前的页面的活动名称为：%s" % self.driver.current_activity)
@@ -110,12 +107,8 @@ class getlogin_method():
 
 
     def popwindow(self):
-        pass
         sleep(THINK_TIME)
-        self.driver.tap([(730,2549)],100)
+        TouchAction(self.driver).tap(x=577, y=2356).perform()
 
-
-    def test(self):
-        print("test case")
 
 
