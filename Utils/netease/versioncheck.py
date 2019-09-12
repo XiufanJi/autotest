@@ -21,7 +21,10 @@ class versioncheck():
             # locate point can be anywhere outside the window area, decide by yourself
             # actions.tap(x=577, y=2356).perform().release()
             # another simple writing
-            TouchAction(self.driver).tap(x=577, y=2356).perform()
+            screen = self.driver.get_window_size()
+            height = screen["height"]
+            width = screen["width"]
+            TouchAction(self.driver).tap(x=width/4, y=height/4).perform()
             # if use driver.tap,it will encounter some problems
             # self.driver.tap([(577, 2356)], 5)
             """

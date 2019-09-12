@@ -17,6 +17,9 @@ class search_music(unittest.TestCase):
     def test_c_search(self):
         # click search button
         try:
+            print("搜索按钮当前所处页面的活动名称为：%s" % self.driver.current_activity)
+            # sleep(THINK_TIME)
+            """make sure search button is show or not"""
             search = self.driver.find_element_by_accessibility_id("Search")
             flag = search.is_displayed()
             if flag:
@@ -25,12 +28,15 @@ class search_music(unittest.TestCase):
                 # locate search edit box
                 sleep(THINK_TIME)
                 edit = self.driver.find_element_by_id("com.netease.cloudmusic:id/search_src_text")
-                item = "a million years ago"
+                item = "million years ago"
                 edit.send_keys(item)
                 # locate search button
                 self.driver.find_element_by_id("com.netease.cloudmusic:id/c8e").click()
                 sleep(THINK_TIME)
-                window_action().swipe_up()
+                """use swipe down method"""
+                flag = window_action().is_bottom()
+                self.driver.shake()
+                self.assertEquals(False, flag)
             else:
                 pass
         except Exception as e:
