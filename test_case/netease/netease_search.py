@@ -14,7 +14,7 @@ class search_music(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.driver.quit()
 
-    @unittest.skip("do not test right now")
+    # @unittest.skip("do not test right now")
     def test_c_search(self):
         # click search button
         try:
@@ -35,8 +35,8 @@ class search_music(unittest.TestCase):
                 self.driver.find_element_by_id("com.netease.cloudmusic:id/c8e").click()
                 sleep(THINK_TIME)
                 """use swipe down method"""
-                is_bottom = action().is_bottom()
-                is_top = action().is_top()
+                is_bottom = action().top_bottom("down")
+                is_top = action().top_bottom("up")
                 # self.driver.shake()
                 self.assertEquals(True, is_bottom)
                 self.assertEquals(True, is_top)

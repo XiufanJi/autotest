@@ -31,12 +31,12 @@ class login(unittest.TestCase):
         versioncheck().versioncheck()
         sleep(THINK_TIME)
         # click "歌单广场"
-        self.driver.tap([(1146, 1227), (1384, 1312)], 100)
-        self.driver.wait_activity(".activity.MainPlaylistActivity", THINK_TIME)
-        scroll = self.driver.find_element_by_id("com.netease.cloudmusic:id/akt").size
-        print("获取到的区域长宽分别为:{0:.2f},{1:.2f}".format(scroll["height"], scroll["width"]))
-        start_x, end_x, y = scroll["width"] / 4, scroll["width"] / 2, scroll["height"] / 2
-        action().swipe_left(start_x=start_x, end_x=end_x, y=y)
+        # self.driver.tap([(1146, 1227), (1384, 1312)], 100)
+        # self.driver.wait_activity(".activity.MainPlaylistActivity", THINK_TIME)
+        # scroll = self.driver.find_element_by_id("com.netease.cloudmusic:id/akt").size
+        # print("获取到的滑动区域长宽分别为:{0:.2f},{1:.2f}".format(scroll["height"], scroll["width"]))
+        # start_x, end_x, y = scroll["width"] / 10, scroll["width"] / 2, scroll["height"] / 2
+        # action().swipe_left(start_x=start_x, end_x=end_x, y=y)
         # action().swipe_left(scroll["height"], scroll["width"])
         self.assertEquals(".activity.MainActivity", self.driver.current_activity)
         # locate recommend pop window
