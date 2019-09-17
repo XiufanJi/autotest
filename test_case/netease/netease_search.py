@@ -1,6 +1,6 @@
 import unittest
 from Utils.appium_config import DriverClient
-from Utils.action_config import window_action
+from Utils.action_config import action
 from time import sleep
 
 
@@ -14,6 +14,7 @@ class search_music(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls.driver.quit()
 
+    @unittest.skip("do not test right now")
     def test_c_search(self):
         # click search button
         try:
@@ -34,9 +35,11 @@ class search_music(unittest.TestCase):
                 self.driver.find_element_by_id("com.netease.cloudmusic:id/c8e").click()
                 sleep(THINK_TIME)
                 """use swipe down method"""
-                flag = window_action().is_bottom()
-                self.driver.shake()
-                self.assertEquals(False, flag)
+                is_bottom = action().is_bottom()
+                is_top = action().is_top()
+                # self.driver.shake()
+                self.assertEquals(True, is_bottom)
+                self.assertEquals(True, is_top)
             else:
                 pass
         except Exception as e:

@@ -3,17 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Result.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/action_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/action_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/netease/versioncheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/netease/versioncheck.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_action_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_action_config_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_netease_authorize_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_netease_authorize_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_netease_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_netease_login_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_netease_versioncheck_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_netease_versioncheck_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_login_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_search_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_search_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/netease/netease_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_search.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,13 +22,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/run_all_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+            <state relative-caret-position="66">
+              <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
+                <element signature="e#258#412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -39,46 +38,100 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/netease/netease_search.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+            <state relative-caret-position="198">
+              <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#160#197#0" expanded="true" />
-                <element signature="e#300#317#0" expanded="true" />
+                <element signature="e#395#1619#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
+        <entry file="file://$PROJECT_DIR$/test_case/netease/netease_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
+            <state relative-caret-position="308">
+              <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
               <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#199#239#0" expanded="true" />
-                <element signature="e#768#804#0" expanded="true" />
-                <element signature="e#1068#1119#0" expanded="true" />
-                <element signature="e#1180#1554#1" expanded="true" />
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#353#392#0" expanded="true" />
+                <element signature="e#456#488#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/action_config.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="924">
-              <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+            <state relative-caret-position="180">
+              <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#102#142#0" expanded="true" />
-                <element signature="e#183#358#0" expanded="true" />
-                <element signature="e#372#393#0" expanded="true" />
-                <element signature="e#530#868#0" expanded="true" />
-                <element signature="e#916#946#0" expanded="true" />
-                <element signature="e#1254#1282#0" expanded="true" />
+                <element signature="e#133#173#0" expanded="true" />
+                <element signature="e#231#495#0" expanded="true" />
+                <element signature="e#382#403#0" expanded="true" />
+                <element signature="e#551#928#0" expanded="true" />
+                <element signature="e#962#1270#0" expanded="true" />
+                <element signature="e#1335#1794#0" expanded="true" />
+                <element signature="e#1582#2190#0" expanded="true" />
+                <element signature="e#1608#1648#0" expanded="true" />
+                <element signature="e#2276#2805#0" expanded="true" />
+                <element signature="e#3160#3950#0" expanded="true" />
+                <element signature="e#3061#3089#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5106">
+              <caret line="675" column="15" selection-start-line="675" selection-start-column="15" selection-end-line="675" selection-end-column="15" />
+              <folding>
+                <element signature="e#3290#3997#1" expanded="true" />
+                <element signature="e#6780#6883#0" expanded="true" />
+                <element signature="e#6918#6929#0" expanded="true" />
+                <element signature="e#6970#6981#0" expanded="true" />
+                <element signature="e#7086#8205#0" expanded="true" />
+                <element signature="e#8251#8270#0" expanded="true" />
+                <element signature="e#8314#8631#0" expanded="true" />
+                <element signature="e#13280#13400#0" expanded="true" />
+                <element signature="e#13445#13661#0" expanded="true" />
+                <element signature="e#13710#14096#0" expanded="true" />
+                <element signature="e#14146#14522#0" expanded="true" />
+                <element signature="e#15541#15973#0" expanded="true" />
+                <element signature="e#17550#17949#0" expanded="true" />
+                <element signature="e#21273#21867#0" expanded="true" />
+                <element signature="e#21790#21857#0" expanded="true" />
+                <element signature="e#25614#25847#0" expanded="true" />
+                <element signature="e#25902#26117#0" expanded="true" />
+                <element signature="e#26175#26391#0" expanded="true" />
+                <element signature="e#26967#27118#0" expanded="true" />
+                <element signature="e#27151#27307#0" expanded="true" />
+                <element signature="e#36204#36802#0" expanded="true" />
+                <element signature="e#36877#37660#0" expanded="true" />
+                <element signature="e#38312#38550#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webelement.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1980">
+              <caret line="521" selection-start-line="521" selection-end-line="521" />
+              <folding>
+                <element signature="e#7736#8192#0" expanded="true" />
+                <element signature="e#10332#10749#0" expanded="true" />
+                <element signature="e#17081#17415#0" expanded="true" />
+                <element signature="e#17321#17391#0" expanded="true" />
+                <element signature="e#17686#18040#0" expanded="true" />
+                <element signature="e#17946#18017#0" expanded="true" />
+                <element signature="e#18084#18348#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,12 +154,14 @@
       <find>self</find>
       <find>cls</find>
       <find>getDriver()</find>
+      <find>window_action</find>
     </findStrings>
     <replaceStrings>
       <replace>getDriver()</replace>
       <replace>cls</replace>
       <replace>self</replace>
       <replace>driver</replace>
+      <replace>action</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -140,16 +195,16 @@
         <option value="$PROJECT_DIR$/test_case/netease/my_music.py" />
         <option value="$PROJECT_DIR$/Utils/appium_config.py" />
         <option value="$PROJECT_DIR$/Utils/netease/authorize.py" />
-        <option value="$PROJECT_DIR$/run_all_test.py" />
         <option value="$PROJECT_DIR$/Utils/netease/log.py" />
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/Utils/netease/login.py" />
         <option value="$PROJECT_DIR$/test_case/netease/netease_mymusic.py" />
-        <option value="$PROJECT_DIR$/test_case/netease/netease_login.py" />
         <option value="$PROJECT_DIR$/Utils/get_window_size.py" />
         <option value="$PROJECT_DIR$/Utils/netease/versioncheck.py" />
         <option value="$PROJECT_DIR$/test_case/netease/netease_search.py" />
         <option value="$PROJECT_DIR$/Utils/action_config.py" />
+        <option value="$PROJECT_DIR$/test_case/netease/netease_login.py" />
+        <option value="$PROJECT_DIR$/run_all_test.py" />
       </list>
     </option>
   </component>
@@ -173,6 +228,17 @@
             <path>
               <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="test_case" type="462c0819:PsiDirectoryNode" />
+              <item name="netease" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,8 +363,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.run_all_test (1)" />
-        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="JavaScript Debug.Result.html" />
+        <item itemvalue="JavaScript Debug.index.html" />
         <item itemvalue="Python.action_config" />
         <item itemvalue="Python.get_window_size" />
       </list>
@@ -326,6 +392,8 @@
       <workItem from="1567989662379" duration="22731000" />
       <workItem from="1568075813474" duration="23737000" />
       <workItem from="1568163015751" duration="49548000" />
+      <workItem from="1568594623662" duration="14669000" />
+      <workItem from="1568682719606" duration="15239000" />
     </task>
     <servers />
   </component>
@@ -362,17 +430,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241438000" />
+    <option name="totallyTimeSpent" value="271346000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2006079" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20668693" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.33442622" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924013" visible="true" weight="0.33442622" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39836067" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -380,7 +449,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5007599" side_tool="true" weight="0.33442622" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.3289689" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.3289689" />
       <window_info anchor="bottom" id="Messages" order="13" />
@@ -425,7 +494,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autoTest$Unittests_in_test_d_editPatient_py.coverage" NAME="Unittests in test_d_editPatient.py Coverage Results" MODIFIED="1566524434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/autoTest$netease_mymusic.coverage" NAME="netease_mymusic Coverage Results" MODIFIED="1568164758419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/netease" />
-    <SUITE FILE_PATH="coverage/autoTest$run_all_test__1_.coverage" NAME="run_all_test (1) Coverage Results" MODIFIED="1568282882954" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/autoTest$run_all_test__1_.coverage" NAME="run_all_test (1) Coverage Results" MODIFIED="1568703342763" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoTest$login.coverage" NAME="login Coverage Results" MODIFIED="1567741964870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
     <SUITE FILE_PATH="coverage/autoTest$run_all_test.coverage" NAME="run_all_test Coverage Results" MODIFIED="1566462506823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/autoTest$versioncheck.coverage" NAME="versioncheck Coverage Results" MODIFIED="1568022214153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
@@ -531,16 +600,6 @@
           <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="47" column="65" lean-forward="true" selection-start-line="47" selection-start-column="65" selection-end-line="47" selection-end-column="65" />
-          <folding>
-            <element signature="e#1674#1677#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -668,27 +727,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="1039" column="19" lean-forward="true" selection-start-line="1039" selection-start-column="19" selection-end-line="1039" selection-end-column="19" />
-          <folding>
-            <element signature="e#13710#14096#0" expanded="true" />
-            <element signature="e#14146#14522#0" expanded="true" />
-            <element signature="e#15541#15973#0" expanded="true" />
-            <element signature="e#17550#17949#0" expanded="true" />
-            <element signature="e#21273#21867#0" expanded="true" />
-            <element signature="e#21790#21857#0" expanded="true" />
-            <element signature="e#22926#23096#0" expanded="true" />
-            <element signature="e#25614#25847#0" expanded="true" />
-            <element signature="e#26967#27118#0" expanded="true" />
-            <element signature="e#36204#36802#0" expanded="true" />
-            <element signature="e#36877#37660#0" expanded="true" />
-            <element signature="e#38312#38550#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/extensions/action_helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
@@ -698,33 +736,6 @@
             <element signature="e#2232#3486#0" expanded="true" />
             <element signature="e#4073#4145#0" expanded="true" />
             <element signature="e#4494#5096#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#353#392#0" expanded="true" />
-            <element signature="e#456#488#0" expanded="true" />
-            <element signature="e#972#1001#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#199#239#0" expanded="true" />
-            <element signature="e#768#804#0" expanded="true" />
-            <element signature="e#1068#1119#0" expanded="true" />
-            <element signature="e#1180#1554#1" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -743,40 +754,129 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_search.py">
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webelement.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="36" column="50" lean-forward="true" selection-start-line="36" selection-start-column="50" selection-end-line="36" selection-end-column="50" />
+        <state relative-caret-position="1980">
+          <caret line="521" selection-start-line="521" selection-end-line="521" />
           <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#160#197#0" expanded="true" />
-            <element signature="e#300#317#0" expanded="true" />
+            <element signature="e#7736#8192#0" expanded="true" />
+            <element signature="e#10332#10749#0" expanded="true" />
+            <element signature="e#17081#17415#0" expanded="true" />
+            <element signature="e#17321#17391#0" expanded="true" />
+            <element signature="e#17686#18040#0" expanded="true" />
+            <element signature="e#17946#18017#0" expanded="true" />
+            <element signature="e#18084#18348#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_all_test.py">
+    <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="69" lean-forward="true" selection-start-line="10" selection-start-column="69" selection-end-line="10" selection-end-column="69" />
+        <state relative-caret-position="198">
+          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
           <folding>
-            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#199#239#0" expanded="true" />
+            <element signature="e#768#804#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/3/unittest/__init__.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2336">
+          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+          <folding>
+            <element signature="e#515#518#0" expanded="true" />
+            <element signature="e#740#743#0" expanded="true" />
+            <element signature="e#1674#1677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_search.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#395#1619#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5106">
+          <caret line="675" column="15" selection-start-line="675" selection-start-column="15" selection-end-line="675" selection-end-column="15" />
+          <folding>
+            <element signature="e#3290#3997#1" expanded="true" />
+            <element signature="e#6780#6883#0" expanded="true" />
+            <element signature="e#6918#6929#0" expanded="true" />
+            <element signature="e#6970#6981#0" expanded="true" />
+            <element signature="e#7086#8205#0" expanded="true" />
+            <element signature="e#8251#8270#0" expanded="true" />
+            <element signature="e#8314#8631#0" expanded="true" />
+            <element signature="e#13280#13400#0" expanded="true" />
+            <element signature="e#13445#13661#0" expanded="true" />
+            <element signature="e#13710#14096#0" expanded="true" />
+            <element signature="e#14146#14522#0" expanded="true" />
+            <element signature="e#15541#15973#0" expanded="true" />
+            <element signature="e#17550#17949#0" expanded="true" />
+            <element signature="e#21273#21867#0" expanded="true" />
+            <element signature="e#21790#21857#0" expanded="true" />
+            <element signature="e#25614#25847#0" expanded="true" />
+            <element signature="e#25902#26117#0" expanded="true" />
+            <element signature="e#26175#26391#0" expanded="true" />
+            <element signature="e#26967#27118#0" expanded="true" />
+            <element signature="e#27151#27307#0" expanded="true" />
+            <element signature="e#36204#36802#0" expanded="true" />
+            <element signature="e#36877#37660#0" expanded="true" />
+            <element signature="e#38312#38550#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/action_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="924">
-          <caret line="42" column="28" lean-forward="true" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+        <state relative-caret-position="180">
+          <caret line="62" column="48" lean-forward="true" selection-start-line="62" selection-start-column="48" selection-end-line="62" selection-end-column="48" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#102#142#0" expanded="true" />
-            <element signature="e#183#358#0" expanded="true" />
-            <element signature="e#372#393#0" expanded="true" />
-            <element signature="e#530#868#0" expanded="true" />
-            <element signature="e#916#946#0" expanded="true" />
-            <element signature="e#1254#1282#0" expanded="true" />
+            <element signature="e#133#173#0" expanded="true" />
+            <element signature="e#231#495#0" expanded="true" />
+            <element signature="e#382#403#0" expanded="true" />
+            <element signature="e#551#928#0" expanded="true" />
+            <element signature="e#962#1270#0" expanded="true" />
+            <element signature="e#1335#1794#0" expanded="true" />
+            <element signature="e#1582#2190#0" expanded="true" />
+            <element signature="e#1608#1648#0" expanded="true" />
+            <element signature="e#2276#2805#0" expanded="true" />
+            <element signature="e#3160#3950#0" expanded="true" />
+            <element signature="e#3061#3089#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#353#392#0" expanded="true" />
+            <element signature="e#456#488#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/run_all_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="15" column="29" lean-forward="true" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#258#412#0" expanded="true" />
           </folding>
         </state>
       </provider>
