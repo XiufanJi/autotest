@@ -37,7 +37,6 @@ class login(unittest.TestCase):
         # print("获取到的滑动区域长宽分别为:{0:.2f},{1:.2f}".format(scroll["height"], scroll["width"]))
         # start_x, end_x, y = scroll["width"] / 10, scroll["width"] / 2, scroll["height"] / 2
         # action().swipe_left(start_x=start_x, end_x=end_x, y=y)
-        # action().swipe_left(scroll["height"], scroll["width"])
         self.assertEquals(".activity.MainActivity", self.driver.current_activity)
         # locate recommend pop window
         # try:

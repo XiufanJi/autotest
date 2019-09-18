@@ -47,7 +47,8 @@ class action():
         :param end_x: 滑动过程中的x轴的变化量
         :param y: 滑动的区域的y轴位置，因左右滑动时，y值无变化，所以可取同一值
         usage like:
-        start_x, y, end_x, y = width / 2, height / 2, width / 4, height / 2
+        start_x, y, end_x, y = width / 3, height / 2, width *2/ 3, height / 2
+        右滑需要start_x的值小于end_x的值：较小值朝较大值滑去
         :return:end_x
         """
         sleep(THINK_TIME)
@@ -62,6 +63,7 @@ class action():
         :param end_x: 滑动过程中的x轴的变化量
         :param y: 滑动的区域的y轴位置，因左右滑动时，y值无变化，所以可取同一值
         :return:end_x
+        usage: 左滑需要start_x的坐标值大于end_x的值，较大值朝较小值滑去
         """
         self.driver.swipe(start_x, y, end_x, y, 200)
         return end_x
@@ -73,7 +75,6 @@ class action():
         :param destination_el: 终止元素
         :return:
         """
-        pass
         self.driver.scroll(origin_el, destination_el, 200)
 
     """判断是否滑动到页面底部：上滑和下滑适用"""
@@ -126,4 +127,7 @@ class action():
         print("屏幕的宽度：%d" % screen_width)
         print("滑动是否到达页面顶部：%s" % is_border)
         return is_border
+
+    # el = self.driver.find_element_by_android_uiautomator("new UiScrollable(new UiSelector().scrollable(true))."
+    #                                                      "scrollIntoView(new UiSelector().text(\"听听\"))")
 
