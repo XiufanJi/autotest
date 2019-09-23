@@ -22,8 +22,10 @@ class getlogin_method():
                 self.driver.find_element_by_id("com.netease.cloudmusic:id/py").click()
             else:
                 raise Exception
+            sleep(THINK_TIME)
             self.driver.find_element_by_class_name("android.widget.EditText").send_keys("18557539532")
             self.driver.find_element_by_id("com.netease.cloudmusic:id/anq").click()
+            sleep(THINK_TIME)
             self.driver.find_element_by_id("com.netease.cloudmusic:id/jb").send_keys("123321")
             textview = self.driver.find_elements_by_class_name("android.widget.TextView")
             textview[2].click()

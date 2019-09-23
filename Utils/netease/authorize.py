@@ -13,6 +13,7 @@ class authorize():
     def authorize(self):
         try:
             # click ok button in the start page
+            sleep(THINK_TIME)
             self.driver.find_element_by_id("com.netease.cloudmusic:id/as6").click()
             sleep(THINK_TIME)
             # click authorize button

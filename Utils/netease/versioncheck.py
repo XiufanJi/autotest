@@ -10,7 +10,7 @@ class versioncheck():
     def versioncheck(self):
         # see if version upgrade pop window is appear
         print("现在所处页面的活动名称为：%s " % self.driver.current_activity)
-        # sleep(THINK_TIME)
+        sleep(THINK_TIME)
         flag = self.driver.find_element_by_id("com.netease.cloudmusic:id/ccj").is_displayed()
         print("版本更新弹框是否弹出: %s" % flag)
         print("当前页面的活动名称为：%s" % self.driver.current_activity)

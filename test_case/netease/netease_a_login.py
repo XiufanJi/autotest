@@ -4,6 +4,7 @@ from Utils.netease.login import getlogin_method
 from Utils.netease.versioncheck import versioncheck
 from Utils.netease.authorize import authorize
 from time import sleep
+from appium import webdriver
 from Utils.action_config import action
 
 
@@ -14,17 +15,16 @@ class login(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.driver = DriverClient().getDriver()
 
-
     @classmethod
     def tearDownClass(cls) -> None:
         # cls.driver.quit()
         pass
+
     def test_a_login(self):
         # use import public utils
         authorize().authorize()
-        authorize().click_agreement()
         # use mobile login method
-        getlogin_method().login_with_guest()
+        getlogin_method().login_with_mobile()
         # shut down version upgrade pop window
         self.driver.wait_activity(".activity.MainActivity", THINK_TIME)
         sleep(THINK_TIME)
