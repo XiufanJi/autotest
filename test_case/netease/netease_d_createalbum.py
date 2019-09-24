@@ -6,8 +6,8 @@ from random import randint
 
 
 THINK_TIME = 3
-randint(1, 100)
-keys = "new album"+randint
+num = randint(1, 100)
+keys = "new album"+str(num)
 class createlist(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
