@@ -2,25 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_case/netease/netease_d_createlist.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/appium_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/netease/authorize.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/netease/authorize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/netease/login.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/netease/login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/netease/versioncheck.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/netease/versioncheck.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_netease_authorize_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_netease_authorize_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_netease_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_netease_login_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_netease_versioncheck_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_netease_versioncheck_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_login_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_mymusic_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_mymusic_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_a_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_mymusic.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_b_playmusic.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_search.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_a_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_a_login_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_c_searchmusic_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_c_searchmusic_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_d_createlist_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_netease_netease_d_createlist_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_a_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_a_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_d_createlist.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_d_createlist.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,14 +26,13 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_all_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+            <state relative-caret-position="242">
+              <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
-                <element signature="e#258#412#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,57 +41,59 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/netease/netease_b_playmusic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="24" column="72" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="72" />
+            <state relative-caret-position="176">
+              <caret line="45" column="92" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="92" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="e#442#456#0" expanded="true" />
+                <element signature="e#987#1089#0" expanded="true" />
+                <element signature="e#1350#1471#0" expanded="true" />
+                <element signature="e#1641#1813#0" expanded="true" />
+                <element signature="e#2334#2353#0" expanded="true" />
+                <element signature="e#3387#3466#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/netease/authorize.py">
+        <entry file="file://$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="107">
-              <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#153#193#0" expanded="true" />
-                <element signature="e#270#955#0" expanded="true" />
-                <element signature="e#705#812#0" expanded="true" />
-                <element signature="e#1037#1901#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-335">
-              <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#199#239#0" expanded="true" />
-                <element signature="e#768#804#0" expanded="true" />
-                <element signature="e#1201#1252#0" expanded="true" />
-                <element signature="e#1313#1687#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_case/netease/netease_d_createlist.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
+            <state relative-caret-position="180">
+              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#159#196#0" expanded="true" />
-                <element signature="e#261#278#0" expanded="true" />
+                <element signature="e#339#372#0" expanded="true" />
+                <element signature="e#439#1678#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test_case/netease/netease_d_createlist.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding>
+                <element signature="e#0#15#0" expanded="true" />
+                <element signature="e#196#235#0" expanded="true" />
+                <element signature="e#298#315#0" expanded="true" />
+                <element signature="e#357#1481#0" expanded="true" />
+                <element signature="e#975#1073#0" expanded="true" />
+                <element signature="e#1772#1832#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/venv/Lib/random.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="752" selection-start-line="752" selection-end-line="752" />
+              <folding>
+                <element signature="e#26462#26533#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -105,13 +102,32 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/netease/netease_a_login.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
+            <state relative-caret-position="206">
+              <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
                 <element signature="e#420#459#0" expanded="true" />
-                <element signature="e#494#526#0" expanded="true" />
-                <element signature="e#1541#1570#0" expanded="true" />
+                <element signature="e#465#479#0" expanded="true" />
+                <element signature="e#947#961#0" expanded="true" />
+                <element signature="e#1533#1562#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+              <folding>
+                <element signature="e#0#44#0" expanded="true" />
+                <element signature="e#199#239#0" expanded="true" />
+                <element signature="e#277#322#0" expanded="true" />
+                <element signature="e#638#723#0" expanded="true" />
+                <element signature="e#853#889#0" expanded="true" />
+                <element signature="e#1199#1250#0" expanded="true" />
+                <element signature="e#1311#1685#1" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -121,14 +137,10 @@
         <entry file="file://$PROJECT_DIR$/Utils/netease/login.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="138">
-              <caret line="29" column="89" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
               <folding>
                 <element signature="e#0#44#0" expanded="true" />
                 <element signature="e#428#468#0" expanded="true" />
-                <element signature="e#1621#2017#0" expanded="true" />
-                <element signature="e#1858#1919#0" expanded="true" />
-                <element signature="e#3548#3564#0" expanded="true" />
-                <element signature="e#3750#3842#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -204,10 +216,11 @@
         <option value="$PROJECT_DIR$/test_case/netease/netease_createlist.py" />
         <option value="$PROJECT_DIR$/Utils/appium_config.py" />
         <option value="$PROJECT_DIR$/test_case/netease/netease_login.py" />
+        <option value="$PROJECT_DIR$/Utils/netease/login.py" />
         <option value="$PROJECT_DIR$/test_case/netease/netease_a_login.py" />
+        <option value="$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py" />
         <option value="$PROJECT_DIR$/Utils/netease/versioncheck.py" />
         <option value="$PROJECT_DIR$/test_case/netease/netease_d_createlist.py" />
-        <option value="$PROJECT_DIR$/Utils/netease/login.py" />
       </list>
     </option>
   </component>
@@ -410,7 +423,8 @@
       <workItem from="1568767890649" duration="23515000" />
       <workItem from="1568942197865" duration="6914000" />
       <workItem from="1568960542925" duration="10525000" />
-      <workItem from="1569201719811" duration="20655000" />
+      <workItem from="1569201719811" duration="20897000" />
+      <workItem from="1569286614545" duration="7891000" />
     </task>
     <servers />
   </component>
@@ -447,13 +461,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="342242000" />
+    <option name="totallyTimeSpent" value="350375000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21884498" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2218845" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -511,7 +525,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autoTest$Unittests_in_test_d_editPatient_py.coverage" NAME="Unittests in test_d_editPatient.py Coverage Results" MODIFIED="1566524434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/autoTest$netease_mymusic.coverage" NAME="netease_mymusic Coverage Results" MODIFIED="1568164758419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/netease" />
-    <SUITE FILE_PATH="coverage/autoTest$run_all_test__1_.coverage" NAME="run_all_test (1) Coverage Results" MODIFIED="1569233171250" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/autoTest$run_all_test__1_.coverage" NAME="run_all_test (1) Coverage Results" MODIFIED="1569294944261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoTest$login.coverage" NAME="login Coverage Results" MODIFIED="1567741964870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
     <SUITE FILE_PATH="coverage/autoTest$run_all_test.coverage" NAME="run_all_test Coverage Results" MODIFIED="1566462506823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/autoTest$versioncheck.coverage" NAME="versioncheck Coverage Results" MODIFIED="1568022214153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
@@ -769,16 +783,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/venv/Lib/random.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="753" selection-start-line="753" selection-end-line="753" />
-          <folding>
-            <element signature="e#26462#26533#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/venv/Lib/site-packages/appium/webdriver/extensions/android/activities.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
@@ -810,30 +814,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="23" column="51" selection-start-line="23" selection-start-column="51" selection-end-line="23" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/netease/authorize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="107">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#153#193#0" expanded="true" />
-            <element signature="e#270#955#0" expanded="true" />
-            <element signature="e#705#812#0" expanded="true" />
-            <element signature="e#1037#1901#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/appium_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="70">
@@ -848,52 +828,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_b_playmusic.py">
+    <entry file="file://$PROJECT_DIR$/Utils/netease/authorize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="24" column="72" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="72" />
+        <state relative-caret-position="264">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#442#456#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_d_createlist.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="19" column="70" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="70" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#159#196#0" expanded="true" />
-            <element signature="e#261#278#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-335">
-          <caret line="15" column="61" selection-start-line="15" selection-start-column="61" selection-end-line="15" selection-end-column="61" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#199#239#0" expanded="true" />
-            <element signature="e#768#804#0" expanded="true" />
-            <element signature="e#1201#1252#0" expanded="true" />
-            <element signature="e#1313#1687#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_a_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="32" column="22" selection-start-line="32" selection-start-column="22" selection-end-line="32" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#420#459#0" expanded="true" />
-            <element signature="e#494#526#0" expanded="true" />
-            <element signature="e#1541#1570#0" expanded="true" />
+            <element signature="e#153#193#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -901,25 +842,103 @@
     <entry file="file://$PROJECT_DIR$/Utils/netease/login.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="29" column="89" selection-start-line="29" selection-start-column="89" selection-end-line="29" selection-end-column="89" />
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
             <element signature="e#0#44#0" expanded="true" />
             <element signature="e#428#468#0" expanded="true" />
-            <element signature="e#1621#2017#0" expanded="true" />
-            <element signature="e#1858#1919#0" expanded="true" />
-            <element signature="e#3548#3564#0" expanded="true" />
-            <element signature="e#3750#3842#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_a_login.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="28" column="50" selection-start-line="28" selection-start-column="50" selection-end-line="28" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#420#459#0" expanded="true" />
+            <element signature="e#465#479#0" expanded="true" />
+            <element signature="e#947#961#0" expanded="true" />
+            <element signature="e#1533#1562#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/netease/versioncheck.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="16" column="61" lean-forward="true" selection-start-line="16" selection-start-column="61" selection-end-line="16" selection-end-column="61" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#199#239#0" expanded="true" />
+            <element signature="e#277#322#0" expanded="true" />
+            <element signature="e#638#723#0" expanded="true" />
+            <element signature="e#853#889#0" expanded="true" />
+            <element signature="e#1199#1250#0" expanded="true" />
+            <element signature="e#1311#1685#1" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_all_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+        <state relative-caret-position="242">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#258#412#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/venv/Lib/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="752" selection-start-line="752" selection-end-line="752" />
+          <folding>
+            <element signature="e#26462#26533#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_c_searchmusic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#339#372#0" expanded="true" />
+            <element signature="e#439#1678#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_b_playmusic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="45" column="92" selection-start-line="45" selection-start-column="61" selection-end-line="45" selection-end-column="92" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#442#456#0" expanded="true" />
+            <element signature="e#987#1089#0" expanded="true" />
+            <element signature="e#1350#1471#0" expanded="true" />
+            <element signature="e#1641#1813#0" expanded="true" />
+            <element signature="e#2334#2353#0" expanded="true" />
+            <element signature="e#3387#3466#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/netease/netease_d_createlist.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#196#235#0" expanded="true" />
+            <element signature="e#298#315#0" expanded="true" />
+            <element signature="e#357#1481#0" expanded="true" />
+            <element signature="e#975#1073#0" expanded="true" />
+            <element signature="e#1772#1832#0" expanded="true" />
           </folding>
         </state>
       </provider>

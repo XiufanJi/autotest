@@ -12,7 +12,8 @@ class search_music(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls) -> None:
-        cls.driver.quit()
+        # cls.driver.quit()
+        pass
 
     @unittest.skip("do not test right now")
     def test_c_search(self):

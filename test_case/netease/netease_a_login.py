@@ -15,10 +15,10 @@ class login(unittest.TestCase):
     def setUpClass(cls) -> None:
         cls.driver = DriverClient().getDriver()
 
-    @classmethod
-    def tearDownClass(cls) -> None:
-        # cls.driver.quit()
-        pass
+    # @classmethod
+    # def tearDownClass(cls) -> None:
+    #     # cls.driver.quit()
+    #     pass
 
     def test_a_login(self):
         # use import public utils

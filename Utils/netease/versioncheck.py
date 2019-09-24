@@ -9,17 +9,18 @@ class versioncheck():
 
     def versioncheck(self):
         # see if version upgrade pop window is appear
-        print("现在所处页面的活动名称为：%s " % self.driver.current_activity)
+        # print("现在所处页面的活动名称为：%s " % self.driver.current_activity)
         sleep(THINK_TIME)
-        flag = self.driver.find_element_by_id("com.netease.cloudmusic:id/ccj").is_displayed()
+        flag = self.driver.find_element_by_android_uiautomator("new UiSelector().textContains(\"是否升级\")")\
+            .is_displayed()
         print("版本更新弹框是否弹出: %s" % flag)
         print("当前页面的活动名称为：%s" % self.driver.current_activity)
         if flag:
             # if there is a pop window appear? click anywhere outside the window,let it disappear
+            # locate point can be anywhere outside the window area, decide by yourself
             sleep(THINK_TIME)
             # actions = TouchAction(self.driver)
-            # locate point can be anywhere outside the window area, decide by yourself
-            # actions.tap(x=577, y=2356).perform().release()
+            # actions.tap(x=352, y=2575).perform().release()
             # another simple writing
             screen = self.driver.get_window_size()
             height = screen["height"]
