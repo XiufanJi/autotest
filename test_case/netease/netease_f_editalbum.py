@@ -12,13 +12,15 @@ class editalbum(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls) -> None:
-        cls.driver.quit()
+        # cls.driver.quit()
+        pass
 
     def test_editalbunm(self):
         """查找歌单的编辑按钮"""
         try:
             sleep(THINK_TIME)
             # albumlist=self.driver.find_elements_by_id("com.netease.cloudmusic:id/a16")
+            """查询相应歌单对应的修改按钮"""
             self.driver.find_element_by_android_uiautomator("new UiSelector().textContains(\"new album\")\
             .fromParent(new UiSelector().resourceId(\"com.netease.cloudmusic:id/a16\"))").click()
             """找到编辑按钮"""
@@ -26,8 +28,10 @@ class editalbum(unittest.TestCase):
             """切换activity"""
             self.driver.wait_activity(".activity.EditPlayListActivity", THINK_TIME)
             """清除输入框内的内容并进行文字输入"""
-            self.driver.find_element_by_id("com.netease.cloudmusic:id/apd").clear()
-            self.driver.find_element_by_id("com.netease.cloudmusic:id/apd").send_keys("test")
+            self.driver.find_element_by_id("com.netease.cloudmusic:id/apd").click()
+            sleep(THINK_TIME)
+            self.driver.find_element_by_id("com.netease.cloudmusic:id/api").clear()
+            self.driver.find_element_by_id("com.netease.cloudmusic:id/api").send_keys("test")
             """点击save按钮"""
             self.driver.find_elements_by_class_name("android.widget.TextView")[0].click()
             """点击返回按钮返回主页面"""
