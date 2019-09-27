@@ -14,12 +14,16 @@ class message(unittest.TestCase):
 
     @classmethod
     def tearDownClass(cls) -> None:
-        cls.driver.quit()
+        # cls.driver.quit()
+        pass
 
     """可单独与login联合执行"""
-    def test_checkmessage(self):
+    """获取私信数量并进行批量已读操作"""
+    @unittest.skip("暂不测试")
+    def test_privatemsg(self):
         try:
             """获取私信消息数目"""
+            print("当前页面的活动名称：%s" % self.driver.current_activity)
             sleep(THINK_TIME)
             message_num = self.driver.find_element_by_android_uiautomator("new UiSelector().\
             description(\"抽屉菜单\").fromParent(new UiSelector().className(\"android.widget.TextView\"))").text
@@ -38,11 +42,16 @@ class message(unittest.TestCase):
                 sleep(THINK_TIME)
                 self.driver.find_element_by_android_uiautomator("new UiSelector().text(\"标记已读\")").click()
                 """获取是否还有未读消息toast"""
-                pop_message = "//*[contains(@text,'暂无新消息')]"
+                pop_message = "//*[@text='暂无新消息']"
                 toast_element = WebDriverWait(self.driver, 5).\
                     until(EC.presence_of_element_located((By.XPATH, pop_message)))
                 print("获取到的页面提示消息为：%s" % toast_element.text)
                 self.assertEquals("暂无新消息", toast_element.text)
+                """点击按钮返回我的音乐首页"""
+                self.driver.find_element_by_android_uiautomator("new UiSelector().text(\"Navigate up\")").click()
+                self.driver.wait_activity(".activity.MainActivity", THINK_TIME)
+                self.assertEquals(".activity.MainActivity", self.driver.current_activity)
+                print("当前页面活动的名称为：%s" % self.driver.current_activity)
             else:
                 pass
         except Exception as e:
