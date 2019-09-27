@@ -27,10 +27,10 @@ class createlist(unittest.TestCase):
     def test_01_creatalbum(self):
         """click mine button"""
         try:
-            self.driver.find_element_by_accessibility_id("我的音乐").click()
-            sleep(THINK_TIME)
-            """先将弹出的提示框点击关掉"""
-            TouchAction(self.driver).tap(x=1108, y=902).perform()
+            # self.driver.find_element_by_accessibility_id("我的音乐").click()
+            # sleep(THINK_TIME)
+            # """先将弹出的提示框点击关掉"""
+            # TouchAction(self.driver).tap(x=1108, y=902).perform()
             """find creat button"""
             self.driver.find_element_by_id("com.netease.cloudmusic:id/c8").click()
             """make sure if pop window is appear"""
@@ -111,7 +111,7 @@ class createlist(unittest.TestCase):
             self.driver.find_element_by_android_uiautomator("new UiSelector().text(\"DELETE\")").click()
             """获取是否还有未读消息toast"""
             pop_message = "//*[@text='Deleted']"
-            toast_element = WebDriverWait(self.driver, 5). \
+            toast_element = WebDriverWait(self.driver, 0.01). \
                 until(EC.presence_of_element_located((By.XPATH, pop_message)))
             print("获取到的页面提示消息为：%s" % toast_element.text)
             self.assertEquals("Deleted", toast_element.text)

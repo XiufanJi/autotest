@@ -15,6 +15,7 @@ class history(unittest.TestCase):
         pass
 
     """进行历史记录的删除测试"""
+    @unittest.skip("暂不测试")
     def test_delehistory(self):
         try:
             sleep(THINK_TIME)

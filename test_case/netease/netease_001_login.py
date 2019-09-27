@@ -23,8 +23,10 @@ class login(unittest.TestCase):
     def test_a_login(self):
         # use import public utils
         authorize().authorize()
+        """如果使用游客角色登录，则需要加上下面的方法调用"""
+        authorize().click_agreement()
         # use mobile login method
-        getlogin_method().login_with_mobile()
+        getlogin_method().login_with_guest()
         # shut down version upgrade pop window
         self.driver.wait_activity(".activity.MainActivity", THINK_TIME)
         sleep(THINK_TIME)

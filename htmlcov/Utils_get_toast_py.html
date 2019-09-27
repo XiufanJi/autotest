@@ -85,7 +85,7 @@
 <p id="t4" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t5" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t6" class="stm run hide_run"><span class="key">def</span> <span class="nam">get_toast</span><span class="op">(</span><span class="nam">matchString</span><span class="op">,</span> <span class="nam">driver</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t7" class="stm mis">    <span class="nam">toast_element</span> <span class="op">=</span> <span class="nam">WebDriverWait</span><span class="op">(</span><span class="nam">driver</span><span class="op">,</span> <span class="num">5</span><span class="op">)</span><span class="op">.</span> <span class="xx">\</span><span class="strut">&nbsp;</span></p>
+<p id="t7" class="stm mis">    <span class="nam">toast_element</span> <span class="op">=</span> <span class="nam">WebDriverWait</span><span class="op">(</span><span class="nam">driver</span><span class="op">,</span> <span class="num">0.01</span><span class="op">)</span><span class="op">.</span> <span class="xx">\</span><span class="strut">&nbsp;</span></p>
 <p id="t8" class="pln">        <span class="nam">until</span><span class="op">(</span><span class="nam">EC</span><span class="op">.</span><span class="nam">presence_of_element_located</span><span class="op">(</span><span class="op">(</span><span class="nam">By</span><span class="op">.</span><span class="nam">XPATH</span><span class="op">,</span> <span class="nam">matchString</span><span class="op">)</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t9" class="stm mis">    <span class="key">return</span> <span class="nam">toast_element</span><span class="op">.</span><span class="nam">text</span><span class="strut">&nbsp;</span></p>
 
@@ -98,7 +98,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-09-26 17:48
+            created at 2019-09-27 15:57
         </p>
     </div>
 </div>

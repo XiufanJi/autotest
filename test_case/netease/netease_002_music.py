@@ -61,10 +61,14 @@ class my_music(unittest.TestCase):
             raise e
 
     """搜索歌曲并对结果页面进行上下滑动测试"""
+    @unittest.skip("暂不测试")
     def test_02_searchmusic(self):
         # click search button
         try:
             self.driver.find_element_by_accessibility_id("我的音乐").click()
+            sleep(THINK_TIME)
+            """先将弹出的提示框点击关掉"""
+            TouchAction(self.driver).tap(x=1108, y=902).perform()
             print("搜索按钮当前所处页面的活动名称为：%s" % self.driver.current_activity)
             # sleep(THINK_TIME)
             """make sure search button is show or not"""

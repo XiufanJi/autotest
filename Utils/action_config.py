@@ -69,13 +69,14 @@ class action():
         return end_x
 
     """针对需要滑动的目标不能进行区域定位，但是可以进行单独定位的情况"""
-    def element_scroll(self, origin_el, destination_el):
+    def element_scroll(self, origin_el, destination_el, duration):
         """
-        :param origin_el: 起始元素
-        :param destination_el: 终止元素
+        :param origin_el: 滑动开始元素
+        :param destination_el: 滑动结束元素
+        :param duration: 滑动间隔时间
         :return:
         """
-        self.driver.scroll(origin_el, destination_el, 200)
+        self.driver.scroll(origin_el, destination_el, duration)
 
     """判断是否滑动到页面底部：上滑和下滑适用"""
     def top_bottom(self, direction):
@@ -130,4 +131,17 @@ class action():
 
     # el = self.driver.find_element_by_android_uiautomator("new UiScrollable(new UiSelector().scrollable(true))."
     #                                                      "scrollIntoView(new UiSelector().text(\"听听\"))")
+
+    def scroll_to_el(self, pattern):
+        """
+        :param pattern: 不同查找类型和需要匹配的字段
+        example usage:
+        pattern = "new UiSelector().text(\"听听\"))"
+        self.driver.find_element_by_android_uiautomator("new UiScrollable(new UiSelector().scrollable(true)).\
+                                                        scrollIntoView(pattern)")
+        :return: webElement
+        """
+        target_el = self.driver.find_element_by_android_uiautomator\
+            ("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(\""+pattern+"\")")
+        return target_el
 

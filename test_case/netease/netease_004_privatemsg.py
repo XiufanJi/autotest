@@ -1,3 +1,4 @@
+# coding=utf-8
 import unittest
 from Utils.appium_config import DriverClient
 from selenium.webdriver.support.ui import WebDriverWait
@@ -42,8 +43,9 @@ class message(unittest.TestCase):
                 sleep(THINK_TIME)
                 self.driver.find_element_by_android_uiautomator("new UiSelector().text(\"标记已读\")").click()
                 """获取是否还有未读消息toast"""
-                pop_message = "//*[@text='暂无新消息']"
-                toast_element = WebDriverWait(self.driver, 5).\
+                """有问题，不能成功获取toast信息"""
+                pop_message = "//*[@text=\'暂无新消息\']"
+                toast_element = WebDriverWait(self.driver, 0.01).\
                     until(EC.presence_of_element_located((By.XPATH, pop_message)))
                 print("获取到的页面提示消息为：%s" % toast_element.text)
                 self.assertEquals("暂无新消息", toast_element.text)
