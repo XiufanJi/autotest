@@ -35,11 +35,11 @@ class authorize():
             self.driver.wait_activity(".activity.IntroduceActivity", THINK_TIME)
             print("当前的页面的活动名称为：%s" % self.driver.current_activity)
             # change to login page
-            sleep(WAIT_TIME)
             self.driver.wait_activity(".activity.LoginActivity", THINK_TIME)
             print("当前的页面的活动名称为：%s" % self.driver.current_activity)
             # click agreement checkbox
-            self.driver.tap([(401, 2730)], 100)
+            self.driver.tap([(411, 2754)], 100)
+            # self.driver.find_element_by_class_name("android.widget.CheckBox").click()
             # verify if checkbox is checked
             clickable = self.driver.find_element_by_id("com.netease.cloudmusic:id/as6") \
                 .get_attribute("checked")

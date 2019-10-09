@@ -24,14 +24,15 @@ class login(unittest.TestCase):
         # use import public utils
         authorize().authorize()
         """如果使用游客角色登录，则需要加上下面的方法调用"""
-        authorize().click_agreement()
+        # authorize().click_agreement()
         # use mobile login method
-        getlogin_method().login_with_guest()
+        sleep(WAIT_TIME)
+        getlogin_method().login_with_mobile()
         # shut down version upgrade pop window
         self.driver.wait_activity(".activity.MainActivity", THINK_TIME)
         sleep(THINK_TIME)
         versioncheck().versioncheck()
-        sleep(THINK_TIME)
+        # sleep(THINK_TIME)
         # click "歌单广场"
         # self.driver.tap([(1146, 1227), (1384, 1312)], 100)
         # self.driver.wait_activity(".activity.MainPlaylistActivity", THINK_TIME)

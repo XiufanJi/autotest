@@ -10,7 +10,7 @@ class action():
     """获取页面长宽"""
     def get_window_size(self):
         window = self.driver.get_window_size("current")
-        self.driver.get_window_rect()
+        # self.driver.get_window_rect()
         x = window["width"]
         y = window["height"]
         # print(type(window))
@@ -48,7 +48,7 @@ class action():
         :param y: 滑动的区域的y轴位置，因左右滑动时，y值无变化，所以可取同一值
         usage like:
         start_x, y, end_x, y = width / 3, height / 2, width *2/ 3, height / 2
-        右滑需要start_x的值小于end_x的值：较小值朝较大值滑去
+        右滑需要start_x的值大于end_x的值：较大值朝较小值滑去（使用的模拟器中感觉坐标是在右边的）
         :return:end_x
         """
         sleep(THINK_TIME)
@@ -63,7 +63,7 @@ class action():
         :param end_x: 滑动过程中的x轴的变化量
         :param y: 滑动的区域的y轴位置，因左右滑动时，y值无变化，所以可取同一值
         :return:end_x
-        usage: 左滑需要start_x的坐标值大于end_x的值，较大值朝较小值滑去
+        usage: 左滑需要start_x的坐标值小于end_x的值，较小值朝较大值滑去
         """
         self.driver.swipe(start_x, y, end_x, y, 200)
         return end_x
@@ -144,4 +144,13 @@ class action():
         target_el = self.driver.find_element_by_android_uiautomator\
             ("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(\""+pattern+"\")")
         return target_el
+
+    def find_element_byUiautormator(self, pattern):
+        """
+        :param pattern: 使用uiautomator所匹配的模板，如text,classname 等
+        :return: web Element
+        """
+        el = self.driver.find_element_by_android_uiautomator(pattern)
+        return el
+
 
