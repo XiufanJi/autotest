@@ -19,16 +19,21 @@ class Singleton(object):
                 # "appPackage": "com.conlin360.medical",
                 # "appActivity": "com.conlin360.medical.activity.mine.SplashActivity"
                 # netease app config
-                "platformName": "Android",
-                "deviceName": "192.168.210.104:5555",
+                "deviceName": "192.168.196.102:5555",
                 "platformVersion": "9",
+                # """使用真机调试"""
+                "platformName": "Android",
+                # "deviceName": "a8a5e0d07cf4",
+                # "plateforVersion": "7.1.2",
                 "automationName": "UiAutomator2",
                 # "appPackage": "com.netease.cloudmusic",
                 # "appActivity": "com.netease.cloudmusic.activity.LoadingActivity"
                 # "appPackage": "com.autonavi.minimap",
                 # "appActivity": "com.autonavi.map.activity.SplashActivity"
-                "appPackage": "com.baidu.BaiduMap",
-                "appActivity": "com.baidu.baidumaps.guide.TermsActivity"
+                # "appPackage": "com.baidu.BaiduMap",
+                # "appActivity": "com.baidu.baidumaps.guide.TermsActivity"
+                "appPackage": "com.tencent.map",
+                "appActivity": "com.tencent.map.WelcomeActivity"
                 # 'autoLaunch':'false'   #appium是否要自动启动或安装APP，默认为ture
                 # 'newCommandTimeout':'60'  #设置未接受到新命令的超时时间，默认60s，说明：如果60s内没有接收到新命令，
                 # appium会自动断开，
