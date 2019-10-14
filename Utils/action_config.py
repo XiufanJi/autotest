@@ -1,5 +1,7 @@
 from Utils.appium_config import DriverClient
 from time import sleep
+from appium.webdriver.common.multi_action import MultiAction
+from appium.webdriver.common.touch_action import TouchAction
 
 
 THINK_TIME = 2
@@ -152,5 +154,45 @@ class action():
         """
         el = self.driver.find_element_by_android_uiautomator(pattern)
         return el
+
+    """放大操作，使用multiAction"""
+    def enlarge(self):
+        area = action().get_window_size()
+        height = area[1]
+        width = area[0]
+
+        action1 = TouchAction(self.driver)
+        action1.tap(x=width * 0.4, y=height * 0.4).move_to(x=width * 0.2, y=height * 0.2).release()
+        action2 = TouchAction(self.driver)
+        action2.tap(x=width * 0.6, y=height * 0.6).move_to(x=width * 0.8, y=height * 0.8).release()
+
+        """MultiAction在使用是不能连续写成MultiAction(driver).add(el).perform()的形式
+        否则会报错NoneType类型没有perform()属性，必须要分开成下面的方式才行，
+        而且多次循环perform的时候不能只循坏perform部分，add部分也需要加进循环体内
+        """
+        multi = MultiAction(self.driver)
+        multi.add(action1, action2)
+        multi.perform()
+
+    """缩小操作，使用multiAction"""
+    def narrow(self):
+        area = action().get_window_size()
+        height = area[1]
+        width = area[0]
+
+        action1 = TouchAction(self.driver)
+        action1.tap(x=width * 0.2, y=height * 0.2).move_to(x=width * 0.4, y=height * 0.4).release()
+        action2 = TouchAction(self.driver)
+        action2.tap(x=width * 0.8, y=height * 0.8).move_to(x=width * 0.6, y=height * 0.6).release()
+
+        """
+        MultiAction在使用是不能连续写成MultiAction(driver).add(el).perform()的形式
+        否则会报错NoneType类型没有perform()属性，必须要分开成下面的方式才行，
+        而且多次循环perform的时候不能只循坏perform部分，add部分也需要加进循环体内
+        """
+        multi = MultiAction(self.driver)
+        multi.add(action1, action2)
+        multi.perform()
+
 
 

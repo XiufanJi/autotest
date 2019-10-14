@@ -19,13 +19,14 @@ class Singleton(object):
                 # "appPackage": "com.conlin360.medical",
                 # "appActivity": "com.conlin360.medical.activity.mine.SplashActivity"
                 # netease app config
-                "deviceName": "192.168.196.102:5555",
-                "platformVersion": "9",
+                "deviceName": "f0dc688e",
+                "platformVersion": "4.4.4",
                 # """使用真机调试"""
                 "platformName": "Android",
                 # "deviceName": "a8a5e0d07cf4",
                 # "plateforVersion": "7.1.2",
-                "automationName": "UiAutomator2",
+                """获取toast，使用UIAutomator2"""
+                "automationName": "UIAutomator1",
                 # "appPackage": "com.netease.cloudmusic",
                 # "appActivity": "com.netease.cloudmusic.activity.LoadingActivity"
                 # "appPackage": "com.autonavi.minimap",
