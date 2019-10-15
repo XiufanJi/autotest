@@ -3,7 +3,6 @@ from time import sleep
 from appium.webdriver.common.multi_action import MultiAction
 from appium.webdriver.common.touch_action import TouchAction
 
-
 THINK_TIME = 2
 class action():
     def __init__(self):

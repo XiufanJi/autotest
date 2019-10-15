@@ -3,7 +3,6 @@ from appium import webdriver
 accountRegx = "((^(13|14|15|16|17|18|19)\d{9}$))"
 passregx = "(^\w{6,18}$)"
 idregx = "(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)"
-num=""
 
 
 def driverConfig(self):

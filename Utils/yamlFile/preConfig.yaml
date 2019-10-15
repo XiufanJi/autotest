@@ -1,0 +1,41 @@
+# 对应的平台名称Android还是iOS
+platformName: Android
+# 使用的驱动名称
+autormator:
+  - automationName: UiAutomator1
+  # 需要获取toast时可使用2,没有设置则模式使用1
+  - automationName: UiAutomator2
+# 调试时使用的模拟器或真机的系统版本
+platformVersion:
+  - platformVersion: 4.4.4
+  - platformVersion: 8.0.0
+  - platformVersion: 9
+# 模拟器或真机的名称
+device:
+  # 真机调试时使用的参数，OPPO， Android 4.4.4
+  - deviceName: f0dc688e
+  # 模拟器名称
+  - deviceName: 192.168.251.101:5555
+  # Samsung Galaxy S10 emulator
+  - deviceName: 192.168.196.101:5555
+# 对应的安装包的名称
+app:
+  # 健康兰溪APP
+  - appPackage: com.conlin360.medical
+  # 网易云音乐
+  - appPackage: com.netease.cloudmusic
+  # 高德地图
+  - appPackage: com.autonavi.minimap
+  # 腾讯地图
+  - appPackge: com.tencent.map
+  # 百度地图
+  - appPackage: com.baidu.BaiduMap
+# 启动APP的活动名称
+appActivity:
+  # app对应的页面活动名称
+  - appActivity: com.conlin360.medical.activity.mine.SplashActivity
+  # 网易云音乐
+  - appActivity: com.netease.cloudmusic.activity.LoadingActivity
+  # 腾讯地图
+  - appActivity: com.tencent.map.WelcomeActivity
+

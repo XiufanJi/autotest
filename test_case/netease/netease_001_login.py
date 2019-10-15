@@ -19,14 +19,15 @@ class login(unittest.TestCase):
     # def tearDownClass(cls) -> None:
     #     # cls.driver.quit()
     #     pass
-    @unittest.skip("skip now")
+    # @unittest.skip("skip now")
     def test_a_login(self):
         # use import public utils
         authorize().authorize()
         """如果使用游客角色登录，则需要加上下面的方法调用"""
+        sleep(WAIT_TIME)
         authorize().click_agreement()
         # use mobile login method
-        sleep(WAIT_TIME)
+        # sleep(WAIT_TIME)
         getlogin_method().login_with_guest()
         # shut down version upgrade pop window
         self.driver.wait_activity(".activity.MainActivity", THINK_TIME)
