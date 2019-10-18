@@ -19,6 +19,7 @@ class addPatient(unittest.TestCase):
         # cls.driver.quit()
         pass
 
+    @unittest.skip("skip it")
     def test_b_add_patient(self):
         try:
             self.driver.wait_activity("com.conlin360.medical.activity.HomePageActivity", 10)

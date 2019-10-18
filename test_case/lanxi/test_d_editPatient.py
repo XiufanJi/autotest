@@ -5,10 +5,13 @@ from Utils.appium_config import DriverClient
 class editPatient(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
-        cls.driver=DriverClient.getDriver()
+        cls.driver = DriverClient().getDriver()
     @classmethod
     def tearDown(cls) -> None:
-        cls.driver.quit()
+        # cls.driver.quit()
+        pass
+
+    @unittest.skip("skip it")
     def test_editPatient(self):
         pass
 

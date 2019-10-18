@@ -4,7 +4,7 @@ from selenium.webdriver.common.by import By
 
 
 class get_toast():
-    def get_toast(matchString, driver):
+    def get_toast(self, matchString, driver):
         toast_element = WebDriverWait(driver, 0.01). \
             until(EC.presence_of_element_located((By.XPATH, matchString)))
         return toast_element.text
@@ -15,9 +15,7 @@ class get_toast():
         :param pattern: 查找元素使用的方法id,text等
         :return: boolean
         """
-        el = WebDriverWait(driver, 2).until\
-            (EC.presence_of_element_located(lambda x: driver.find_element_by_x(pattern).is_displayed()))
-        if el:
-            return True
-        else:
-            return False
+        el = WebDriverWait(driver, 1).until\
+            (EC.presence_of_element_located(lambda x: By.x, pattern))
+        print("输出获取到的元素的类型：", type(el))
+        return el

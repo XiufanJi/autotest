@@ -146,12 +146,25 @@ class action():
             ("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(\""+pattern+"\")")
         return target_el
 
-    def find_element_byUiautormator(self, pattern):
+    def find_byUiautormator(self, mode, matchStr):
         """
-        :param pattern: 使用uiautomator所匹配的模板，如text,classname 等
-        :return: web Element
+        :param mode: 查找元素所需匹配的类型，text,id ,className etc.
+        :param matchStr: 查找元素所需要匹配的具体字段
+        :return: web element
         """
-        el = self.driver.find_element_by_android_uiautomator(pattern)
+        if mode == "text":
+            el = self.driver.find_element_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
+        if mode == "className":
+            el = self.driver.find_element_by_android_uiautomator("new UiSelector().className(\""+matchStr+"\")")
+        if mode == "description":
+            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+            description(\"" + matchStr + "\")")
+        if mode == "StartsWith":
+            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+            textStartsWith(\"" + matchStr + "\")")
+        if mode == "textContains":
+            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+            textContains(\"" + matchStr + "\")")
         return el
 
     """放大操作，使用multiAction"""

@@ -7,17 +7,30 @@ autormator:
   - automationName: UiAutomator2
 # 调试时使用的模拟器或真机的系统版本
 platformVersion:
+  # 真机调试，OPPO
   - platformVersion: 4.4.4
+  # 夜神模拟器
+  - platformVersion: 5.1.1
+  # 真机 Redmi4x
+  - platformVersion: 7.1.2
+  # 其余为genymotion模拟器
   - platformVersion: 8.0.0
   - platformVersion: 9
+  - platformVersion: 7.1.1
 # 模拟器或真机的名称
 device:
   # 真机调试时使用的参数，OPPO， Android 4.4.4
   - deviceName: f0dc688e
-  # 模拟器名称
-  - deviceName: 192.168.251.101:5555
+  # 真机redmi4x ,android 7.1.2
+  - deviceName: a8a5e0d07cf4
+  # google pixel 7.1.0 emulator
+  - deviceName: 192.168.196.104:5555
   # Samsung Galaxy S10 emulator
   - deviceName: 192.168.196.101:5555
+  # 夜神模拟器
+  - deviceName: 127.0.0.1:62001
+  # mi 9真机
+  - deviceName: 36c02a5
 # 对应的安装包的名称
 app:
   # 健康兰溪APP
@@ -30,6 +43,8 @@ app:
   - appPackge: com.tencent.map
   # 百度地图
   - appPackage: com.baidu.BaiduMap
+  # 微信
+  - appPackage: com.tencent.mm
 # 启动APP的活动名称
 appActivity:
   # app对应的页面活动名称
@@ -38,4 +53,7 @@ appActivity:
   - appActivity: com.netease.cloudmusic.activity.LoadingActivity
   # 腾讯地图
   - appActivity: com.tencent.map.WelcomeActivity
-
+  # 微信
+  - appActivity: .ui.LauncherUI
+# APP等待活动名称
+appWaitActivity: .app.WeChatSplashActivity

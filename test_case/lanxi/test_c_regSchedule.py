@@ -10,12 +10,14 @@ THINK_TIME = 5
 class regSchedule(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.driver=DriverClient().getDriver()
+        cls.driver = DriverClient().getDriver()
 
     @classmethod
     def tearDownClass(cls):
-        cls.driver.quit()
+        # cls.driver.quit()
+        pass
 
+    @unittest.skip("skip it")
     def test_c_regSchedule(self):
         sleep(THINK_TIME)
         # press back button
