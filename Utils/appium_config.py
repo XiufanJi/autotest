@@ -2,6 +2,10 @@ from appium import webdriver
 # from Test.logs.logs import logging  # 本人自己封装的方法，你们写时可以不用调用，并且删除方法中调用的logging即可
 import yaml
 
+
+# chromeDriver = "C:\Users\YQ\AppData\Roaming\\npm\\node_modules\chromedriver\lib\chromedriver\chromedriver.exe"
+
+test = "D:\BaiduNetdiskDownload\chromedriver_win32_66\chromedriver.exe"
 class Singleton(object):
     driver = None
 
@@ -22,10 +26,11 @@ class Singleton(object):
                 "automationName": data["autormator"][1]["automationName"],
                 "appPackage": data["app"][5]["appPackage"],
                 "appActivity": data["appActivity"][3]["appActivity"],
-                # "appWaitActivity": data["appWaitActivity"],
-                "ChromeOptions": {"androidProcess": "com.tencent.mm:tools"},
+                "chromeOptions": {"androidProcess": "com.tencent.mm:tools"},
                 "noReset": "true",
-                "fullReset": "false"
+                "fullReset": "false",
+                """指定chromeDriver的执行路径，chromedriver单独放置时使用"""
+                "chromedriverExecutable": test
             }
             cls._instance = orig.__new__(cls, *args, **kw)
             cls._instance.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', config)

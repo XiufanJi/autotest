@@ -16,7 +16,7 @@ platformVersion:
   # 其余为genymotion模拟器
   - platformVersion: 8.0.0
   - platformVersion: 9
-  - platformVersion: 7.1.1
+  - platformVersion: 7.1.0
 # 模拟器或真机的名称
 device:
   # 真机调试时使用的参数，OPPO， Android 4.4.4

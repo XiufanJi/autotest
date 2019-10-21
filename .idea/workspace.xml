@@ -2,27 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Report/Result.html" beforeDir="false" afterPath="$PROJECT_DIR$/Report/Result.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/action_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/action_config.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/appium_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/get_toast.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/get_toast.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_action_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_action_config_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_publicConfig_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_publicConfig_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/test_a_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/test_a_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/test_b_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/test_b_patient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/test_c_regSchedule.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/test_c_regSchedule.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/test_d_editPatient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/test_d_editPatient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_miniProgram_weixin_001_miniPro_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_miniProgram_weixin_001_miniPro_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,83 +25,41 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_all_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="132">
+              <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
                 <element signature="e#80#131#0" expanded="true" />
-                <element signature="e#268#421#0" expanded="true" />
+                <element signature="e#262#438#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/appium_config.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
+              <folding>
+                <element signature="e#0#28#0" expanded="true" />
+                <element signature="e#542#569#0" expanded="true" />
+                <element signature="e#1544#1587#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Utils/appium_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-                <element signature="e#587#614#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
+            <state relative-caret-position="198">
+              <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
               <folding>
                 <element signature="e#0#15#0" expanded="true" />
-                <element signature="e#155#194#0" expanded="true" />
                 <element signature="e#334#366#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../Python/Lib/site-packages/Appium_Python_Client-0.44-py3.7.egg!/appium/webdriver/extensions/context.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-102">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#1347#1561#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Utils/action_config.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="366">
-              <caret line="164" column="34" selection-start-line="164" selection-start-column="34" selection-end-line="164" selection-end-column="34" />
-              <folding>
-                <element signature="e#0#44#0" expanded="true" />
-                <element signature="e#6073#6120#0" expanded="true" />
-                <element signature="e#6239#6289#0" expanded="true" />
-                <element signature="e#6408#6458#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/remote/webdriver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-946">
-              <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
-              <folding>
-                <element signature="e#24982#25542#0" expanded="true" />
-                <element signature="e#25614#25847#0" expanded="true" />
-                <element signature="e#25902#26117#0" expanded="true" />
-                <element signature="e#26175#26391#0" expanded="true" />
-                <element signature="e#26442#26673#0" expanded="true" />
-                <element signature="e#26714#26920#0" expanded="true" />
+                <element signature="e#425#2283#0" expanded="true" />
+                <element signature="e#1871#1884#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -120,8 +68,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="59" selection-start-line="59" selection-end-line="59" />
+            <state relative-caret-position="154">
+              <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -208,10 +156,10 @@
         <option value="$PROJECT_DIR$/test_case/lanxi/test_c_regSchedule.py" />
         <option value="$PROJECT_DIR$/test_case/lanxi/test_a_login.py" />
         <option value="$PROJECT_DIR$/run_all_test.py" />
-        <option value="$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml" />
         <option value="$PROJECT_DIR$/Utils/action_config.py" />
-        <option value="$PROJECT_DIR$/Utils/appium_config.py" />
+        <option value="$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml" />
         <option value="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" />
+        <option value="$PROJECT_DIR$/Utils/appium_config.py" />
       </list>
     </option>
   </component>
@@ -257,6 +205,12 @@
               <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoTest" type="462c0819:PsiDirectoryNode" />
               <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+              <item name="yamlFile" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -452,7 +406,8 @@
       <workItem from="1570771159713" duration="13510000" />
       <workItem from="1570841269300" duration="11278000" />
       <workItem from="1571014282019" duration="28564000" />
-      <workItem from="1571186647203" duration="67800000" />
+      <workItem from="1571186647203" duration="68848000" />
+      <workItem from="1571618779235" duration="26623000" />
     </task>
     <servers />
   </component>
@@ -489,13 +444,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="647407000" />
+    <option name="totallyTimeSpent" value="675078000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27355623" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2781155" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -553,7 +508,7 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autoTest$Unittests_in_test_d_editPatient_py.coverage" NAME="Unittests in test_d_editPatient.py Coverage Results" MODIFIED="1566524434386" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/autoTest$netease_mymusic.coverage" NAME="netease_mymusic Coverage Results" MODIFIED="1568164758419" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case/netease" />
-    <SUITE FILE_PATH="coverage/autoTest$run_all_test__1_.coverage" NAME="run_all_test (1) Coverage Results" MODIFIED="1571386836053" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/autoTest$run_all_test__1_.coverage" NAME="run_all_test (1) Coverage Results" MODIFIED="1571650928508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/autoTest$login.coverage" NAME="login Coverage Results" MODIFIED="1567741964870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
     <SUITE FILE_PATH="coverage/autoTest$run_all_test.coverage" NAME="run_all_test Coverage Results" MODIFIED="1566462506823" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_case" />
     <SUITE FILE_PATH="coverage/autoTest$versioncheck.coverage" NAME="versioncheck Coverage Results" MODIFIED="1568022214153" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
@@ -878,19 +833,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/lanxi/lanxi_01_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#156#195#0" expanded="true" />
-            <element signature="e#262#279#0" expanded="true" />
-            <element signature="e#314#318#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/lanxi/lanxi_01_login.py" />
     <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/chrome/options.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-440">
@@ -1102,13 +1045,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/Lib/ssl.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="88">
@@ -1119,9 +1055,21 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/action_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="164" column="34" selection-start-line="164" selection-start-column="34" selection-end-line="164" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#44#0" expanded="true" />
+            <element signature="e#6073#6120#0" expanded="true" />
+            <element signature="e#6239#6289#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/Lib/site-packages/selenium-3.141.0-py3.7.egg/selenium/webdriver/remote/webdriver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-946">
+        <state relative-caret-position="2684">
           <caret line="751" column="8" selection-start-line="751" selection-start-column="8" selection-end-line="751" selection-end-column="8" />
           <folding>
             <element signature="e#24982#25542#0" expanded="true" />
@@ -1134,22 +1082,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/action_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="164" column="34" selection-start-line="164" selection-start-column="34" selection-end-line="164" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#44#0" expanded="true" />
-            <element signature="e#6073#6120#0" expanded="true" />
-            <element signature="e#6239#6289#0" expanded="true" />
-            <element signature="e#6408#6458#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../Python/Lib/site-packages/Appium_Python_Client-0.44-py3.7.egg!/appium/webdriver/extensions/context.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102">
+        <state relative-caret-position="22">
           <caret line="29" selection-start-line="29" selection-end-line="29" />
           <folding>
             <element signature="e#1347#1561#0" expanded="true" />
@@ -1157,37 +1092,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py">
+    <entry file="file://$PROJECT_DIR$/Utils/yamlFile/preConfig.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="43" column="33" selection-start-line="43" selection-start-column="33" selection-end-line="43" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-            <element signature="e#155#194#0" expanded="true" />
-            <element signature="e#334#366#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="154">
+          <caret line="28" column="14" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/run_all_test.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="26" lean-forward="true" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="132">
+          <caret line="9" lean-forward="true" selection-start-line="9" selection-end-line="9" />
           <folding>
             <element signature="e#15#30#0" expanded="true" />
             <element signature="e#80#131#0" expanded="true" />
-            <element signature="e#268#421#0" expanded="true" />
+            <element signature="e#262#438#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Utils/appium_config.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="34" lean-forward="true" selection-start-line="26" selection-start-column="34" selection-end-line="26" selection-end-column="34" />
+        <state relative-caret-position="176">
+          <caret line="32" column="46" lean-forward="true" selection-start-line="32" selection-start-column="46" selection-end-line="32" selection-end-column="46" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
-            <element signature="e#587#614#0" expanded="true" />
+            <element signature="e#542#569#0" expanded="true" />
+            <element signature="e#1544#1587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="58" lean-forward="true" selection-start-line="58" selection-end-line="58" />
+          <folding>
+            <element signature="e#0#15#0" expanded="true" />
+            <element signature="e#334#366#0" expanded="true" />
+            <element signature="e#425#2283#0" expanded="true" />
+            <element signature="e#1871#1884#0" expanded="true" />
           </folding>
         </state>
       </provider>

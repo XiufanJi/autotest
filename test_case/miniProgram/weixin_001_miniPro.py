@@ -37,7 +37,7 @@ class miniPro(unittest.TestCase):
             self.driver.wait_activity(".plugin.appbrand.ui.AppBrandLauncherUI", THINK_TIME)
             sleep(THINK_TIME)
             print("当前的context值为：", self.driver.context)
-            target_minipro = "体验版"
+            target_minipro = "咖啡外卖"
             el_target = action().find_byUiautormator("textContains", target_minipro)
             print("页面上定位到target小程序元素吗？:%s" % el_target.is_displayed())
             if el_target.is_displayed():
@@ -47,13 +47,12 @@ class miniPro(unittest.TestCase):
             """点击小程序进入页面，切换进入webview页面"""
             self.driver.switch_to.context("WEBVIEW_com.tencent.mm:tools")
             sleep(10)
-            print("当前页面的模式为：%s" % self.driver.context)
-            menu = "我的"
-            el_menu = action().find_byUiautormator("text", menu)
-            print("页面上定位到小程序我的元素吗？:%s" % el_menu.is_displayed())
-            if el_menu.is_displayed():
-                el_menu.click()
+            # menu = "我的"
+            # el_menu = action().find_byUiautormator("text", menu)
+            # print("页面上定位到小程序我的元素吗？:%s" % el_menu.is_displayed())
+            # if el_menu.is_displayed():
+            #     el_menu.click()
             self.assertEquals(".plugin.appbrand.ui.AppBrandUI", self.driver.current_activity)
-
+            print("当前页面的模式为：%s" % self.driver.context)
         except Exception as e:
             raise e
