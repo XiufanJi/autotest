@@ -3,9 +3,7 @@ from appium import webdriver
 import yaml
 
 
-# chromeDriver = "C:\Users\YQ\AppData\Roaming\\npm\\node_modules\chromedriver\lib\chromedriver\chromedriver.exe"
-
-test = "D:\BaiduNetdiskDownload\chromedriver_win32_66\chromedriver.exe"
+# test = "D:\BaiduNetdiskDownload\chromedriver_win32_66\chromedriver.exe"
 class Singleton(object):
     driver = None
 
@@ -16,21 +14,18 @@ class Singleton(object):
             """从配置文件中读取相应的配置项"""
             file = open('Utils/yamlFile/preConfig.yaml', 'rb')
             data = yaml.load(file)
-            """配置Chrome"""
-            # options = ChromeOptions()
-            # options.add_experimental_option("androidProcess", "com.tencent.mm:appbrand2")
             config = {
-                "deviceName": data["device"][5]["deviceName"],
-                "platformVersion": data["platformVersion"][4]["platformVersion"],
+                "deviceName": data["device"][2]["deviceName"],
+                "platformVersion": data["platformVersion"][5]["platformVersion"],
                 "platformName": data["platformName"],
                 "automationName": data["autormator"][1]["automationName"],
-                "appPackage": data["app"][5]["appPackage"],
-                "appActivity": data["appActivity"][3]["appActivity"],
-                "chromeOptions": {"androidProcess": "com.tencent.mm:tools"},
+                "appPackage": data["app"][0]["appPackage"],
+                "appActivity": data["appActivity"][0]["appActivity"],
+                # "chromeOptions": {"androidProcess": "com.tencent.mm:appbrand0"},
                 "noReset": "true",
-                "fullReset": "false",
-                """指定chromeDriver的执行路径，chromedriver单独放置时使用"""
-                "chromedriverExecutable": test
+                "fullReset": "false"
+                # 指定chromeDriver的执行路径，chromedriver单独放置时使用
+                # "chromedriverExecutable": data["chromeDriver"][0]["chromeDriver"]
             }
             cls._instance = orig.__new__(cls, *args, **kw)
             cls._instance.driver = webdriver.Remote('http://127.0.0.1:4723/wd/hub', config)

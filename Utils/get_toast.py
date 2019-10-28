@@ -5,17 +5,18 @@ from selenium.webdriver.common.by import By
 
 class get_toast():
     def get_toast(self, matchString, driver):
-        toast_element = WebDriverWait(driver, 0.01). \
+        toast_element = WebDriverWait(driver, 0.001). \
             until(EC.presence_of_element_located((By.XPATH, matchString)))
         return toast_element.text
 
-    def element_is_present(self, driver, pattern):
+    def element_is_present(self, driver, locator, pattern):
         """
-        :param driver:
-        :param pattern: 查找元素使用的方法id,text等
-        :return: boolean
+        :param driver: 使用的驱动
+        :param x: 定位的方式，id,classname ...
+        :param pattern:
+        :return: web element
         """
         el = WebDriverWait(driver, 1).until\
-            (EC.presence_of_element_located(lambda x: By.x, pattern))
+            (EC.presence_of_element_located(By.locator, pattern))
         print("输出获取到的元素的类型：", type(el))
         return el

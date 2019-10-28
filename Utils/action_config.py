@@ -165,6 +165,34 @@ class action():
         if mode == "textContains":
             el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
             textContains(\"" + matchStr + "\")")
+        if mode == "id":
+            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+            resourceId(\"" + matchStr + "\")")
+        return el
+
+    """查找多个元素"""
+    def find_elements_byUiautormator(self, mode, matchStr):
+        """
+        :param mode: 查找元素所需匹配的类型，text,id ,className etc.
+        :param matchStr: 查找元素所需要匹配的具体字段
+        :return: web element
+        """
+        if mode == "text":
+            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
+        if mode == "className":
+            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().className(\""+matchStr+"\")")
+        if mode == "description":
+            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+            description(\"" + matchStr + "\")")
+        if mode == "StartsWith":
+            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+            textStartsWith(\"" + matchStr + "\")")
+        if mode == "textContains":
+            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+            textContains(\"" + matchStr + "\")")
+        if mode == "id":
+            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+            resourceId(\"" + matchStr + "\")")
         return el
 
     """放大操作，使用multiAction"""

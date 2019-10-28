@@ -57,3 +57,7 @@ appActivity:
   - appActivity: .ui.LauncherUI
 # APP等待活动名称
 appWaitActivity: .app.WeChatSplashActivity
+# chromeDriver 配置
+chromeDriver:
+  - chromeDriver: D://autotest/chromedriver/chromedriver_win32_2.39/chromedriver.exe
+  - chromeDriver: D://autotest/chromedriver/chromedriver_win32_77/chromedriver.exe
