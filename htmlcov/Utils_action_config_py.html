@@ -247,7 +247,7 @@
 <p id="n178" class="pln"><a href="#n178">178</a></p>
 <p id="n179" class="pln"><a href="#n179">179</a></p>
 <p id="n180" class="stm run hide_run"><a href="#n180">180</a></p>
-<p id="n181" class="stm mis"><a href="#n181">181</a></p>
+<p id="n181" class="stm run hide_run"><a href="#n181">181</a></p>
 <p id="n182" class="stm run hide_run"><a href="#n182">182</a></p>
 <p id="n183" class="stm mis"><a href="#n183">183</a></p>
 <p id="n184" class="stm run hide_run"><a href="#n184">184</a></p>
@@ -257,7 +257,7 @@
 <p id="n188" class="stm mis"><a href="#n188">188</a></p>
 <p id="n189" class="pln"><a href="#n189">189</a></p>
 <p id="n190" class="stm run hide_run"><a href="#n190">190</a></p>
-<p id="n191" class="stm run hide_run"><a href="#n191">191</a></p>
+<p id="n191" class="stm mis"><a href="#n191">191</a></p>
 <p id="n192" class="pln"><a href="#n192">192</a></p>
 <p id="n193" class="stm run hide_run"><a href="#n193">193</a></p>
 <p id="n194" class="stm mis"><a href="#n194">194</a></p>
@@ -488,7 +488,7 @@
 <p id="t178" class="pln"><span class="str">        :return: web element</span><span class="strut">&nbsp;</span></p>
 <p id="t179" class="pln"><span class="str">        """</span><span class="strut">&nbsp;</span></p>
 <p id="t180" class="stm run hide_run">        <span class="key">if</span> <span class="nam">mode</span> <span class="op">==</span> <span class="str">"text"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t181" class="stm mis">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().text(\""</span><span class="op">+</span><span class="nam">matchStr</span><span class="op">+</span><span class="str">"\")"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t181" class="stm run hide_run">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().text(\""</span><span class="op">+</span><span class="nam">matchStr</span><span class="op">+</span><span class="str">"\")"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t182" class="stm run hide_run">        <span class="key">if</span> <span class="nam">mode</span> <span class="op">==</span> <span class="str">"className"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t183" class="stm mis">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().className(\""</span><span class="op">+</span><span class="nam">matchStr</span><span class="op">+</span><span class="str">"\")"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t184" class="stm run hide_run">        <span class="key">if</span> <span class="nam">mode</span> <span class="op">==</span> <span class="str">"description"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
@@ -498,7 +498,7 @@
 <p id="t188" class="stm mis">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().\</span><span class="strut">&nbsp;</span></p>
 <p id="t189" class="pln"><span class="str">            textStartsWith(\""</span> <span class="op">+</span> <span class="nam">matchStr</span> <span class="op">+</span> <span class="str">"\")"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t190" class="stm run hide_run">        <span class="key">if</span> <span class="nam">mode</span> <span class="op">==</span> <span class="str">"textContains"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
-<p id="t191" class="stm run hide_run">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().\</span><span class="strut">&nbsp;</span></p>
+<p id="t191" class="stm mis">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().\</span><span class="strut">&nbsp;</span></p>
 <p id="t192" class="pln"><span class="str">            textContains(\""</span> <span class="op">+</span> <span class="nam">matchStr</span> <span class="op">+</span> <span class="str">"\")"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t193" class="stm run hide_run">        <span class="key">if</span> <span class="nam">mode</span> <span class="op">==</span> <span class="str">"id"</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t194" class="stm mis">            <span class="nam">el</span> <span class="op">=</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">find_elements_by_android_uiautomator</span><span class="op">(</span><span class="str">"new UiSelector().\</span><span class="strut">&nbsp;</span></p>
@@ -556,7 +556,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-10-28 15:50
+            created at 2019-10-29 10:32
         </p>
     </div>
 </div>

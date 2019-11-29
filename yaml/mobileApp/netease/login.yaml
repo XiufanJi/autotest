@@ -1,0 +1,85 @@
+testcase:
+  # 网易云音乐APP的元素管理
+  -
+    desc: 首页同意按钮
+    element_location: new UiSelector().text(\"同意\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 进入APP按钮
+    element_location: new UiSelector().text(\"进入App\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 用户名
+    element_location: new UiSelector().text(\"手机号登录\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 游客体验按钮
+    element_location: new UiSelector().text(\"立即体验\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 微信账号
+    element_location: com.netease.cloudmusic:id/as8
+    find_type: id
+    find_locator: normal
+    operate_1: click
+  -
+    desc: QQ账号
+    element_location: com.netease.cloudmusic:id/as9
+    find_type: id
+    find_locator: normal
+    operate_1: click
+  -
+    desc: 微博账号
+    element_location: com.netease.cloudmusic:id/as9
+    find_type: id
+    find_locator: normal
+    operate_1: click
+  -
+    desc: 网易账号
+    element_location: com.netease.cloudmusic:id/asa
+    find_type: id
+    find_locator: normal
+    operate_1: click
+  -
+    desc: 手机号
+    element_location: new UiSelector().text(\"请输入手机号\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: clear
+    operate_2: send_keys
+    content: 18557539532
+  -
+    desc: 下一步按钮
+    element_location: new UiSelector().text(\"下一步\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 输入密码
+    element_location: new UiSelector().className(\"android.widget.EditText\")
+    find_type: className
+    find_locator: android_uiautomator
+    operate_1: clear
+    operate_2: send_keys
+    content: 123456
+  -
+    desc: 忘记密码
+    element_location: new UiSelector().text(\"忘记密码？\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 登录
+    element_location: new UiSelector().text(\"登录\")
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+

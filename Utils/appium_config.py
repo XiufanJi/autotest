@@ -15,16 +15,17 @@ class Singleton(object):
             file = open('Utils/yamlFile/preConfig.yaml', 'rb')
             data = yaml.load(file)
             config = {
-                "deviceName": data["device"][2]["deviceName"],
-                "platformVersion": data["platformVersion"][5]["platformVersion"],
+                "deviceName": data["device"][4]["deviceName"],
+                "platformVersion": data["platformVersion"][1]["platformVersion"],
                 "platformName": data["platformName"],
                 "automationName": data["autormator"][1]["automationName"],
-                "appPackage": data["app"][0]["appPackage"],
-                "appActivity": data["appActivity"][0]["appActivity"],
+                "appPackage": data["app"][1]["appPackage"],
+                "appActivity": data["appActivity"][1]["appActivity"],
+                # 切换小程序时使用
                 # "chromeOptions": {"androidProcess": "com.tencent.mm:appbrand0"},
                 "noReset": "true",
                 "fullReset": "false"
-                # 指定chromeDriver的执行路径，chromedriver单独放置时使用
+                # 指定chromeDriver的执行路径，chromedriver单独放置时使用,切换webview页面时使用
                 # "chromedriverExecutable": data["chromeDriver"][0]["chromeDriver"]
             }
             cls._instance = orig.__new__(cls, *args, **kw)

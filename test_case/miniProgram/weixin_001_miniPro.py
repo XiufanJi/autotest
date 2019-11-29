@@ -1,6 +1,6 @@
 import unittest
 from Utils.appium_config import DriverClient
-from Utils.action_config import action
+from Utils.public_action import action
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.webdriver import WebDriver
@@ -20,6 +20,7 @@ class miniPro(unittest.TestCase):
         # pass
 
     """对微信小程序进行测试"""
+
     def test_miniPro(self):
         try:
             """登录微信首页后，点击发现按钮，切换至小程序页面"""

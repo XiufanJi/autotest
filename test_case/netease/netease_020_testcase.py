@@ -1,7 +1,7 @@
 import unittest
 from Utils.appium_config import DriverClient
 from time import sleep
-from Utils.action_config import action
+from Utils.public_action import action
 
 THINK_TIME = 3
 class testcase(unittest.TestCase):

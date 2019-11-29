@@ -1,0 +1,14 @@
+testcase:
+  # 微信页面按钮
+  -
+    element_locator: new UiSelector().text(\"发现\")
+    find_type: android_uiautomator
+    operate: click
+  -
+    element_locator: new UiSelector().text(\"小程序\")
+    find_type: android_uiautomator
+    operate: click
+  -
+    element_locator: new UiSelector().\textContains(\"麦乐送"\")
+    find_type: android_uiautomator
+    operate: click

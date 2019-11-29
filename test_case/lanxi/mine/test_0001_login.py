@@ -5,7 +5,7 @@ from time import sleep
 from Utils import publicConfig
 from Utils.appium_config import DriverClient
 from Utils.get_toast import get_toast
-from Utils.action_config import action
+from Utils.public_action import action
 import time
 
 
@@ -22,7 +22,9 @@ class login_apps(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = DriverClient().getDriver()
         flag = cls.driver.is_app_installed("com.conlin360.medical")
-        if not flag:
+        if flag:
+            pass
+        else:
             cls.driver.install_app('app/com.conlin360.medical_1.1.20_15.apk')
 
     @classmethod
@@ -41,9 +43,7 @@ class login_apps(unittest.TestCase):
             #     self.driver.find_element_by_id("com.android.packageinstaller:id/permission_allow_button").click()
             # 等待页面活动切换点击页面下方菜单进行过页面切换，
             # 切换至登录页面（"我的"和"登录按钮点击"）
-            sleep(5)
             self.driver.wait_activity(".HomePageActivity", 3)
-            sleep(5)
             mine = "我的"
             el_mine = action().find_byUiautormator("text", mine)
             self.assertEqual("我的", el_mine.text)
@@ -53,7 +53,7 @@ class login_apps(unittest.TestCase):
             self.assertIn("登录", el_login.text)
             el_login.click()
             # 等待切换至当前活动页面
-            self.driver.wait_activity(".mine.LoginActivity", 10)
+            self.driver.wait_activity(".mine.LoginActivity", 3)
             currentnew = self.driver.current_activity
             print("当前页面的活动名称：", currentnew)
 
@@ -111,8 +111,8 @@ class login_apps(unittest.TestCase):
             message = "//*[contains(@text,'用户') or contains(@text,'成功')]"
             # 获取toast提示框内容
             toast_element = get_toast().get_toast(message, self.driver)
-            print("登录获取到的toast信息：", toast_element.text)
-            self.assertEqual("登录成功", toast_element.text)
+            print("登录获取到的toast信息：", toast_element)
+            self.assertEqual("登录成功", toast_element)
         except Exception as msg:
             # print("异常原因：%s" % msg)
             nowdate = time.strftime("%Y%m%d.%H.%M.%S")

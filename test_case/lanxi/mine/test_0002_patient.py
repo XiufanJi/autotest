@@ -2,7 +2,7 @@ import unittest
 import time
 from time import sleep
 from Utils.appium_config import DriverClient
-from Utils.action_config import action
+from Utils.public_action import action
 from Utils.get_toast import get_toast
 from random import choice
 from appium.webdriver.common.touch_action import TouchAction
@@ -21,8 +21,8 @@ class addPatient(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         # end the session
-        cls.driver.quit()
-        # pass
+        # cls.driver.quit()
+        pass
 
     """对就诊人进行添加删除和修改等操作"""
     @unittest.skip("skip it")
@@ -66,7 +66,7 @@ class addPatient(unittest.TestCase):
             self.driver.get_screenshot_as_file("Img/%s.png" % nowdate)
             raise msg
 
-    @unittest.skipIf(test_01_delete, "ERROR")
+    @unittest.skip("skip it")
     def test_02_add(self):
         try:
             sleep(THINK_TIME)
@@ -119,6 +119,7 @@ class addPatient(unittest.TestCase):
         except Exception as e:
             raise e
 
+    @unittest.skip("skip it")
     def test_03_edit(self):
         """测试编辑病人功能"""
         try:

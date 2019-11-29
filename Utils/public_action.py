@@ -4,6 +4,8 @@ from appium.webdriver.common.multi_action import MultiAction
 from appium.webdriver.common.touch_action import TouchAction
 
 THINK_TIME = 2
+
+
 class action():
     def __init__(self):
         self.driver = DriverClient().getDriver()
@@ -103,8 +105,8 @@ class action():
         print("滑动是否到达页面底部：%s" % is_bottom)
         return is_bottom
 
-    # 判断左/右滑是否滑动到页面边缘
-    def left_right(self, start_x, end_x, y,direction):
+    """判断左/右滑是否滑动到页面边缘"""
+    def left_right(self, start_x, end_x, y, direction):
         """
         :param start_x: 滑动起始点的x轴位置，根据获取到的区域总宽度来确定x的取值比
         :param end_x: 滑动过程中的x轴的变化量
@@ -130,9 +132,7 @@ class action():
         print("滑动是否到达页面顶部：%s" % is_border)
         return is_border
 
-    # el = self.driver.find_element_by_android_uiautomator("new UiScrollable(new UiSelector().scrollable(true))."
-    #                                                      "scrollIntoView(new UiSelector().text(\"听听\"))")
-
+    """滑动到某个元素"""
     def scroll_to_el(self, pattern):
         """
         :param pattern: 不同查找类型和需要匹配的字段
@@ -146,6 +146,7 @@ class action():
             ("new UiScrollable(new UiSelector().scrollable(true)).scrollIntoView(\""+pattern+"\")")
         return target_el
 
+    """查找单个元素"""
     def find_byUiautormator(self, mode, matchStr):
         """
         :param mode: 查找元素所需匹配的类型，text,id ,className etc.
@@ -168,7 +169,10 @@ class action():
         if mode == "id":
             el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
             resourceId(\"" + matchStr + "\")")
-        return el
+        if el.is_displayed():
+            return el
+        else:
+            return "无法定位到该元素！"
 
     """查找多个元素"""
     def find_elements_byUiautormator(self, mode, matchStr):
@@ -195,8 +199,25 @@ class action():
             resourceId(\"" + matchStr + "\")")
         return el
 
+    def find_element(self, mode, matchStr):
+        """
+        :param mode:根据什么模式来进行匹配，id/className/
+        :param matchStr:
+        :return: webElement
+        """
+        if mode == 'id':
+            el = self.driver.find_element_by_id(""+matchStr+"")
+        if mode == 'className':
+            el = self.driver.find_element_by_class_name(""+matchStr+"")
+        if mode == 'content_desc':
+            el = self.driver.find_element_by_accessibility_id(""+matchStr+"")
+        if el.is_displayed():
+            return el
+        else:
+            return "无法定位到该元素！"
+
     """放大操作，使用multiAction"""
-    def enlarge(self):
+    def zoom(self):
         area = action().get_window_size()
         height = area[1]
         width = area[0]
@@ -215,7 +236,7 @@ class action():
         multi.perform()
 
     """缩小操作，使用multiAction"""
-    def narrow(self):
+    def pinch(self):
         area = action().get_window_size()
         height = area[1]
         width = area[0]
