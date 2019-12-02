@@ -132,7 +132,7 @@ class action():
         print("滑动是否到达页面顶部：%s" % is_border)
         return is_border
 
-    """滑动到某个元素"""
+    """滑动到某个元素：默认竖滑"""
     def scroll_to_el(self, pattern):
         """
         :param pattern: 不同查找类型和需要匹配的字段
@@ -151,7 +151,7 @@ class action():
         """
         :param mode: 查找元素所需匹配的类型，text,id ,className etc.
         :param matchStr: 查找元素所需要匹配的具体字段
-        :return: web element
+        :return: webElement
         """
         if mode == "text":
             el = self.driver.find_element_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
@@ -169,6 +169,7 @@ class action():
         if mode == "id":
             el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
             resourceId(\"" + matchStr + "\")")
+        # return el
         if el.is_displayed():
             return el
         else:
@@ -179,7 +180,7 @@ class action():
         """
         :param mode: 查找元素所需匹配的类型，text,id ,className etc.
         :param matchStr: 查找元素所需要匹配的具体字段
-        :return: web element
+        :return: webElements
         """
         if mode == "text":
             el = self.driver.find_elements_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
@@ -211,12 +212,13 @@ class action():
             el = self.driver.find_element_by_class_name(""+matchStr+"")
         if mode == 'content_desc':
             el = self.driver.find_element_by_accessibility_id(""+matchStr+"")
+        # return el
         if el.is_displayed():
             return el
         else:
             return "无法定位到该元素！"
 
-    """放大操作，使用multiAction"""
+    """模拟手指放大操作，使用multiAction"""
     def zoom(self):
         area = action().get_window_size()
         height = area[1]
@@ -235,7 +237,7 @@ class action():
         multi.add(action1, action2)
         multi.perform()
 
-    """缩小操作，使用multiAction"""
+    """模拟手指缩小操作，使用multiAction"""
     def pinch(self):
         area = action().get_window_size()
         height = area[1]
@@ -254,6 +256,11 @@ class action():
         multi = MultiAction(self.driver)
         multi.add(action1, action2)
         multi.perform()
+
+    """判断是否为首次登陆"""
+    def isFirstLogin(self):
+        flag = self.driver.current_activity == '.activity.IntroduceActivity'
+        return flag
 
 
 

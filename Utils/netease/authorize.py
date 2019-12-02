@@ -1,5 +1,5 @@
 from Utils.appium_config import DriverClient
-from time import  sleep
+from time import sleep
 
 
 

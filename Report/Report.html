@@ -420,9 +420,9 @@ function hide_img(obj){
 </script>
 <div class='heading'>
 <h1>autotest_app test </h1>
-<p class='attribute'><strong>开始时间:</strong> 2019-11-29 17:15:10</p>
-<p class='attribute'><strong>耗时:</strong> 0:00:00.001952</p>
-<p class='attribute'><strong>状态:</strong> <span class="tj errorCase">Error</span>:1 <span class="tj">通过率</span>:0.0%</p>
+<p class='attribute'><strong>开始时间:</strong> 2019-12-02 16:47:56</p>
+<p class='attribute'><strong>耗时:</strong> 0:00:31.803668</p>
+<p class='attribute'><strong>状态:</strong> <span class="tj passCase">Pass</span>:1 <span class="tj">通过率</span>:100.0%</p>
 
 <p class='description'>test report</p>
 </div>
@@ -435,10 +435,10 @@ function hide_img(obj){
 </div>
 
 <div id='show_detail_line' style=" float: left;  width: 100%;">
-<a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[0.00%]</a>
-<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[0]</a>
+<a class="abstract detail_button" href='javascript:showCase(0,1)'>概要[100.00%]</a>
+<a class="passed  detail_button" href='javascript:showCase(1,1)'>通过[1]</a>
 <a class="failed  detail_button" href='javascript:showCase(2,1)'>失败[0]</a>
-<a class="errored  detail_button" href='javascript:showCase(3,1)'>错误[1]</a>
+<a class="errored  detail_button" href='javascript:showCase(3,1)'>错误[0]</a>
 <a class="skiped  detail_button"  href='javascript:showCase(4,1)'>跳过[0]</a>
 <a class="all detail_button" href='javascript:showCase(5,1)'>所有[1]</a>
 </div>
@@ -463,38 +463,36 @@ function hide_img(obj){
     <th>错误截图</th>
 </tr>
 
-<tr class='errorClass'>
-    <td>unittest.suite._ErrorHolder</td>
+<tr class='passClass'>
+    <td>netease_test_login.login</td>
+    <td>1</td>
     <td>1</td>
     <td>0</td>
     <td>0</td>
-    <td>1</td>
     <td><a href="javascript:showClassDetail('c1.1',1)">详情</a></td>
     <td>&nbsp;</td>
 </tr>
 
-<tr id='et1.1.1' class='none'>
-    <td ><div class='testcase'>login)</div></td>
+<tr id='pt1.1.1' class='hiddenRow'>
+    <td ><div class='testcase'>test_login</div></td>
     <td colspan='5' align='center'>
 
     <!--css div popup start-->
-    <span class='status errorCase'>
-    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_et1.1.1')" >
-        错误</a></span>
+    <span class='status passCase'>
+    <a class="popup_link" onfocus='this.blur();' href="javascript:showTestDetail('div_pt1.1.1')" >
+        通过</a></span>
 
-    <div id='div_et1.1.1' class="popup_window">
+    <div id='div_pt1.1.1' class="popup_window">
         <div style='text-align: right; color:red;cursor:pointer'>
-        <a onfocus='this.blur();' onclick="document.getElementById('div_et1.1.1').style.display = 'none' " >
+        <a onfocus='this.blur();' onclick="document.getElementById('div_pt1.1.1').style.display = 'none' " >
            [x]</a>
         </div>
         <pre>
         
-et1.1.1: Traceback (most recent call last):
-  File "D:\autoTest\test_case\netease\netease_test.py", line 9, in setUpClass
-    cls.driver = DC().getDriver()
-  File "D:\autoTest\Utils\appium_config.py", line 15, in __new__
-    file = open('Utils/yamlFile/preConfig.yaml', 'rb')
-FileNotFoundError: [Errno 2] No such file or directory: 'Utils/yamlFile/preConfig.yaml'
+pt1.1.1: - - - - - - -开始执行执行测试- - - - - - -
+D:\autoTest\Utils\load_data.py:17: YAMLLoadWarning: calling yaml.load() without Loader=... is deprecated, as the default Loader is unsafe. Please read https://msg.pyyaml.org/load for full details.
+  data = yaml.load(file)
+- - - - - - - - -测试结束- - - - - - - - -
 
 
         </pre>
@@ -508,16 +506,16 @@ FileNotFoundError: [Errno 2] No such file or directory: 'Utils/yamlFile/preConfi
 <tr id='total_row'>
     <th>统计</th>
     <th>1</th>
-    <th>0</th>
-    <th>0</th>
     <th>1</th>
+    <th>0</th>
+    <th>0</th>
     <th>&nbsp;</th>
     <th>&nbsp;</th>
 </tr>
 </table>
 <script>
     showCase(0,1);
-    drawCircle('circle1',0, 0, 1);
+    drawCircle('circle1',1, 0, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

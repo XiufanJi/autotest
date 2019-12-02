@@ -73,10 +73,10 @@ class load_data():
         return self.load_all_data()["testcase"][i]["content"]
 
 
-# load_data = load_data('yamlFile/mobileApp/login.yaml', 'rb').load_all_data()
-# data_length = load_data('yamlFile/mobileApp/login.yaml', 'rb').get_data_length()
+# load_data = load_data('../yaml/mobile/netease/login.yaml', 'rb').load_all_data()
+# data_length = load_data('yamlFile/mobile/login.yaml', 'rb').get_data_length()
 
-# data = load_data('yamlFile/mobileApp/login.yaml', 'rb').get_find_locator(0)
+# data = load_data('yamlFile/mobile/login.yaml', 'rb').get_find_locator(0)
 # print(load_data)
 
 # print(data)

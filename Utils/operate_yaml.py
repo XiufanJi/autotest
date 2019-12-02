@@ -1,13 +1,15 @@
 from Utils.load_data import load_data as data
 from time import sleep
 from Utils.public_action import action
-# path = 'yamlFile/mobileApp/login.yaml'
+import os
+# path = 'yaml/mobile/netease/login.yaml'
 wait = 2
+
 
 class operate_yaml():
     def __init__(self, path):
         self.data = data(path, 'rb')
-        self.action = action
+        self.action = action()
 
     def operate_yaml(self, desc_match):
         data_length = self.data.get_data_length()
@@ -36,13 +38,17 @@ class operate_yaml():
                                     .send_keys(self.data.get_content(i))
                         elif self.data.get_find_locator(i) == 'android_uiautomator':
                             if desc_match in self.data.get_desc(i):
-                                self.action.find_element(self.data.get_type(i), self.data.get_element_location(i))\
-                                    .clear()
+                                self.action.find_byUiautormator(self.data.get_type(i)\
+                                                                ,self.data.get_element_location(i)).clear()
                                 sleep(wait)
-                                self.action.find_element(self.data.get_type(i), self.data.get_element_location(i))\
-                                    .send_keys(self.data.get_content(i))
+                                self.action.find_byUiautormator(self.data.get_type(i)\
+                                                                ,self.data.get_element_location(i)).\
+                                    send_keys(self.data.get_content(i))
         else:
             return "yaml文件内数据为空！"
 
 
-
+# test = operate_yaml().operate_yaml("同意")
+# if __name__ == '__main__':
+#     current = os.getcwd()
+#     print(current)

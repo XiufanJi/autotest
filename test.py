@@ -11,10 +11,10 @@ def test():
     # print(data)
     # # 读取第一个platformVersion的值
     # print(data["platformVersion"][0]["platformVersion"])
-    chrome_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'chromedriver')
+    chrome_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'base')
     print("chrome", chrome_dir)
-    discover = unittest.defaultTestLoader.discover(chrome_dir, pattern="chrome_*.exe", top_level_dir=None)
-    print(discover)
+    # discover = unittest.defaultTestLoader.discover(chrome_dir, pattern="chrome_*.exe", top_level_dir=None)
+    # print(discover)
 
 
 

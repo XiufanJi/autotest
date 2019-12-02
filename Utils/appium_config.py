@@ -1,9 +1,16 @@
 from appium import webdriver
 # from Test.logs.logs import logging  # 本人自己封装的方法，你们写时可以不用调用，并且删除方法中调用的logging即可
 import yaml
+import os
 
 
 # test = "D:\BaiduNetdiskDownload\chromedriver_win32_66\chromedriver.exe"
+"""调试文件读取路径"""
+test = '../../../yaml/preConfig.yaml'
+"""配置文件的读取路径"""
+path = 'yaml/preConfig.yaml'
+
+
 class Singleton(object):
     driver = None
 
@@ -12,7 +19,8 @@ class Singleton(object):
             orig = super(Singleton, cls)
             # logging.info('-----------------------init driver----------------------')
             """从配置文件中读取相应的配置项"""
-            file = open('Utils/yamlFile/preConfig.yaml', 'rb')
+            # file = open(test, 'rb')
+            file = open(path, 'rb')
             data = yaml.load(file)
             config = {
                 "deviceName": data["device"][4]["deviceName"],
@@ -34,7 +42,12 @@ class Singleton(object):
 
 
 class DriverClient(Singleton):
-
     def getDriver(self):
         # logging.info('get driver')
         return self.driver
+
+
+# if __name__ == '__main__':
+#     current = os.getcwd()
+#     flag = os.path.exists(preConfig)
+#     print(flag, current)
