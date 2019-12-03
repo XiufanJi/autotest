@@ -27,8 +27,8 @@ class Singleton(object):
                 "platformVersion": data["platformVersion"][1]["platformVersion"],
                 "platformName": data["platformName"],
                 "automationName": data["autormator"][1]["automationName"],
-                "appPackage": data["app"][1]["appPackage"],
-                "appActivity": data["appActivity"][1]["appActivity"],
+                "appPackage": data["app"][0]["appPackage"],
+                "appActivity": data["appActivity"][0]["appActivity"],
                 # 切换小程序时使用
                 # "chromeOptions": {"androidProcess": "com.tencent.mm:appbrand0"},
                 "noReset": "true",

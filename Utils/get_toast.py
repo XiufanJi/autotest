@@ -4,9 +4,18 @@ from selenium.webdriver.common.by import By
 
 
 class get_toast():
-    def get_toast(self, matchString, driver):
+    def get_toast(self, pattern, driver):
+        """
+        :param pattern: 需要匹配的xpath模板
+        usage template: 使用示例
+                message = "//*[contains(@text,'用户') or contains(@text,'成功')]"
+                # 获取toast提示框内容
+                toast_element = get_toast().get_toast(message, self.driver)
+        :param driver: 驱动
+        :return: webElement
+        """
         toast_element = WebDriverWait(driver, 0.001). \
-            until(EC.presence_of_element_located((By.XPATH, matchString)))
+            until(EC.presence_of_element_located((By.XPATH, pattern)))
         return toast_element.text
 
     def element_is_present(self, driver, locator, pattern):

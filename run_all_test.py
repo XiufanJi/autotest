@@ -5,12 +5,12 @@ import coverage
 import os
 
 # 获取当前目录下的case目录
-case_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_case/netease')
+case_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'test_case/lanxi/mine')
 
 
 def run_all():
     """匹配以哪个名字开头的文件"""
-    discover = unittest.defaultTestLoader.discover(case_dir, pattern="netease_test*.py", top_level_dir=None)
+    discover = unittest.defaultTestLoader.discover(case_dir, pattern="test_login*.py", top_level_dir=None)
     print("查询到的测试用例为：", discover)
     return discover
 

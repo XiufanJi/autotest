@@ -18,26 +18,26 @@ class operate_yaml():
                 if self.data.get_operate_1(i) == 'click':
                     if self.data.get_find_locator(i) == 'normal':
                         """判断取到的数据是否符合自己的要求"""
-                        if desc_match in self.data.get_desc(i):
+                        if desc_match == self.data.get_desc(i):
                             """调用action类中的方法实现元素操作"""
                             self.action.find_element(self.data.get_type(i), self.data.get_element_location(i)).click()
 
                     elif self.data.get_find_locator(i) == 'android_uiautomator':
-                        if desc_match in self.data.get_desc(i):
+                        if desc_match == self.data.get_desc(i):
                             self.action.find_byUiautormator(self.data.get_type(i), self.data.get_element_location(i))\
                                 .click()
 
                 elif self.data.get_operate_1(i) == 'clear':
                     if self.data.get_operate_2(i) == 'send_keys':
                         if self.data.get_find_locator(i) == 'normal':
-                            if desc_match in self.data.get_desc(i):
+                            if desc_match == self.data.get_desc(i):
                                 self.action.find_element(self.data.get_type(i), self.data.get_element_location(i))\
                                     .clear()
                                 sleep(wait)
                                 self.action.find_element(self.data.get_type(i), self.data.get_element_location(i))\
                                     .send_keys(self.data.get_content(i))
                         elif self.data.get_find_locator(i) == 'android_uiautomator':
-                            if desc_match in self.data.get_desc(i):
+                            if desc_match == self.data.get_desc(i):
                                 self.action.find_byUiautormator(self.data.get_type(i)\
                                                                 ,self.data.get_element_location(i)).clear()
                                 sleep(wait)

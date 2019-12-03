@@ -109,12 +109,12 @@
 <p id="t5" class="stm mis"><span class="key">import</span> <span class="nam">os</span><span class="strut">&nbsp;</span></p>
 <p id="t6" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t7" class="pln"><span class="com"># &#33719;&#21462;&#24403;&#21069;&#30446;&#24405;&#19979;&#30340;case&#30446;&#24405;</span><span class="strut">&nbsp;</span></p>
-<p id="t8" class="stm mis"><span class="nam">case_dir</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">dirname</span><span class="op">(</span><span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">realpath</span><span class="op">(</span><span class="nam">__file__</span><span class="op">)</span><span class="op">)</span><span class="op">,</span> <span class="str">'test_case/netease'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t8" class="stm mis"><span class="nam">case_dir</span> <span class="op">=</span> <span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">join</span><span class="op">(</span><span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">dirname</span><span class="op">(</span><span class="nam">os</span><span class="op">.</span><span class="nam">path</span><span class="op">.</span><span class="nam">realpath</span><span class="op">(</span><span class="nam">__file__</span><span class="op">)</span><span class="op">)</span><span class="op">,</span> <span class="str">'test_case/lanxi/mine'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t9" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t10" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t11" class="stm mis"><span class="key">def</span> <span class="nam">run_all</span><span class="op">(</span><span class="op">)</span><span class="op">:</span><span class="strut">&nbsp;</span></p>
 <p id="t12" class="pln">    <span class="str">"""&#21305;&#37197;&#20197;&#21738;&#20010;&#21517;&#23383;&#24320;&#22836;&#30340;&#25991;&#20214;"""</span><span class="strut">&nbsp;</span></p>
-<p id="t13" class="stm run hide_run">    <span class="nam">discover</span> <span class="op">=</span> <span class="nam">unittest</span><span class="op">.</span><span class="nam">defaultTestLoader</span><span class="op">.</span><span class="nam">discover</span><span class="op">(</span><span class="nam">case_dir</span><span class="op">,</span> <span class="nam">pattern</span><span class="op">=</span><span class="str">"netease_test*.py"</span><span class="op">,</span> <span class="nam">top_level_dir</span><span class="op">=</span><span class="key">None</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t13" class="stm run hide_run">    <span class="nam">discover</span> <span class="op">=</span> <span class="nam">unittest</span><span class="op">.</span><span class="nam">defaultTestLoader</span><span class="op">.</span><span class="nam">discover</span><span class="op">(</span><span class="nam">case_dir</span><span class="op">,</span> <span class="nam">pattern</span><span class="op">=</span><span class="str">"test_login*.py"</span><span class="op">,</span> <span class="nam">top_level_dir</span><span class="op">=</span><span class="key">None</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t14" class="stm run hide_run">    <span class="nam">print</span><span class="op">(</span><span class="str">"&#26597;&#35810;&#21040;&#30340;&#27979;&#35797;&#29992;&#20363;&#20026;&#65306;"</span><span class="op">,</span> <span class="nam">discover</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t15" class="stm run hide_run">    <span class="key">return</span> <span class="nam">discover</span><span class="strut">&nbsp;</span></p>
 <p id="t16" class="pln"><span class="strut">&nbsp;</span></p>
@@ -144,7 +144,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2019-11-29 17:12
+            created at 2019-12-03 16:52
         </p>
     </div>
 </div>
