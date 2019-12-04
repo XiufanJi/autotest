@@ -19,7 +19,7 @@ if __name__ == '__main__':
     """生成代码使用率报告"""
     cov = coverage.Coverage()
     cov.start()
-    filepath = 'Report\Report.html'
+    filepath = 'report\Report.html'
     file_result = open(filepath, 'wb')
     """生成测试报告"""
     runner = HTMLTestRunner.HTMLTestRunner(file_result, title='autotest_app test ', description='test report')

@@ -21,7 +21,7 @@ class login(unittest.TestCase):
     #     pass
     # @unittest.skip("skip now")
     def test_a_login(self):
-        # use import public utils
+        # use import public Utils
         authorize().authorize()
         """如果使用游客角色登录，则需要加上下面的方法调用"""
         sleep(WAIT_TIME)

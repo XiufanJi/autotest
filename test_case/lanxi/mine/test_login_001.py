@@ -9,9 +9,9 @@ class login(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = DC().getDriver()
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
+    # @classmethod
+    # def tearDownClass(cls):
+    #     cls.driver.quit()
 
     def test_login(self):
         base = loginBase()
@@ -19,6 +19,6 @@ class login(unittest.TestCase):
         message = "//*[contains(@text,'登录成功')]"
         toast = get_toast().get_toast(message, self.driver)
         self.assertEquals('登录成功', toast)
-        self.assertEquals('".HomePageActivity"', self.driver.current_activity)
+        self.assertEquals('.activity.HomePageActivity', self.driver.current_activity)
 
 

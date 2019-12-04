@@ -1,0 +1,96 @@
+testcase:
+  -
+    desc: 我的
+    element_location: 我的
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 就诊人管理
+    element_location: 就诊人管理
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 添加
+    element_location: 添加
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 请输入姓名
+    element_location: 请输入姓名
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: clear
+    operate_2: send_keys
+    content: 月城雪兔
+  -
+    desc: 选择证件类型
+    element_location: com.conlin360.medical:id/a27
+    find_type: id
+    find_locator: normal
+    operate_1: click
+  -
+    desc: 二代身份证
+    element_location: 二代身份证
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 证件号
+    element_location: 请输入证件号码
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: clear
+    operate_2: send_keys
+    content: 411123197907279628
+  -
+    desc: 手机号
+    element_location: com.conlin360.medical:id/g3
+    find_type: id
+    find_locator: normal
+    operate_1: clear
+    operate_2: send_keys
+    content: 18557539532
+  -
+    desc: 邮箱
+    element_location: com.conlin360.medical:id/g2
+    find_type: id
+    find_locator: normal
+    operate_1: clear
+    operate_2: send_keys
+    content: haha@163.com
+  -
+    desc: 居住地址
+    element_location: com.conlin360.medical:id/gb
+    find_type: id
+    find_locator: normal
+    operate_1: clear
+    operate_2: send_keys
+    content: 居住地址巴拉巴拉
+  -
+    desc: 确定
+    element_location: 确定
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+  -
+    desc: 返回按钮
+    element_location: 转到上一层级
+    find_type: content_desc
+    find_locator: normal
+    operate_1: click
+  -
+    desc: 首页
+    element_location: 转到上一层级
+    find_type: text
+    find_locator: android_uiautomator
+    operate_1: click
+
+
+
+
+
+
+

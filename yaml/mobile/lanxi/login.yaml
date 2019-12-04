@@ -39,6 +39,13 @@ testcase:
     find_type: text
     find_locator: android_uiautomator
     operate_1: click
+  -
+    desc: 清除手机号
+    element_location: com.conlin360.medical:id/kj
+    find_type: id
+    find_locator: normal
+    operate_1: click
+
 
 
 

@@ -116,7 +116,7 @@ class login_apps(unittest.TestCase):
         except Exception as msg:
             # print("异常原因：%s" % msg)
             nowdate = time.strftime("%Y%m%d.%H.%M.%S")
-            self.driver.get_screenshot_as_file("Img/%s.png" % nowdate)
+            self.driver.get_screenshot_as_file("screenShots/%s.png" % nowdate)
             raise msg
 
 
