@@ -2,20 +2,16 @@
 import yaml
 import os
 import unittest
+import logging
 
 
 def test():
-    # file = open('Utils/config.yaml', 'rb')
-    # data = yaml.load(file)
-    # # 读取全部数据
-    # print(data)
-    # # 读取第一个platformVersion的值
-    # print(data["platformVersion"][0]["platformVersion"])
-    chrome_dir = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'base')
-    print("chrome", chrome_dir)
-    # discover = unittest.defaultTestLoader.discover(chrome_dir, pattern="chrome_*.exe", top_level_dir=None)
-    # print(discover)
-
+    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%Y%m%d %H:%M:%S')
+    logging.basicConfig(filename='example.log', level=logging.WARNING)
+    logging.debug('This message should go to the log file')
+    logging.info('So should this')
+    logging.warning('this a warning info')
+    os.path.join()
 
 
 if __name__ == '__main__':

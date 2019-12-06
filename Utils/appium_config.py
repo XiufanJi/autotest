@@ -8,7 +8,7 @@ import os
 """调试文件读取路径"""
 test = '../../../yaml/preConfig.yaml'
 """配置文件的读取路径"""
-path = 'yaml/preConfig.yaml'
+path = '../yaml/preConfig.yaml'
 
 
 class Singleton(object):

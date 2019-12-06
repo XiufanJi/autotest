@@ -24,10 +24,10 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: 月城雪兔
+    content: 安岳
   -
     desc: 选择证件类型
-    element_location: com.conlin360.medical:id/a27
+    element_location: com.conlin360.medical:id/a3d
     find_type: id
     find_locator: normal
     operate_1: click
@@ -44,18 +44,18 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: 411123197907279628
+    content: 610723198709291275
   -
     desc: 手机号
-    element_location: com.conlin360.medical:id/g3
-    find_type: id
-    find_locator: normal
+    element_location: 用于接收短信通知，请谨慎填写
+    find_type: text
+    find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
     content: 18557539532
   -
     desc: 邮箱
-    element_location: com.conlin360.medical:id/g2
+    element_location: com.conlin360.medical:id/g_
     find_type: id
     find_locator: normal
     operate_1: clear
@@ -63,7 +63,7 @@ testcase:
     content: haha@163.com
   -
     desc: 居住地址
-    element_location: com.conlin360.medical:id/gb
+    element_location: com.conlin360.medical:id/gk
     find_type: id
     find_locator: normal
     operate_1: clear
@@ -83,10 +83,25 @@ testcase:
     operate_1: click
   -
     desc: 首页
-    element_location: 转到上一层级
+    element_location: 首页
     find_type: text
     find_locator: android_uiautomator
     operate_1: click
+  -
+    desc: 修改
+    element_location: com.conlin360.medical:id/fy
+    find_type: id
+    find_locator: normal
+    operate_1: click
+  -
+    desc: 删除
+    element_location: com.conlin360.medical:id/f1
+    find_type: id
+    find_locator: normal
+    operate_1: click
+
+
+
 
 
 

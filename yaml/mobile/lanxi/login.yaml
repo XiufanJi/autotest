@@ -27,7 +27,7 @@ testcase:
     content: 18557539532
   -
     desc: 登录密码
-    element_location: com.conlin360.medical:id/fy
+    element_location: com.conlin360.medical:id/g6
     find_type: id
     find_locator: normal
     operate_1: clear
@@ -41,7 +41,7 @@ testcase:
     operate_1: click
   -
     desc: 清除手机号
-    element_location: com.conlin360.medical:id/kj
+    element_location: com.conlin360.medical:id/kx
     find_type: id
     find_locator: normal
     operate_1: click

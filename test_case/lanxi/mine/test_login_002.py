@@ -13,12 +13,40 @@ class add_patient(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
-    # @unittest.skipIf()
     def test_add(self):
         patient = patientBase()
         patient.add_patient()
-        message = "//*[contains(@text,'添加成功')]"
-        toast = get_toast().get_toast(message, self.driver)
-        self.assertEquals('添加成功', toast)
+        try:
+            message = "//*[contains(@text,'添加成功')]"
+            toast = get_toast().get_toast(message, self.driver)
+            self.assertEquals('添加成功', toast)
+        except Exception as e:
+            raise e
+        finally:
+            patient.back_home()
+
+    def test_mod(self):
+        patient = patientBase()
+        patient.mod_patient()
+        try:
+            message = "//*[@text='编辑成功']"
+            toast = get_toast().get_toast(message, self.driver)
+            self.assertEquals('删除就诊人成功', toast)
+        except Exception as e:
+            raise e
+        finally:
+            patient.back_home()
+
+    def test_dele(self):
+        patient = patientBase()
+        patient.dele_patient()
+        try:
+            message = "//*[@text='删除就诊人成功']"
+            toast = get_toast().get_toast(message, self.driver)
+            self.assertEquals('删除就诊人成功', toast)
+        except Exception as e:
+            raise e
+        finally:
+            patient.back_home()
 
 

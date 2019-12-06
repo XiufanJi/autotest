@@ -114,7 +114,6 @@ class login_apps(unittest.TestCase):
             print("登录获取到的toast信息：", toast_element)
             self.assertEqual("登录成功", toast_element)
         except Exception as msg:
-            # print("异常原因：%s" % msg)
             nowdate = time.strftime("%Y%m%d.%H.%M.%S")
             self.driver.get_screenshot_as_file("screenShots/%s.png" % nowdate)
             raise msg

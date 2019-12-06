@@ -1,7 +1,10 @@
+# coding=utf-8
 from Utils.appium_config import DriverClient
 from time import sleep
 from appium.webdriver.common.multi_action import MultiAction
 from appium.webdriver.common.touch_action import TouchAction
+import time
+import os
 
 THINK_TIME = 2
 
@@ -261,6 +264,26 @@ class action():
     def isFirstLogin(self):
         flag = self.driver.current_activity == '.activity.IntroduceActivity'
         return flag
+
+    """获取屏幕快照"""
+    def get_screenShot(self):
+        dirName = time.strftime("%Y%m%d")
+        filepath = '../screenShots/'+dirName
+        # print(os.getcwd())
+        if not os.path.exists(filepath):
+            os.mkdir(filepath)
+            nowdate = time.strftime("%H:%M:%S")
+            # os.system('adb exec-out screencap -p > /{}/{}.png'.format(filepath, nowdate))
+            self.driver.get_screenshot_as_file(u"screenShots\\{}\\{}.png".format(dirName, nowdate))
+        else:
+            nowdate = time.strftime("%H:%M:%S")
+            # os.system('adb exec-out screencap -p > /{}/{}.png'.format(filepath, nowdate))
+            self.driver.get_screenshot_as_file("screenShots\\{}\\{}.png".format(dirName, nowdate))
+
+
+# if __name__ == '__main__':
+#     action().get_screenShot()
+
 
 
 

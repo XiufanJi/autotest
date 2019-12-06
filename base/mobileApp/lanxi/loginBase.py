@@ -1,8 +1,7 @@
 from Utils.appium_config import DriverClient as DC
 from Utils.operate_yaml import operate_yaml
 from time import sleep
-import time
-import os
+from Utils.public_action import action
 path = 'yaml/mobile/lanxi/login.yaml'
 think_time = 3
 
@@ -38,19 +37,6 @@ class loginBase():
             sleep(think_time)
             operate.operate_yaml('登录')
             self.driver.wait_activity('.activity.HomePageActivity', think_time)
-            # sleep(think_time)
-            # """返回主页"""
-            # operate.operate_yaml('首页')
         except Exception as e:
+            action().get_screenShot()
             raise e
-        #     dirName = time.strftime("%Y%m%d")
-        #     filePath = 'screenShots/' + dirName
-        #     if not os.path.exists(filePath):
-        #         os.mkdir(filePath)
-        #     else:
-        #         # 获取截图有问题，暂时先不管
-        #         nowdate = time.strftime("%Y%m%d %H:%M:%S")
-        #         print("文件存储路径："+filePath+"/%s.png" % nowdate)
-        #         picPath = filePath+"/%s.png" % nowdate
-        #         self.driver.get_screenshot_as_file(picPath)
-        #         # os.system('adb exec-out screencap -p > '+filePath+'/{}.png'.format(nowdate))
