@@ -267,19 +267,16 @@ class action():
 
     """获取屏幕快照"""
     def get_screenShot(self):
-        dirName = time.strftime("%Y%m%d")
-        filepath = '../screenShots/'+dirName
-        # print(os.getcwd())
-        if not os.path.exists(filepath):
-            os.mkdir(filepath)
-            nowdate = time.strftime("%H:%M:%S")
-            # os.system('adb exec-out screencap -p > /{}/{}.png'.format(filepath, nowdate))
-            self.driver.get_screenshot_as_file(u"screenShots\\{}\\{}.png".format(dirName, nowdate))
+        """在进行截图保存的时候，需要注意文件名，windows系统中，文、件名不能包括特殊字符，否则会保存失败"""
+        folder = time.strftime("%Y%m%d")
+        filepath = '../screenShots'
+        now = time.strftime("%H%M%S")
+        if os.path.exists(filepath):
+            self.driver.get_screenshot_as_file(filepath + '/{}/{}.png'.format(folder, now))
         else:
-            nowdate = time.strftime("%H:%M:%S")
-            # os.system('adb exec-out screencap -p > /{}/{}.png'.format(filepath, nowdate))
-            self.driver.get_screenshot_as_file("screenShots\\{}\\{}.png".format(dirName, nowdate))
-
+            """在指定的目录下创建子目录"""
+            os.makedirs('../screenShots' + './{}'.format(folder))
+            self.driver.get_screenshot_as_file(filepath + "/{}/{}.png".format(folder, now))
 
 # if __name__ == '__main__':
 #     action().get_screenShot()

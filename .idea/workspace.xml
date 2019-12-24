@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/appium_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/get_toast.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/get_toast.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/public_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/public_action.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com.conlin360.medical_1.1.20_15.apk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_0001_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_001.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_001.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_002.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_002.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yaml/mobile/lanxi/patient.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/patient.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,8 +16,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/run_all_test.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
+            <state relative-caret-position="220">
+              <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
               <folding>
                 <element signature="e#15#30#0" expanded="true" />
                 <element signature="e#211#390#0" expanded="true" />
@@ -42,27 +26,15 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Utils/public_action.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="274" column="45" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="45" />
+            <state relative-caret-position="398">
+              <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
               <folding>
                 <element signature="e#293#333#0" expanded="true" />
-                <element signature="e#4792#5337#0" expanded="true" />
-                <element signature="e#10733#10761#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-              <folding>
-                <element signature="e#17#28#0" expanded="true" />
+                <element signature="e#10069#10497#0" expanded="true" />
+                <element signature="e#10761#10789#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,9 +123,9 @@
         <option value="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" />
         <option value="$PROJECT_DIR$/Utils/appium_config.py" />
         <option value="$PROJECT_DIR$/test_case/lanxi/mine/test_0001_login.py" />
-        <option value="$PROJECT_DIR$/Utils/public_action.py" />
         <option value="$PROJECT_DIR$/test_case/lanxi/mine/test_login_002.py" />
         <option value="$PROJECT_DIR$/test.py" />
+        <option value="$PROJECT_DIR$/Utils/public_action.py" />
       </list>
     </option>
   </component>
@@ -171,6 +143,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,18 +151,22 @@
               <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
               <item name="autoTest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="autoTest" type="b2602c69:ProjectViewProjectNode" />
+              <item name="autoTest" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../python-github/appiumn_auto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -392,7 +369,9 @@
       <workItem from="1575507107164" duration="4028000" />
       <workItem from="1575516235585" duration="10705000" />
       <workItem from="1575535063133" duration="4861000" />
-      <workItem from="1575593510905" duration="16527000" />
+      <workItem from="1575593510905" duration="16619000" />
+      <workItem from="1575960201984" duration="134000" />
+      <workItem from="1577180798893" duration="191000" />
     </task>
     <task id="LOCAL-00001" summary="修改整体架构">
       <created>1575019588131</created>
@@ -422,7 +401,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575452610292</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="app po模式实现就诊人删除、修改">
+      <created>1575625122769</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1575625122769</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -458,18 +444,18 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="928680000" />
+    <option name="totallyTimeSpent" value="929097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25835866" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26595744" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32786885" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924013" visible="true" weight="0.3180328" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924013" weight="0.3180328" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.33770493" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -498,7 +484,8 @@
     <MESSAGE value="修改后的架构，流程测试能正常走通" />
     <MESSAGE value="app 登录用例修改为po模式" />
     <MESSAGE value="app po模式实现就诊人添加" />
-    <option name="LAST_COMMIT_MESSAGE" value="app po模式实现就诊人添加" />
+    <MESSAGE value="app po模式实现就诊人删除、修改" />
+    <option name="LAST_COMMIT_MESSAGE" value="app po模式实现就诊人删除、修改" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/autoTest$login.coverage" NAME="login Coverage Results" MODIFIED="1567741964870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Utils/netease" />
@@ -825,9 +812,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/20191205/20191205">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/20191205/20191205" />
     <entry file="file://$PROJECT_DIR$/Utils/appium_config.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="946">
@@ -909,17 +894,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/run_all_test.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="25" column="25" lean-forward="true" selection-start-line="25" selection-start-column="25" selection-end-line="25" selection-end-column="25" />
-          <folding>
-            <element signature="e#15#30#0" expanded="true" />
-            <element signature="e#211#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -944,25 +918,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/public_action.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="274" column="45" selection-start-line="274" selection-start-column="37" selection-end-line="274" selection-end-column="45" />
-          <folding>
-            <element signature="e#293#333#0" expanded="true" />
-            <element signature="e#4792#5337#0" expanded="true" />
-            <element signature="e#10733#10761#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../Python/Lib/ntpath.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="218">
@@ -973,9 +928,34 @@
     <entry file="file://$PROJECT_DIR$/test.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="286">
-          <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
+          <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
           <folding>
             <element signature="e#17#28#0" expanded="true" />
+            <element signature="e#88#396#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example.log" />
+    <entry file="file://$PROJECT_DIR$/run_all_test.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="14" selection-start-line="10" selection-start-column="14" selection-end-line="10" selection-end-column="14" />
+          <folding>
+            <element signature="e#15#30#0" expanded="true" />
+            <element signature="e#211#390#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Utils/public_action.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="282" lean-forward="true" selection-start-line="282" selection-end-line="282" />
+          <folding>
+            <element signature="e#293#333#0" expanded="true" />
+            <element signature="e#10069#10497#0" expanded="true" />
+            <element signature="e#10761#10789#0" expanded="true" />
           </folding>
         </state>
       </provider>
