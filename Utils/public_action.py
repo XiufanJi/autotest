@@ -267,7 +267,7 @@ class action():
 
     """获取屏幕快照"""
     def get_screenShot(self):
-        """在进行截图保存的时候，需要注意文件名，windows系统中，文、件名不能包括特殊字符，否则会保存失败"""
+        """在进行截图保存的时候，需要注意文件名，windows系统中，文件名不能包括特殊字符，否则会保存失败"""
         folder = time.strftime("%Y%m%d")
         filepath = '../screenShots'
         now = time.strftime("%H%M%S")

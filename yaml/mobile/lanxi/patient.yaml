@@ -44,7 +44,7 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: 610723198709291275
+    content: your id_num
   -
     desc: 手机号
     element_location: 用于接收短信通知，请谨慎填写
@@ -52,7 +52,7 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: 18557539532
+    content: phone_num
   -
     desc: 邮箱
     element_location: com.conlin360.medical:id/g_
@@ -60,7 +60,7 @@ testcase:
     find_locator: normal
     operate_1: clear
     operate_2: send_keys
-    content: haha@163.com
+    content: your email_address
   -
     desc: 居住地址
     element_location: com.conlin360.medical:id/gk

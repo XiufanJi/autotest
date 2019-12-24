@@ -55,7 +55,7 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: 18557539532
+    content: your phone_num
   -
     desc: 下一步按钮
     element_location: 下一步
@@ -69,7 +69,7 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: 123321
+    content: your_password
   -
     desc: 忘记密码
     element_location: 忘记密码？
