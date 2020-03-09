@@ -21,8 +21,8 @@ if __name__ == '__main__':
     cov.start()
     filepath = 'report\Report.html'
     file_result = open(filepath, 'wb')
-    """生成测试报告"""
-    runner = HTMLTestRunner.HTMLTestRunner(file_result, title='autotest_app test ', description='test report')
+    """生成测试报告，失败后重跑一次"""
+    runner = HTMLTestRunner.HTMLTestRunner(file_result, title='autotest_app test ', description='test report', retry=1)
     runner.run(run_all())
     cov.stop()
     cov.save()
