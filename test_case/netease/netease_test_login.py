@@ -1,7 +1,7 @@
 import unittest
 from base.mobileApp.netease.loginBase import loginBase
 from Utils.appium_config import DriverClient as DC
-from Utils.public_action import action
+from Utils.appium_action import action
 
 
 class login(unittest.TestCase):
@@ -13,7 +13,7 @@ class login(unittest.TestCase):
         if flag:
             pass
         else:
-            cls.driver.install_app('app/com.netease.cloudmusic_6.3.2_152.apk')
+            cls.driver.install_app('app/com.netease.cloudmusic.apk')
 
     @classmethod
     def tearDownClass(cls):

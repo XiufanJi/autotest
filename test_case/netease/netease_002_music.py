@@ -3,7 +3,7 @@ import unittest
 from time import sleep
 from appium.webdriver.common.touch_action import TouchAction
 # from appium.webdriver.common.multi_action import MultiAction
-from Utils.public_action import action
+from Utils.appium_action import action
 from random import choice
 
 THINK_TIME = 3

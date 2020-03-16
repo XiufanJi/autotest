@@ -27,11 +27,10 @@ class login(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.driver = DC().getDriver()
-        flag = cls.driver.is_app_installed('com.conlin360.medical')
-        print('是否安装了APP：', flag)
-        if not flag:
-            os.system('adb install app/jiankanglanxi.apk')
-            # cls.driver.install_app('app/jiankanglanxi.apk')
+        # flag = cls.driver.is_app_installed('com.conlin360.medical')
+        # print('是否安装了APP：', flag)
+        # if not flag:
+        #     os.system('adb install app/jiankanglanxi.apk')
 
     # @classmethod
     # def tearDownClass(cls):

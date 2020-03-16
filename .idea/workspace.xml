@@ -2,24 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/autoTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autoTest.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Utils/appium_action.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/get_toast.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/get_toast.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/appium_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/operate_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/operate_yaml.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/public_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/public_action.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/com.netease.cloudmusic_6.3.2_152.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/com.netease.cloudmusic.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/com.tencent.map_8.9.3_644.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/com.tencent.map.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jiankanglanxi-latest.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/jiankanglanxi.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_operate_yaml_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_operate_yaml_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_public_action_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_public_action_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/coverage_html.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/coverage_html.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.ba-throttle-debounce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.ba-throttle-debounce.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.hotkeys.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.hotkeys.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.isonscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.isonscreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.tablesorter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.tablesorter.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0001_login.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0002_patient.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0003_order.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_001.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_002.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/lanxi/test_0003_regSchedule.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_003_album.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_003_album.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_004_privatemsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_004_privatemsg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_005_delehistory.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_005_delehistory.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_001_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_002_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_002_music.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/netease/netease_008_playvideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_008_playvideo.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/netease/netease_020_testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_020_testcase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,14 +115,11 @@
       <recent name="D:\autoTest" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.test">
-    <configuration name="Report.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/autoTest/Report/Report.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.run_all_test ">
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/autoTest/htmlcov/index.html" useBuiltInWebServerPort="true">
       <method v="2" />
     </configuration>
-    <configuration name="loginBase (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="loginBase " type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +154,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/public_action.py" />
+      <option name="SCRIPT_NAME" value="D:\autoTest\Utils\appium_action.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -146,7 +163,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="run_all_test (1)" type="PythonConfigurationType" factoryName="Python">
+    <configuration name="run_all_test " type="PythonConfigurationType" factoryName="Python">
       <module name="autoTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -190,11 +207,33 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests in test_001_login.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="autoTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test_case/lanxi/mine" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run_all_test " />
+      <item itemvalue="Python.loginBase " />
+      <item itemvalue="Python.public_action" />
+      <item itemvalue="Python.test" />
+      <item itemvalue="Python tests.Unittests in test_001_login.py" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Unittests in test_001_login.py" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.public_action" />
-        <item itemvalue="Python.loginBase (1)" />
+        <item itemvalue="Python.loginBase " />
       </list>
     </recent_temporary>
   </component>
@@ -345,38 +384,6 @@
     <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 08m 43s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 16m 51s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 20m 13s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 22m 01s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 22m 26s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 22m 36s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 10h 38m 17s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_run_all_test_py - 2019.08.21 at 17h 05m 01s.xml">
-      <configuration name="Unittests in run_all_test.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_test_d_editPatient_py - 2019.08.23 at 09h 40m 36s.xml">
-      <configuration name="Unittests in test_d_editPatient.py" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_in_netease_test_login_py - 2019.12.02 at 09h 54m 39s.xml">
-      <configuration name="Unittests in netease_test_login.py" configurationId="tests" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="933118000" />
   </component>
@@ -396,6 +403,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="删除部分不必要的yaml内容" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="134" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584346159639">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="134" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1584346159639" />
     <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1583725199899">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -404,6 +415,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583918386927" />
+    <state width="1339" height="171" key="GridCell.Tab.0.bottom" timestamp="1584351975453">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="171" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584351975453" />
+    <state width="1339" height="171" key="GridCell.Tab.0.center" timestamp="1584351975452">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="171" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584351975452" />
+    <state width="1339" height="171" key="GridCell.Tab.0.left" timestamp="1584351975452">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="171" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584351975452" />
+    <state width="1339" height="171" key="GridCell.Tab.0.right" timestamp="1584351975453">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="171" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584351975453" />
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584347084577">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
+    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584347084577">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
+    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584347084577">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584347084577">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
     <state x="181" y="6" key="SettingsEditor" timestamp="1584324815004">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

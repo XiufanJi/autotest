@@ -5,7 +5,7 @@ from Utils.netease.versioncheck import versioncheck
 from Utils.netease.authorize import authorize
 from time import sleep
 from appium import webdriver
-from Utils.public_action import action
+from Utils.appium_action import action
 
 
 THINK_TIME = 5

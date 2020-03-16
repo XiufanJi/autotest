@@ -2,7 +2,7 @@ from Utils.appium_config import DriverClient as DC
 from Utils.operate_yaml import operate_yaml
 from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
-from Utils.public_action import action
+from Utils.appium_action import action
 path = 'yaml/mobile/lanxi/patient.yaml'
 think_time = 3
 

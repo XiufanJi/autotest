@@ -2,7 +2,7 @@ from Utils.operate_yaml import operate_yaml
 from Utils.appium_config import DriverClient as DC
 from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
-from Utils.public_action import action
+from Utils.appium_action import action
 import os
 path = 'yaml/mobile/netease/login.yaml'
 think_time = 3

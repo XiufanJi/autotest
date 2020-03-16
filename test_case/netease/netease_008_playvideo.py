@@ -1,7 +1,7 @@
 import unittest
 from Utils.appium_config import DriverClient
 from time import sleep
-from Utils.public_action import action
+from Utils.appium_action import action
 from appium.webdriver.common.touch_action import TouchAction
 
 sleepTime = 3

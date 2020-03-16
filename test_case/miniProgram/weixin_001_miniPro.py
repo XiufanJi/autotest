@@ -1,6 +1,6 @@
 import unittest
 from Utils.appium_config import DriverClient
-from Utils.public_action import action
+from Utils.appium_action import action
 from time import sleep
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.webdriver import WebDriver
