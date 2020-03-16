@@ -2,8 +2,9 @@ import unittest
 from Utils.appium_config import DriverClient
 from time import sleep
 
-
 THINK_TIME = 3
+
+
 class history(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

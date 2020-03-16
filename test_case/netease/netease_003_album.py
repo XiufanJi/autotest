@@ -7,11 +7,11 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 
-
-
 THINK_TIME = 3
 num = randint(1, 100)
 keys = "new album"+str(num)
+
+
 class createlist(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

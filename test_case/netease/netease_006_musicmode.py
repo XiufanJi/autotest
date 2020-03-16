@@ -7,6 +7,7 @@ from Utils.get_toast import get_toast
 
 THINKE_TIME = 3
 
+
 class musicmode(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -16,6 +17,7 @@ class musicmode(unittest.TestCase):
     def tearDownClass(cls) -> None:
         # cls.driver.quit()
         pass
+    
     @unittest.skip("skip")
     def test_likemode(self):
         try:

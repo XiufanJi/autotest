@@ -6,6 +6,8 @@ from appium.webdriver.common.touch_action import TouchAction
 
 sleepTime = 3
 waitTime = 5
+
+
 class testcase(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

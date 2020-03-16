@@ -1,6 +1,8 @@
 from Utils.operate_yaml import operate_yaml
 from Utils.appium_config import DriverClient as DC
 from time import sleep
+from selenium.webdriver.support import expected_conditions as EC
+from Utils.public_action import action
 import os
 path = 'yaml/mobile/netease/login.yaml'
 think_time = 3
@@ -25,7 +27,8 @@ class loginBase():
             operate.operate_yaml('进入APP')
             sleep(think_time)
             loginBase().login()
-        except Exception as e:
+        except EC.NoSuchElementException as e:
+            action().get_screenShot()
             raise e
 
     def login(self):
@@ -42,7 +45,8 @@ class loginBase():
             operate.operate_yaml('输入密码')
             operate.operate_yaml('登录')
             self.driver.wait_activity(".activity.MainActivity", think_time)
-        except Exception as e:
+        except EC.NoSuchElementException as e:
+            action().get_screenShot()
             raise e
 
 

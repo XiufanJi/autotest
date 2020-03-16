@@ -19,6 +19,7 @@ if __name__ == '__main__':
     """生成代码使用率报告"""
     cov = coverage.Coverage()
     cov.start()
+    """代码使用率报告保存文件夹"""
     filepath = 'report\Report.html'
     file_result = open(filepath, 'wb')
     """生成测试报告，失败后重跑一次"""

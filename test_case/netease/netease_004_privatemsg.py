@@ -6,8 +6,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from time import sleep
 
-
 THINK_TIME = 3
+
+
 class message(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:

@@ -2,9 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/autoTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/autoTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/get_toast.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/get_toast.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yaml/mobile/netease/login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/netease/login.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0001_login.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0002_patient.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_0003_order.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_001.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_login_002.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/test_0003_regSchedule.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_003_album.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_003_album.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_004_privatemsg.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_004_privatemsg.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_005_delehistory.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_005_delehistory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_008_playvideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_008_playvideo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_020_testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_020_testcase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +56,6 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1376" />
-    <option name="height" value="744" />
-  </component>
   <component name="ProjectId" id="1YhQpvXGcV99AHXmHzWGLLJkPyo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -69,21 +78,21 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\autoTest\chromedriver" />
-      <recent name="D:\autoTest\test_case\lanxi" />
-      <recent name="D:\autoTest\app" />
-      <recent name="D:\autoTest" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\autoTest\base\mobileApp\netease" />
       <recent name="D:\autoTest\base" />
       <recent name="D:\autoTest\yaml\mobileApp\netease" />
       <recent name="D:\autoTest" />
       <recent name="D:\autoTest\test_case\lanxi\mine" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\autoTest\chromedriver" />
+      <recent name="D:\autoTest\test_case\lanxi" />
+      <recent name="D:\autoTest\app" />
+      <recent name="D:\autoTest" />
     </key>
   </component>
   <component name="RunManager" selected="Python.test">
@@ -326,7 +335,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577246313169</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="删除部分不必要的yaml内容">
+      <created>1583725202820</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1583725202820</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -376,12 +392,33 @@
     <MESSAGE value="更新截图方法" />
     <MESSAGE value="去除私有信息" />
     <MESSAGE value="修正截图路径判断方法" />
-    <option name="LAST_COMMIT_MESSAGE" value="修正截图路径判断方法" />
+    <MESSAGE value="删除部分不必要的yaml内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除部分不必要的yaml内容" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1583725093434">
+    <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1583725199899">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1583725093434" />
+    <state x="318" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1583725199899" />
+    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1583918386927">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583918386927" />
+    <state x="181" y="6" key="SettingsEditor" timestamp="1584324815004">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="181" y="6" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1584324815004" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1583725217753">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1583725217753" />
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1583918374103">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1583918374103" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584326021150">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1584326021150" />
   </component>
 </project>

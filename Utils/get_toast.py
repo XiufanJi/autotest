@@ -25,8 +25,8 @@ class get_toast():
     def element_is_present(self, driver, locator, pattern):
         """
         :param driver: 使用的驱动
-        :param x: 定位的方式，id,classname ...
-        :param pattern:
+        :param locator: 定位的方式，id,classname ...
+        :param pattern: 需要进行匹配的字段
         :return: web element
         """
         el = WebDriverWait(driver, 1).until\

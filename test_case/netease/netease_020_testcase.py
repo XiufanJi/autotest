@@ -4,6 +4,8 @@ from time import sleep
 from Utils.public_action import action
 
 THINK_TIME = 3
+
+
 class testcase(unittest.TestCase):
     @classmethod
     def setUpClass(cls) -> None:
@@ -28,14 +30,14 @@ class testcase(unittest.TestCase):
         self.driver.wait_activity(".ama.MapActivity", THINK_TIME)
         # """等待地图加载完成"""
         sleep(10)
-        action().enlarge()
+        # action().zoom()
         # for i in range(3):
         #     """调用放大方法进行地图放大"""
-        #     action().enlarge()
+        #     action().zoom()
         #     sleep(3)
         for i in range(3):
             """调用缩小方法进行地图缩小操作"""
-            action().narrow()
+            action().pinch()
             sleep(3)
 
 
