@@ -2,15 +2,15 @@ from Utils.appium_config import DriverClient as DC
 from Utils.operate_yaml import operate_yaml
 from time import sleep
 from Utils.appium_action import action
-from Utils.public_action import action as p_action
-# path = 'yaml/mobile/lanxi/login.yaml'
+from Utils.public_action import pub_action
+
 think_time = 2
 
 
 class loginBase():
     def __init__(self):
         self.driver = DC().getDriver()
-        self.path = p_action().get_path("yaml/mobile/lanxi/login.yaml")
+        self.path = pub_action().get_path("yaml/mobile/lanxi/login.yaml")
 
     def firstLogin(self):
         pass

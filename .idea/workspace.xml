@@ -4,18 +4,11 @@
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/appium_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_action.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/appium_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/get_toast.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Utils/operate_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/operate_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/public_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/public_action.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/jiankanglanxi.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/com.conlin360.medical.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_action_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_action_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/Utils_operate_yaml_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_operate_yaml_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_public_action_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_public_action_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" afterDir="false" />
@@ -23,11 +16,12 @@
       <change beforePath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_001_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_001_login_py.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_002_patient_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_002_patient_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -238,9 +232,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.public_action (1)" />
         <item itemvalue="Python tests.Unittests in test_001_login.py" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.public_action" />
         <item itemvalue="Python.loginBase " />
       </list>
@@ -428,38 +422,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583918386927" />
-    <state width="1339" height="171" key="GridCell.Tab.0.bottom" timestamp="1584425859905">
+    <state width="1339" height="194" key="GridCell.Tab.0.bottom" timestamp="1584437333819">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584425859905" />
-    <state width="1339" height="171" key="GridCell.Tab.0.center" timestamp="1584425859904">
+    <state width="1339" height="194" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584437333819" />
+    <state width="1339" height="194" key="GridCell.Tab.0.center" timestamp="1584437333819">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584425859904" />
-    <state width="1339" height="171" key="GridCell.Tab.0.left" timestamp="1584425859904">
+    <state width="1339" height="194" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584437333819" />
+    <state width="1339" height="194" key="GridCell.Tab.0.left" timestamp="1584437333819">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584425859904" />
-    <state width="1339" height="171" key="GridCell.Tab.0.right" timestamp="1584425859905">
+    <state width="1339" height="194" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584437333819" />
+    <state width="1339" height="194" key="GridCell.Tab.0.right" timestamp="1584437333819">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584425859905" />
-    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584352296622">
+    <state width="1339" height="194" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584437333819" />
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584429783738">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
-    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584352296622">
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584429783738" />
+    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584429783737">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
-    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584352296622">
+    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584429783737" />
+    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584429783737">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
-    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584352296622">
+    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584429783737" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584429783738">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584429783738" />
     <state x="181" y="6" key="SettingsEditor" timestamp="1584324815004">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

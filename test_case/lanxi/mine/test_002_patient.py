@@ -1,6 +1,7 @@
 from base.mobileApp.lanxi.patientBase import patientBase
 from Utils.appium_config import DriverClient as DC
 import unittest
+from Utils.public_action import skip_dependon
 from Utils.public_action import pub_action
 
 
@@ -13,6 +14,7 @@ class patientList(unittest.TestCase):
     def tearDownClass(cls):
         cls.driver.quit()
 
+    @skip_dependon(depend="test_login")
     def test_add(self):
         patient = patientBase()
         patient.add_patient()
@@ -25,6 +27,7 @@ class patientList(unittest.TestCase):
         finally:
             patient.back_home()
 
+    @skip_dependon(depend="test_login")
     def test_mod(self):
         patient = patientBase()
         patient.mod_patient()
@@ -37,6 +40,7 @@ class patientList(unittest.TestCase):
         finally:
             patient.back_home()
 
+    @skip_dependon(depend="test_login")
     def test_dele(self):
         patient = patientBase()
         patient.dele_patient()

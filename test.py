@@ -1,17 +1,13 @@
 # coding = utf-8
-import yaml
-import os
-import unittest
-import logging
+import re
 
 
 def test():
-    logging.basicConfig(format='%(asctime)s %(message)s', datefmt='%Y%m%d %H:%M:%S')
-    logging.basicConfig(filename='example.log', level=logging.WARNING)
-    logging.debug('This message should go to the log file')
-    logging.info('So should this')
-    logging.warning('this a warning info')
-    os.path.join()
+    pattern = "^[A-Za-z]+|[\u4e00-\u9fa5]+$"
+    sentence = "你好"
+    flag = re.findall(pattern, sentence)
+    print(type(flag))
+    print(flag)
 
 
 if __name__ == '__main__':

@@ -1,6 +1,6 @@
 from appium import webdriver
 import yaml
-from Utils.public_action import action
+from Utils.public_action import pub_action
 
 
 # test = "D:\BaiduNetdiskDownload\chromedriver_win32_66\chromedriver.exe"
@@ -20,7 +20,7 @@ class Singleton(object):
             # logging.info('-----------------------init driver----------------------')
             """从配置文件中读取相应的配置项"""
             # file = open(test, 'rb')
-            path = action().get_path("yaml/preConfig.yaml")
+            path = pub_action().get_path("yaml/preConfig.yaml")
             file = open(path, 'rb')
             data = yaml.load(file)
             # appPackage = apk_path+"/app/"+data["app"][0]["appPackage"]

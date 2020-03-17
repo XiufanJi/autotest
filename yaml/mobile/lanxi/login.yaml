@@ -32,7 +32,7 @@ testcase:
     find_locator: normal
     operate_1: clear
     operate_2: send_keys
-    content: 123456
+    content: 12
   -
     desc: 登录
     element_location: 登录
