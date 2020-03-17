@@ -5,6 +5,7 @@ from appium.webdriver.common.multi_action import MultiAction
 from appium.webdriver.common.touch_action import TouchAction
 import time
 import os
+from Utils.public_action import pub_action
 
 THINK_TIME = 2
 
@@ -206,7 +207,7 @@ class action():
     def find_element(self, mode, matchStr):
         """
         :param mode:根据什么模式来进行匹配，id/className/
-        :param matchStr:
+        :param matchStr: 需要匹配的具体字段
         :return: webElement
         """
         if mode == 'id':
@@ -222,7 +223,7 @@ class action():
             return "无法定位到该元素！"
 
     """模拟手指放大操作，使用multiAction"""
-    def zoom(self):
+    def zoomIn(self):
         area = action().get_window_size()
         height = area[1]
         width = area[0]
@@ -241,7 +242,7 @@ class action():
         multi.perform()
 
     """模拟手指缩小操作，使用multiAction"""
-    def pinch(self):
+    def zoomOut(self):
         area = action().get_window_size()
         height = area[1]
         width = area[0]
@@ -268,9 +269,10 @@ class action():
     """获取屏幕快照"""
     def get_screenShot(self):
         """在进行截图保存的时候，需要注意文件名，windows系统中，文件名不
-        能包括特殊字符，否则会保存失败"""
+        能包括特殊字符（< > / \ | :  * ? 等），否则会保存失败"""
         folder = time.strftime("%Y%m%d")
-        filepath = '../screenShots'
+        """设置图片保存文件夹"""
+        filepath = pub_action().get_path("screenShots")
         pic_name = time.strftime("%H%M%S")
         if os.path.exists(filepath):
             if os.path.exists(filepath + '/' + folder):

@@ -3,20 +3,22 @@ from Utils.operate_yaml import operate_yaml
 from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
 from Utils.appium_action import action
-path = 'yaml/mobile/lanxi/patient.yaml'
+from Utils.public_action import pub_action
+
 think_time = 3
 
 
 class patientBase():
     def __init__(self):
         self.driver = DC().getDriver()
+        self.path = pub_action().get_path("yaml/mobile/lanxi/patient.yaml")
 
     def can_add_patient(self):
         pass
 
     def add_patient(self):
         try:
-            operate = operate_yaml(path)
+            operate = operate_yaml(self.path)
             # sleep(think_time)
             # operate.operate_yaml('我的')
             sleep(think_time)
@@ -40,7 +42,7 @@ class patientBase():
     def mod_patient(self):
         try:
             sleep(think_time)
-            operate = operate_yaml(path)
+            operate = operate_yaml(self.path)
             operate.operate_yaml('我的')
             operate.operate_yaml('就诊人管理')
             self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
@@ -56,7 +58,7 @@ class patientBase():
     def dele_patient(self):
         try:
             sleep(think_time)
-            operate = operate_yaml(path)
+            operate = operate_yaml(self.path)
             operate.operate_yaml('我的')
             operate.operate_yaml('就诊人管理')
             self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
@@ -68,7 +70,7 @@ class patientBase():
 
     def back_home(self):
         try:
-            operate = operate_yaml(path)
+            operate = operate_yaml(self.path)
             operate.operate_yaml('返回按钮')
             self.driver.wait_activity('.activity.HomePageActivity', think_time)
             operate.operate_yaml('首页')

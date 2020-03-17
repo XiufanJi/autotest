@@ -1,8 +1,7 @@
 from Utils.load_data import load_data as data
 from time import sleep
 from Utils.appium_action import action
-import os
-# path = 'yaml/mobile/netease/login.yaml'
+
 wait = 2
 
 

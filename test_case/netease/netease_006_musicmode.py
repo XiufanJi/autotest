@@ -2,7 +2,7 @@
 import unittest
 from Utils.appium_config import DriverClient
 from time import sleep
-from Utils.get_toast import get_toast
+from Utils.public_action import pub_action
 
 
 THINKE_TIME = 3
@@ -48,7 +48,7 @@ class musicmode(unittest.TestCase):
                 else:
                     pop_msg = "心动模式"
                 text_pattern = "//*[@text={}]".format(pop_msg)
-                msg = get_toast(text_pattern, self.driver)
+                msg = pub_action(text_pattern, self.driver)
                 print("每次点击的匹配语句为:{0},获取到的toast信息为：{1}".format(pop_msg, msg))
                 self.assertEquals(pop_msg, msg)
             """点击返回我的音乐首页"""

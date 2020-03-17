@@ -24,15 +24,15 @@ testcase:
     find_locator: android_uiautomator
     operate_1: clear
     operate_2: send_keys
-    content: phone_number
+    content: 18557539532
   -
     desc: 登录密码
-    element_location: com.conlin360.medical:id/g6
+    element_location: com.conlin360.medical:id/fy
     find_type: id
     find_locator: normal
     operate_1: clear
     operate_2: send_keys
-    content: password
+    content: 123456
   -
     desc: 登录
     element_location: 登录

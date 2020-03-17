@@ -1,7 +1,7 @@
 from base.mobileApp.lanxi.patientBase import patientBase
 from Utils.appium_config import DriverClient as DC
 import unittest
-from Utils.get_toast import get_toast
+from Utils.public_action import pub_action
 
 
 class patientList(unittest.TestCase):
@@ -18,7 +18,7 @@ class patientList(unittest.TestCase):
         patient.add_patient()
         try:
             message = "//*[contains(@text,'添加成功')]"
-            toast = get_toast().get_toast(message, self.driver)
+            toast = pub_action().get_toast(message, self.driver)
             self.assertEquals('添加成功', toast)
         except Exception as e:
             raise e
@@ -30,7 +30,7 @@ class patientList(unittest.TestCase):
         patient.mod_patient()
         try:
             message = "//*[@text='编辑成功']"
-            toast = get_toast().get_toast(message, self.driver)
+            toast = pub_action().get_toast(message, self.driver)
             self.assertEquals('修改就诊人成功', toast)
         except Exception as e:
             raise e
@@ -42,7 +42,7 @@ class patientList(unittest.TestCase):
         patient.dele_patient()
         try:
             message = "//*[@text='删除就诊人成功']"
-            toast = get_toast().get_toast(message, self.driver)
+            toast = pub_action().get_toast(message, self.driver)
             self.assertEquals('删除就诊人成功', toast)
         except Exception as e:
             raise e

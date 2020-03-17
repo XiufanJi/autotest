@@ -2,18 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Utils/appium_action.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/appium_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_action.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/appium_config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Utils/get_toast.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/operate_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/operate_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/public_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/public_action.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com.netease.cloudmusic_6.3.2_152.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/com.netease.cloudmusic.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/com.tencent.map_8.9.3_644.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/com.tencent.map.apk" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/jiankanglanxi-latest.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/jiankanglanxi.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/jiankanglanxi.apk" beforeDir="false" afterPath="$PROJECT_DIR$/app/com.conlin360.medical.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_config_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_get_toast_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" afterDir="false" />
@@ -21,25 +19,16 @@
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_public_action_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_public_action_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/coverage_html.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/coverage_html.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.ba-throttle-debounce.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.ba-throttle-debounce.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.hotkeys.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.hotkeys.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.isonscreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.isonscreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/jquery.tablesorter.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/jquery.tablesorter.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_001_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_001_login_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/miniProgram/weixin_001_miniPro.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_001_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_002_music.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_002_music.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_008_playvideo.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_008_playvideo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_020_testcase.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_020_testcase.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_test_login.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/netease/netease_006_musicmode.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,9 +105,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python.run_all_test ">
-    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/autoTest/htmlcov/index.html" useBuiltInWebServerPort="true">
-      <method v="2" />
-    </configuration>
     <configuration name="loginBase " type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="autoTest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -133,6 +119,27 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/base/mobileApp/netease/loginBase.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="public_action (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="autoTest" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Utils/public_action.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -227,9 +234,11 @@
       <item itemvalue="Python.public_action" />
       <item itemvalue="Python.test" />
       <item itemvalue="Python tests.Unittests in test_001_login.py" />
+      <item itemvalue="Python.public_action (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.public_action (1)" />
         <item itemvalue="Python tests.Unittests in test_001_login.py" />
         <item itemvalue="Python.test" />
         <item itemvalue="Python.public_action" />
@@ -407,6 +416,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="134" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1584346159639" />
+    <state x="410" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584426440665">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="410" y="111" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1360.728@0.0.1360.728" timestamp="1584426440665" />
     <state x="318" y="0" key="CommitChangelistDialog2" timestamp="1583725199899">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -415,38 +428,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583918386927" />
-    <state width="1339" height="171" key="GridCell.Tab.0.bottom" timestamp="1584351975453">
+    <state width="1339" height="171" key="GridCell.Tab.0.bottom" timestamp="1584425859905">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584351975453" />
-    <state width="1339" height="171" key="GridCell.Tab.0.center" timestamp="1584351975452">
+    <state width="1339" height="171" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584425859905" />
+    <state width="1339" height="171" key="GridCell.Tab.0.center" timestamp="1584425859904">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584351975452" />
-    <state width="1339" height="171" key="GridCell.Tab.0.left" timestamp="1584351975452">
+    <state width="1339" height="171" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584425859904" />
+    <state width="1339" height="171" key="GridCell.Tab.0.left" timestamp="1584425859904">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584351975452" />
-    <state width="1339" height="171" key="GridCell.Tab.0.right" timestamp="1584351975453">
+    <state width="1339" height="171" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584425859904" />
+    <state width="1339" height="171" key="GridCell.Tab.0.right" timestamp="1584425859905">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="171" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584351975453" />
-    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584347084577">
+    <state width="1339" height="171" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584425859905" />
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584352296622">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
-    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584347084577">
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
+    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584352296622">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
-    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584347084577">
+    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
+    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584352296622">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
-    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584347084577">
+    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584352296622">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584347084577" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584352296622" />
     <state x="181" y="6" key="SettingsEditor" timestamp="1584324815004">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -455,10 +468,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1583725217753" />
-    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1583918374103">
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584405739623">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1583918374103" />
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1584405739623" />
     <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584326021150">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
