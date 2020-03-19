@@ -32,7 +32,7 @@ testcase:
     find_locator: normal
     operate_1: clear
     operate_2: send_keys
-    content: 12
+    content: 123456
   -
     desc: 登录
     element_location: 登录
@@ -41,7 +41,7 @@ testcase:
     operate_1: click
   -
     desc: 清除手机号
-    element_location: com.conlin360.medical:id/kx
+    element_location: com.conlin360.medical:id/kj
     find_type: id
     find_locator: normal
     operate_1: click

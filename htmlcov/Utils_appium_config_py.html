@@ -149,7 +149,7 @@
 <p id="t22" class="pln">            <span class="com"># file = open(test, 'rb')</span><span class="strut">&nbsp;</span></p>
 <p id="t23" class="stm run hide_run">            <span class="nam">path</span> <span class="op">=</span> <span class="nam">pub_action</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">get_path</span><span class="op">(</span><span class="str">"yaml/preConfig.yaml"</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t24" class="stm run hide_run">            <span class="nam">file</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span class="nam">path</span><span class="op">,</span> <span class="str">'rb'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t25" class="stm run hide_run">            <span class="nam">data</span> <span class="op">=</span> <span class="nam">yaml</span><span class="op">.</span><span class="nam">load</span><span class="op">(</span><span class="nam">file</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t25" class="stm run hide_run">            <span class="nam">data</span> <span class="op">=</span> <span class="nam">yaml</span><span class="op">.</span><span class="nam">safe_load</span><span class="op">(</span><span class="nam">file</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t26" class="pln">            <span class="com"># appPackage = apk_path+"/app/"+data["app"][0]["appPackage"]</span><span class="strut">&nbsp;</span></p>
 <p id="t27" class="stm run hide_run">            <span class="nam">config</span> <span class="op">=</span> <span class="op">{</span><span class="strut">&nbsp;</span></p>
 <p id="t28" class="pln">                <span class="str">"deviceName"</span><span class="op">:</span> <span class="nam">data</span><span class="op">[</span><span class="str">"device"</span><span class="op">]</span><span class="op">[</span><span class="num">4</span><span class="op">]</span><span class="op">[</span><span class="str">"deviceName"</span><span class="op">]</span><span class="op">,</span><span class="strut">&nbsp;</span></p>
@@ -190,7 +190,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2020-03-17 15:25
+            created at 2020-03-18 10:14
         </p>
     </div>
 </div>

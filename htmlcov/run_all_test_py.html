@@ -94,19 +94,22 @@
 <p id="n25" class="stm mis"><a href="#n25">25</a></p>
 <p id="n26" class="pln"><a href="#n26">26</a></p>
 <p id="n27" class="stm mis"><a href="#n27">27</a></p>
-<p id="n28" class="stm mis"><a href="#n28">28</a></p>
+<p id="n28" class="pln"><a href="#n28">28</a></p>
 <p id="n29" class="pln"><a href="#n29">29</a></p>
 <p id="n30" class="stm mis"><a href="#n30">30</a></p>
-<p id="n31" class="stm mis"><a href="#n31">31</a></p>
-<p id="n32" class="pln"><a href="#n32">32</a></p>
+<p id="n31" class="pln"><a href="#n31">31</a></p>
+<p id="n32" class="stm mis"><a href="#n32">32</a></p>
 <p id="n33" class="stm mis"><a href="#n33">33</a></p>
-<p id="n34" class="stm mis"><a href="#n34">34</a></p>
+<p id="n34" class="pln"><a href="#n34">34</a></p>
 <p id="n35" class="stm mis"><a href="#n35">35</a></p>
-<p id="n36" class="stm mis"><a href="#n36">36</a></p>
+<p id="n36" class="pln"><a href="#n36">36</a></p>
 <p id="n37" class="stm mis"><a href="#n37">37</a></p>
 <p id="n38" class="stm mis"><a href="#n38">38</a></p>
-<p id="n39" class="pln"><a href="#n39">39</a></p>
-<p id="n40" class="pln"><a href="#n40">40</a></p>
+<p id="n39" class="stm mis"><a href="#n39">39</a></p>
+<p id="n40" class="stm mis"><a href="#n40">40</a></p>
+<p id="n41" class="stm mis"><a href="#n41">41</a></p>
+<p id="n42" class="pln"><a href="#n42">42</a></p>
+<p id="n43" class="pln"><a href="#n43">43</a></p>
 
             </td>
             <td class="text">
@@ -137,19 +140,22 @@
 <p id="t25" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">start</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t26" class="pln">    <span class="str">"""&#24320;&#22987;&#36816;&#34892;&#29992;&#20363;&#20043;&#21069;&#20808;&#36827;&#34892;apk&#23433;&#35013;&#26816;&#27979;"""</span><span class="strut">&nbsp;</span></p>
 <p id="t27" class="stm mis">    <span class="nam">pub_action</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">App_IsInstall</span><span class="op">(</span><span class="str">"com.conlin360.medical"</span><span class="op">,</span> <span class="nam">apk_dir</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t28" class="stm mis">    <span class="nam">sleep</span><span class="op">(</span><span class="num">3</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t29" class="pln">    <span class="str">"""&#20195;&#30721;&#20351;&#29992;&#29575;&#25253;&#21578;&#20445;&#23384;&#25991;&#20214;&#22841;"""</span><span class="strut">&nbsp;</span></p>
-<p id="t30" class="stm mis">    <span class="nam">filepath</span> <span class="op">=</span> <span class="str">'report\Report.html'</span><span class="strut">&nbsp;</span></p>
-<p id="t31" class="stm mis">    <span class="nam">file_result</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span class="nam">filepath</span><span class="op">,</span> <span class="str">'wb'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t32" class="pln">    <span class="str">"""&#29983;&#25104;&#27979;&#35797;&#25253;&#21578;&#65292;&#22833;&#36133;&#21518;&#37325;&#36305;&#19968;&#27425;"""</span><span class="strut">&nbsp;</span></p>
-<p id="t33" class="stm mis">    <span class="nam">runner</span> <span class="op">=</span> <span class="nam">HTMLTestRunner</span><span class="op">.</span><span class="nam">HTMLTestRunner</span><span class="op">(</span><span class="nam">file_result</span><span class="op">,</span> <span class="nam">title</span><span class="op">=</span><span class="str">'autotest_app test '</span><span class="op">,</span> <span class="nam">description</span><span class="op">=</span><span class="str">'test report'</span><span class="op">,</span> <span class="nam">retry</span><span class="op">=</span><span class="num">1</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t34" class="stm mis">    <span class="nam">runner</span><span class="op">.</span><span class="nam">run</span><span class="op">(</span><span class="nam">run_all</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t35" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">stop</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t36" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t37" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">html_report</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t38" class="stm mis">    <span class="nam">file_result</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t39" class="pln"><span class="strut">&nbsp;</span></p>
-<p id="t40" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t28" class="pln">    <span class="com"># sleep(5)</span><span class="strut">&nbsp;</span></p>
+<p id="t29" class="pln">    <span class="com"># pub_action().simulate_broadcast("BATTERY_LOW")</span><span class="strut">&nbsp;</span></p>
+<p id="t30" class="stm mis">    <span class="nam">sleep</span><span class="op">(</span><span class="num">3</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t31" class="pln">    <span class="com"># """&#20195;&#30721;&#20351;&#29992;&#29575;&#25253;&#21578;&#20445;&#23384;&#25991;&#20214;&#22841;"""</span><span class="strut">&nbsp;</span></p>
+<p id="t32" class="stm mis">    <span class="nam">filepath</span> <span class="op">=</span> <span class="str">'report\Report.html'</span><span class="strut">&nbsp;</span></p>
+<p id="t33" class="stm mis">    <span class="nam">file_result</span> <span class="op">=</span> <span class="nam">open</span><span class="op">(</span><span class="nam">filepath</span><span class="op">,</span> <span class="str">'wb'</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t34" class="pln">    <span class="com"># """&#29983;&#25104;&#27979;&#35797;&#25253;&#21578;&#65292;&#22833;&#36133;&#21518;&#37325;&#36305;&#19968;&#27425;"""</span><span class="strut">&nbsp;</span></p>
+<p id="t35" class="stm mis">    <span class="nam">runner</span> <span class="op">=</span> <span class="nam">HTMLTestRunner</span><span class="op">.</span><span class="nam">HTMLTestRunner</span><span class="op">(</span><span class="nam">file_result</span><span class="op">,</span> <span class="nam">title</span><span class="op">=</span><span class="str">'AutoTest_App Test '</span><span class="op">,</span> <span class="xx">\</span><span class="strut">&nbsp;</span></p>
+<p id="t36" class="pln">                                           <span class="nam">description</span><span class="op">=</span><span class="str">'Test  Results Report'</span><span class="op">,</span> <span class="nam">retry</span><span class="op">=</span><span class="num">1</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t37" class="stm mis">    <span class="nam">runner</span><span class="op">.</span><span class="nam">run</span><span class="op">(</span><span class="nam">run_all</span><span class="op">(</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t38" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">stop</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t39" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">save</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t40" class="stm mis">    <span class="nam">cov</span><span class="op">.</span><span class="nam">html_report</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t41" class="stm mis">    <span class="nam">file_result</span><span class="op">.</span><span class="nam">close</span><span class="op">(</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="pln"><span class="strut">&nbsp;</span></p>
+<p id="t43" class="pln"><span class="strut">&nbsp;</span></p>
 
             </td>
         </tr>
@@ -160,7 +166,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2020-03-17 17:05
+            created at 2020-03-19 15:31
         </p>
     </div>
 </div>

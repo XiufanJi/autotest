@@ -22,7 +22,7 @@ class Singleton(object):
             # file = open(test, 'rb')
             path = pub_action().get_path("yaml/preConfig.yaml")
             file = open(path, 'rb')
-            data = yaml.load(file)
+            data = yaml.safe_load(file)
             # appPackage = apk_path+"/app/"+data["app"][0]["appPackage"]
             config = {
                 "deviceName": data["device"][4]["deviceName"],

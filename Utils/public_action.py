@@ -4,6 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import unittest
 from functools import wraps
+from tkinter import messagebox
 
 
 class pub_action():
@@ -60,6 +61,18 @@ class pub_action():
             (EC.presence_of_element_located(By.locator, pattern))
         print("输出获取到的元素的类型：", type(el))
         return el
+
+    """模拟手机发送广播信息"""
+    """暂时没用，这样在手机上直接使用的时候没有任何效果，后续再看"""
+    def simulate_broadcast(self, case):
+        if case == "CONNECTIVITY_CHANGE":
+            os.system("adb shell am broadcast -a android.net.conn.CONNECTIVITY_CHANGE")
+        if case == "SCREEN_OFF":
+            os.system("adb shell am broadcast -a android.intent.action.SCREEN_OFF")
+        if case == "BATTERY_LOW":
+            os.system("adb shell am broadcast -a android.intent.action.BATTERY_LOW")
+        if case == "DEVICE_STORAGE_LOW":
+            os.system("adb shell am broadcast -a android.intent.action.DEVICE_STORAGE_LOW")
 
 
 def skip_dependon(depend=""):

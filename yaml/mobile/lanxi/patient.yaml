@@ -1,3 +1,7 @@
+# 关于元素的构成：desc-元素的描述，element_location-定位元素的字段，find_type-定位元素的方式(id,className...)，
+# find_locator-现在支持两种，一种是常见的find.byxxx即描述的normal，一种是使用android_uiautomator来进行元素定位
+# operate-元素所需要进行的操作，click，sendkeys,或者是单纯的进行元素查找，即operate为None
+# content-sendkeys的输入内容，return_num-元素查找时是返回单个元素，还是多个元素（more-返多个，single-单个）
 testcase:
   -
     desc: 我的
@@ -11,94 +15,101 @@ testcase:
     find_type: text
     find_locator: android_uiautomator
     operate_1: click
+#  -
+#    desc: 添加
+#    element_location: 添加
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: click
+#  -
+#    desc: 请输入姓名
+#    element_location: 请输入姓名
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: clear
+#    operate_2: send_keys
+#    content: 安岳
+#  -
+#    desc: 选择证件类型
+#    element_location: com.conlin360.medical:id/a3d
+#    find_type: id
+#    find_locator: normal
+#    operate_1: click
+#  -
+#    desc: 二代身份证
+#    element_location: 二代身份证
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: click
+#  -
+#    desc: 证件号
+#    element_location: 请输入证件号码
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: clear
+#    operate_2: send_keys
+#    content: your id_num
+#  -
+#    desc: 手机号
+#    element_location: 用于接收短信通知，请谨慎填写
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: clear
+#    operate_2: send_keys
+#    content: phone_num
+#  -
+#    desc: 邮箱
+#    element_location: com.conlin360.medical:id/g_
+#    find_type: id
+#    find_locator: normal
+#    operate_1: clear
+#    operate_2: send_keys
+#    content: your email_address
+#  -
+#    desc: 居住地址
+#    element_location: com.conlin360.medical:id/gk
+#    find_type: id
+#    find_locator: normal
+#    operate_1: clear
+#    operate_2: send_keys
+#    content: 居住地址巴拉巴拉
+#  -
+#    desc: 确定
+#    element_location: 确定
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: click
+#  -
+#    desc: 返回按钮
+#    element_location: 转到上一层级
+#    find_type: content_desc
+#    find_locator: normal
+#    operate_1: click
+#  -
+#    desc: 首页
+#    element_location: 首页
+#    find_type: text
+#    find_locator: android_uiautomator
+#    operate_1: click
+#  -
+#    desc: 修改
+#    element_location: com.conlin360.medical:id/fy
+#    find_type: id
+#    find_locator: normal
+#    operate_1: click
+#  -
+#    desc: 删除
+#    element_location: com.conlin360.medical:id/f1
+#    find_type: id
+#    find_locator: normal
+#    operate_1: click
   -
-    desc: 添加
-    element_location: 添加
-    find_type: text
+    desc: 证件号码
+    element_location: 证件号码
+    find_type: textContains
     find_locator: android_uiautomator
-    operate_1: click
-  -
-    desc: 请输入姓名
-    element_location: 请输入姓名
-    find_type: text
-    find_locator: android_uiautomator
-    operate_1: clear
-    operate_2: send_keys
-    content: 安岳
-  -
-    desc: 选择证件类型
-    element_location: com.conlin360.medical:id/a3d
-    find_type: id
-    find_locator: normal
-    operate_1: click
-  -
-    desc: 二代身份证
-    element_location: 二代身份证
-    find_type: text
-    find_locator: android_uiautomator
-    operate_1: click
-  -
-    desc: 证件号
-    element_location: 请输入证件号码
-    find_type: text
-    find_locator: android_uiautomator
-    operate_1: clear
-    operate_2: send_keys
-    content: your id_num
-  -
-    desc: 手机号
-    element_location: 用于接收短信通知，请谨慎填写
-    find_type: text
-    find_locator: android_uiautomator
-    operate_1: clear
-    operate_2: send_keys
-    content: phone_num
-  -
-    desc: 邮箱
-    element_location: com.conlin360.medical:id/g_
-    find_type: id
-    find_locator: normal
-    operate_1: clear
-    operate_2: send_keys
-    content: your email_address
-  -
-    desc: 居住地址
-    element_location: com.conlin360.medical:id/gk
-    find_type: id
-    find_locator: normal
-    operate_1: clear
-    operate_2: send_keys
-    content: 居住地址巴拉巴拉
-  -
-    desc: 确定
-    element_location: 确定
-    find_type: text
-    find_locator: android_uiautomator
-    operate_1: click
-  -
-    desc: 返回按钮
-    element_location: 转到上一层级
-    find_type: content_desc
-    find_locator: normal
-    operate_1: click
-  -
-    desc: 首页
-    element_location: 首页
-    find_type: text
-    find_locator: android_uiautomator
-    operate_1: click
-  -
-    desc: 修改
-    element_location: com.conlin360.medical:id/fy
-    find_type: id
-    find_locator: normal
-    operate_1: click
-  -
-    desc: 删除
-    element_location: com.conlin360.medical:id/f1
-    find_type: id
-    find_locator: normal
-    operate_1: click
+    operate_1: nothing
+    return_num: more
 
 
 

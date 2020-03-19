@@ -6,6 +6,7 @@ from appium.webdriver.common.touch_action import TouchAction
 import time
 import os
 from Utils.public_action import pub_action
+from selenium.webdriver.support import expected_conditions as EC
 
 THINK_TIME = 2
 
@@ -157,27 +158,26 @@ class action():
         :param matchStr: 查找元素所需要匹配的具体字段
         :return: webElement
         """
-        if mode == "text":
-            el = self.driver.find_element_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
-        if mode == "className":
-            el = self.driver.find_element_by_android_uiautomator("new UiSelector().className(\""+matchStr+"\")")
-        if mode == "description":
-            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
-            description(\"" + matchStr + "\")")
-        if mode == "StartsWith":
-            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
-            textStartsWith(\"" + matchStr + "\")")
-        if mode == "textContains":
-            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
-            textContains(\"" + matchStr + "\")")
-        if mode == "id":
-            el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
-            resourceId(\"" + matchStr + "\")")
-        # return el
-        if el.is_displayed():
+        try:
+            if mode == "text":
+                el = self.driver.find_element_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
+            if mode == "className":
+                el = self.driver.find_element_by_android_uiautomator("new UiSelector().className(\""+matchStr+"\")")
+            if mode == "description":
+                el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+                description(\"" + matchStr + "\")")
+            if mode == "StartsWith":
+                el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+                textStartsWith(\"" + matchStr + "\")")
+            if mode == "textContains":
+                el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+                textContains(\"" + matchStr + "\")")
+            if mode == "id":
+                el = self.driver.find_element_by_android_uiautomator("new UiSelector().\
+                resourceId(\"" + matchStr + "\")")
             return el
-        else:
-            return "无法定位到该元素！"
+        except EC.NoSuchElementException as e:
+            raise e
 
     """查找多个元素"""
     def find_elements_byUiautormator(self, mode, matchStr):
@@ -186,23 +186,26 @@ class action():
         :param matchStr: 查找元素所需要匹配的具体字段
         :return: webElements
         """
-        if mode == "text":
-            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
-        if mode == "className":
-            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().className(\""+matchStr+"\")")
-        if mode == "description":
-            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
-            description(\"" + matchStr + "\")")
-        if mode == "StartsWith":
-            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
-            textStartsWith(\"" + matchStr + "\")")
-        if mode == "textContains":
-            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
-            textContains(\"" + matchStr + "\")")
-        if mode == "id":
-            el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
-            resourceId(\"" + matchStr + "\")")
-        return el
+        try:
+            if mode == "text":
+                el = self.driver.find_elements_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
+            if mode == "className":
+                el = self.driver.find_elements_by_android_uiautomator("new UiSelector().className(\""+matchStr+"\")")
+            if mode == "description":
+                el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+                description(\"" + matchStr + "\")")
+            if mode == "StartsWith":
+                el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+                textStartsWith(\"" + matchStr + "\")")
+            if mode == "textContains":
+                el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+                textContains(\"" + matchStr + "\")")
+            if mode == "id":
+                el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
+                resourceId(\"" + matchStr + "\")")
+            return el
+        except EC.NoSuchElementException as e:
+            raise e
 
     def find_element(self, mode, matchStr):
         """
@@ -210,17 +213,35 @@ class action():
         :param matchStr: 需要匹配的具体字段
         :return: webElement
         """
-        if mode == 'id':
-            el = self.driver.find_element_by_id(""+matchStr+"")
-        if mode == 'className':
-            el = self.driver.find_element_by_class_name(""+matchStr+"")
-        if mode == 'content_desc':
-            el = self.driver.find_element_by_accessibility_id(""+matchStr+"")
-        # return el
-        if el.is_displayed():
+        try:
+            if mode == 'id':
+                el = self.driver.find_element_by_id(""+matchStr+"")
+            if mode == 'className':
+                el = self.driver.find_element_by_class_name(""+matchStr+"")
+            if mode == 'content_desc':
+                el = self.driver.find_element_by_accessibility_id(""+matchStr+"")
+            # return el
             return el
-        else:
-            return "无法定位到该元素！"
+        except EC.NoSuchElementException as e:
+            raise e
+
+    def find_elements(self, mode, matchStr):
+        """
+        :param mode:根据什么模式来进行匹配，id/className/
+        :param matchStr: 需要匹配的具体字段
+        :return: webElements
+        """
+        try:
+            if mode == 'id':
+                el = self.driver.find_elements_by_id(""+matchStr+"")
+            if mode == 'className':
+                el = self.driver.find_elements_by_class_name(""+matchStr+"")
+            if mode == 'content_desc':
+                el = self.driver.find_elements_by_accessibility_id(""+matchStr+"")
+            # return el
+            return el
+        except EC.NoSuchElementException as e:
+            raise e
 
     """模拟手指放大操作，使用multiAction"""
     def zoomIn(self):

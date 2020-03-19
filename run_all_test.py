@@ -25,12 +25,15 @@ if __name__ == '__main__':
     cov.start()
     """开始运行用例之前先进行apk安装检测"""
     pub_action().App_IsInstall("com.conlin360.medical", apk_dir)
+    # sleep(5)
+    # pub_action().simulate_broadcast("BATTERY_LOW")
     sleep(3)
-    """代码使用率报告保存文件夹"""
+    # """代码使用率报告保存文件夹"""
     filepath = 'report\Report.html'
     file_result = open(filepath, 'wb')
-    """生成测试报告，失败后重跑一次"""
-    runner = HTMLTestRunner.HTMLTestRunner(file_result, title='autotest_app test ', description='test report', retry=1)
+    # """生成测试报告，失败后重跑一次"""
+    runner = HTMLTestRunner.HTMLTestRunner(file_result, title='AutoTest_App Test ', \
+                                           description='Test  Results Report', retry=1)
     runner.run(run_all())
     cov.stop()
     cov.save()

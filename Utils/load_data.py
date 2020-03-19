@@ -14,7 +14,7 @@ class load_data():
     # 获取全部的数据
     def load_all_data(self):
         file = open(self.path, self.mode)
-        data = yaml.load(file)
+        data = yaml.safe_load(file)
         return data
 
     # 获取整个用例的个数
@@ -72,6 +72,12 @@ class load_data():
         """
         return self.load_all_data()["testcase"][i]["content"]
 
+    def get_return(self, i):
+        """
+        :param i: 第几位的return字段
+        :return: content
+        """
+        return self.load_all_data()["testcase"][i]["return_num"]
 
 # load_data = load_data('../yaml/mobile/netease/login.yaml', 'rb').load_all_data()
 # data_length = load_data('yamlFile/mobile/login.yaml', 'rb').get_data_length()
