@@ -158,6 +158,7 @@ class action():
         :param matchStr: 查找元素所需要匹配的具体字段
         :return: webElement
         """
+        el = ""
         try:
             if mode == "text":
                 el = self.driver.find_element_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
@@ -186,6 +187,7 @@ class action():
         :param matchStr: 查找元素所需要匹配的具体字段
         :return: webElements
         """
+        el = ""
         try:
             if mode == "text":
                 el = self.driver.find_elements_by_android_uiautomator("new UiSelector().text(\""+matchStr+"\")")
@@ -203,6 +205,8 @@ class action():
             if mode == "id":
                 el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
                 resourceId(\"" + matchStr + "\")")
+            print("获取到的数据类型为：{}".format(type(el)))
+            print("获取到的返回数据为：{}".format(el))
             return el
         except EC.NoSuchElementException as e:
             raise e
@@ -213,6 +217,7 @@ class action():
         :param matchStr: 需要匹配的具体字段
         :return: webElement
         """
+        el = ""
         try:
             if mode == 'id':
                 el = self.driver.find_element_by_id(""+matchStr+"")
@@ -231,6 +236,7 @@ class action():
         :param matchStr: 需要匹配的具体字段
         :return: webElements
         """
+        el = ""
         try:
             if mode == 'id':
                 el = self.driver.find_elements_by_id(""+matchStr+"")

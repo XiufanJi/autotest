@@ -33,7 +33,7 @@ if __name__ == '__main__':
     file_result = open(filepath, 'wb')
     # """生成测试报告，失败后重跑一次"""
     runner = HTMLTestRunner.HTMLTestRunner(file_result, title='AutoTest_App Test ', \
-                                           description='Test  Results Report', retry=1)
+                                           description='Test  Results Report', retry=0)
     runner.run(run_all())
     cov.stop()
     cov.save()

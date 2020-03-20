@@ -13,12 +13,29 @@ class patientBase():
         self.driver = DC().getDriver()
         self.path = pub_action().get_path("yaml/mobile/lanxi/patient.yaml")
 
+    # 返回首页
+    def back_home(self):
+        try:
+            operate = operate_yaml(self.path)
+            fall_back = operate.operate_yaml('返回按钮')
+            # print("fall_back的数据类型：{}".format(type(fall_back)))
+            # print(fall_back)
+            # print(fall_back[0])
+            fall_back[0].click()
+            self.driver.wait_activity('.activity.HomePageActivity', think_time)
+            home = operate.operate_yaml('首页')
+            home[0].click()
+        except EC.NoSuchElementException as e:
+            action().get_screenShot()
+            raise e
+
     # 判断是否能进行就诊人的添加
     def can_add(self):
         try:
             operate = operate_yaml(self.path)
-            idNo = operate.operate_yaml("证件号码")
-            num = len(idNo)
+            data = operate.operate_yaml("证件号码")
+            # print("data[0]的数据类型为{}：".format(data[0]))
+            num = len(data[0])
             print("定位到的元素总共有多少个：{}".format(num))
             if num >= 5:
                 return False
@@ -30,90 +47,102 @@ class patientBase():
 
     # 判断是否能进行就诊人的删除
     def can_dele(self):
+        num = 0
         try:
             operate = operate_yaml(self.path)
-            idNo = operate.operate_yaml("证件号码")
-            if len(idNo) != 0:
+            data = operate.operate_yaml("证件号码")
+            num = len(data[0])
+            print("获取到的数据个数为：{}".format(num))
+            # print("获取到的data[0]的数据为：".format(data[0]))
+        except :
+            if num != 0:
                 return True
             else:
                 return False
+
+    def add_patient(self):
+        try:
+            operate = operate_yaml(self.path)
+            # sleep(think_time)
+            # operate.operate_yaml('我的')
+            sleep(think_time)
+            patients = operate.operate_yaml('就诊人管理')
+            # print("是否获取到元素就诊人管理：{}".format(patients[0]))
+            patients[0].click()
+            self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
+            sleep(think_time)
+            add = patientBase().can_add()
+            if add:
+                add_patient = operate.operate_yaml('添加')
+                add_patient[0].click()
+                self.driver.wait_activity(".mine.AddOrEditPatientActivity", think_time)
+                sleep(think_time)
+                input_name = operate.operate_yaml('请输入姓名')
+                input_name[0].send_keys(input_name[1])
+                id_type = operate.operate_yaml('选择证件类型')
+                id_type[0].click()
+                identity = operate.operate_yaml('二代身份证')
+                identity[0].click()
+                id_no = operate.operate_yaml('证件号')
+                id_no[0].send_keys(id_no[1])
+                phone_num = operate.operate_yaml('手机号')
+                phone_num[0].send_keys(phone_num[1])
+                ok_one = operate.operate_yaml('确定')
+                ok_one[0].click()
+                ok_two = operate.operate_yaml('确定')
+                ok_two[0].click()
+            else:
+                print("已超过最大添加人数，不能再次添加！")
         except EC.NoSuchElementException as e:
             action().get_screenShot()
             raise e
-
-    def add_patient(self):
-            try:
-                operate = operate_yaml(self.path)
-                # sleep(think_time)
-                # operate.operate_yaml('我的')
-                sleep(think_time)
-                operate.operate_yaml('就诊人管理')
-                self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
-                sleep(think_time)
-                can_add = patientBase().can_add()
-                if can_add:
-                    operate.operate_yaml('添加')
-                    self.driver.wait_activity(".mine.AddOrEditPatientActivity", think_time)
-                    sleep(think_time)
-                    operate.operate_yaml('请输入姓名')
-                    operate.operate_yaml('选择证件类型')
-                    operate.operate_yaml('二代身份证')
-                    operate.operate_yaml('证件号')
-                    operate.operate_yaml('手机号')
-                    operate.operate_yaml('确定')
-                    operate.operate_yaml('确定')
-                else:
-                    print("已超过最大添加人数，不能再次添加！")
-            except EC.NoSuchElementException as e:
-                action().get_screenShot()
-                raise e
-
+"""
     def mod_patient(self):
         can_mod = patientBase().can_dele()
-        if can_mod:
-            try:
-                sleep(think_time)
-                operate = operate_yaml(self.path)
-                operate.operate_yaml('我的')
-                operate.operate_yaml('就诊人管理')
-                self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
-                operate.operate_yaml('修改')
+        try:
+            sleep(think_time)
+            operate = operate_yaml(self.path)
+            mine = operate.operate_yaml('我的')
+            mine[0].click()
+            patients = operate.operate_yaml('就诊人管理')
+            patients[0].click()
+            self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
+            if can_mod:
+                mod = operate.operate_yaml('修改')
+                mod[0].click()
                 self.driver.wait_activity(".mine.AddOrEditPatientActivity", think_time)
-                operate.operate_yaml('邮箱')
-                operate.operate_yaml('确定')
+                email = operate.operate_yaml('邮箱')
+                email[0].send_keys(email[1])
+                ok = operate.operate_yaml('确定')
+                ok[0].click()
                 self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
-            except EC.NoSuchElementException as e:
-                action().get_screenShot()
-                raise e
-        else:
-            print("就诊人列表为空，不能进行修改！")
+            else:
+                print("就诊人列表为空，不能进行修改！")
+        except EC.NoSuchElementException as e:
+            action().get_screenShot()
+            raise e
 
     def dele_patient(self):
         can_dele = patientBase.can_dele(self)
-        if can_dele:
-            try:
-                sleep(think_time)
-                operate = operate_yaml(self.path)
-                operate.operate_yaml('我的')
-                operate.operate_yaml('就诊人管理')
-                self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
-                operate.operate_yaml('删除')
-                operate.operate_yaml('确定')
-            except EC.NoSuchElementException as e:
-                action().get_screenShot()
-                raise e
-        else:
-            print("就诊人列表为空，不能进行删除操作！")
-
-    def back_home(self):
         try:
+            sleep(think_time)
             operate = operate_yaml(self.path)
-            operate.operate_yaml('返回按钮')
-            self.driver.wait_activity('.activity.HomePageActivity', think_time)
-            operate.operate_yaml('首页')
+            mine = operate.operate_yaml('我的')
+            mine[0].click()
+            patients = operate.operate_yaml('就诊人管理')
+            patients[0].click()
+            self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
+            if can_dele:
+                dele = operate.operate_yaml('删除')
+                dele[0].click()
+                ok = operate.operate_yaml('确定')
+                ok[0].click()
+            else:
+                print("就诊人列表为空，不能进行删除操作！")
         except EC.NoSuchElementException as e:
             action().get_screenShot()
-            raise e
+            raise e """
+
 
 
 # if __name__ == '__main__':

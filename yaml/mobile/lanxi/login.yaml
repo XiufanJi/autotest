@@ -4,48 +4,53 @@ testcase:
     element_location: 首页
     find_type: text
     find_locator: android_uiautomator
-    operate_1: click
+    return_num: single
+    operate: click
+
   -
     desc: 我的
     element_location: 我的
     find_type: text
     find_locator: android_uiautomator
-    operate_1: click
+    return_num: single
+    operate: click
   -
     desc: 登录/注册
     element_location: 登录/注册
     find_type: text
     find_locator: android_uiautomator
-    operate_1: click
+    return_num: single
+    operate: click
   -
     desc: 手机号码
     element_location: 请输入您的手机号码
     find_type: text
     find_locator: android_uiautomator
-    operate_1: clear
-    operate_2: send_keys
+    return_num: single
+    operate: send_keys
     content: 18557539532
   -
     desc: 登录密码
     element_location: com.conlin360.medical:id/fy
     find_type: id
     find_locator: normal
-    operate_1: clear
-    operate_2: send_keys
+    return_num: single
+    operate: send_keys
     content: 123456
   -
     desc: 登录
     element_location: 登录
     find_type: text
     find_locator: android_uiautomator
-    operate_1: click
+    return_num: single
+    operate: click
   -
     desc: 清除手机号
     element_location: com.conlin360.medical:id/kj
     find_type: id
     find_locator: normal
-    operate_1: click
-
+    return_num: single
+    operate: click
 
 
 

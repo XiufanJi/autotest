@@ -45,7 +45,7 @@ class pub_action():
             toast_element = WebDriverWait(driver, 0.001). \
                 until(EC.presence_of_element_located((By.XPATH, pattern)))
         except EC.NoAlertPresentException as e:
-            print("未匹配到对应的语句！")
+
             raise e
         return toast_element.text
 
