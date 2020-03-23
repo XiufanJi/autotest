@@ -1,0 +1,45 @@
+testcase:
+  -
+    desc: 设置
+    element_location: 设置
+    find_type: content_desc
+    find_locator: normal
+    return_num: single
+    operate: click
+  -
+    desc: 清除缓存
+    element_location: 清除缓存
+    find_type: text
+    find_locator: android_uiautomator
+    return_num: single
+    operate: click
+  -
+    desc: 确定
+    element_location: 确定
+    find_type: text
+    find_locator: android_uiautomator
+    return_num: single
+    operate: click
+  -
+    desc: 登录/注册
+    element_location: 登录/注册
+    find_type: text
+    find_locator: android_uiautomator
+    return_num: single
+    operate: click
+  -
+    desc: 我的
+    element_location: 我的
+    find_type: text
+    find_locator: android_uiautomator
+    return_num: single
+    operate: click
+  -
+    desc: 退出登录
+    element_location: 退出登录
+    find_type: text
+    find_locator: android_uiautomator
+    return_num: single
+    operate: click
+
+

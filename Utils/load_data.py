@@ -29,16 +29,20 @@ class load_data():
         :param i: 第几位的desc字段
         :return: desc
         """
-        # print("第{0}位的描述词为{1}".format(i, self.load_all_data()["testcase"][i]["desc"]))
-        return self.load_all_data()["testcase"][i]["desc"]
+        try:
+            return self.load_all_data()["testcase"][i]["desc"]
+        except:
+            return "文件中无该字段！"
 
     def get_type(self, i):
         """
         :param i: 第几位的find_type字段
         :return: find_type
         """
-        # print("第{0}位的find_type字段为{1}".format(i, self.load_all_data()["testcase"][i]["find_type"]))
-        return self.load_all_data()["testcase"][i]["find_type"]
+        try:
+            return self.load_all_data()["testcase"][i]["find_type"]
+        except:
+            return "文件中无该字段！"
 
     def get_element_location(self, i):
         """
@@ -46,7 +50,10 @@ class load_data():
         :return: element_location
         """
         # print("第{0}位的location字段为{1}".format(i, self.load_all_data()["testcase"][i]["element_location"]))
-        return self.load_all_data()["testcase"][i]["element_location"]
+        try:
+            return self.load_all_data()["testcase"][i]["element_location"]
+        except:
+            return "文件中无该字段！"
 
     def get_find_locator(self, i):
         """
@@ -54,7 +61,10 @@ class load_data():
         :return: find_locator
         """
         # print("第{0}位的locator字段为{1}".format(i, self.load_all_data()["testcase"][i]["find_locator"]))
-        return self.load_all_data()["testcase"][i]["find_locator"]
+        try:
+            return self.load_all_data()["testcase"][i]["find_locator"]
+        except:
+            return "文件中无该字段！"
 
     def get_operate(self, i):
         """
@@ -62,7 +72,10 @@ class load_data():
         :return: operate
         """
         # print("第{0}位的operate_1字段为{1}".format(i, self.load_all_data()["testcase"][i]["operate_1"]))
-        return self.load_all_data()["testcase"][i]["operate"]
+        try:
+            return self.load_all_data()["testcase"][i]["operate"]
+        except:
+            return "文件中无该字段！"
 
     def get_content(self, i):
         """
@@ -70,7 +83,10 @@ class load_data():
         :return: content
         """
         # print("第{0}位的content字段为{1}".format(i, self.load_all_data()["testcase"][i]["content"]))
-        return self.load_all_data()["testcase"][i]["content"]
+        try:
+            return self.load_all_data()["testcase"][i]["content"]
+        except:
+            return "文件中无该字段！"
 
     def get_return(self, i):
         """
@@ -78,7 +94,10 @@ class load_data():
         :return: return
         """
         # print("第{0}位的return字段为{1}".format(i, self.load_all_data()["testcase"][i]["return_num"]))
-        return self.load_all_data()["testcase"][i]["return_num"]
+        try:
+            return self.load_all_data()["testcase"][i]["return_num"]
+        except:
+            return "文件中无该字段！"
 
 # load_data = load_data('../yaml/mobile/netease/login.yaml', 'rb').load_all_data()
 # data_length = load_data('yamlFile/mobile/login.yaml', 'rb').get_data_length()

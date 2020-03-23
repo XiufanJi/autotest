@@ -39,7 +39,7 @@ class login(unittest.TestCase):
         message = "//*[contains(@text,'登录成功')]"
         toast = pub_action().get_toast(message, self.driver)
         print("获取到的页面弹出信息为：{}".format(toast))
-        self.assertEquals('登录成功', toast)
-        self.assertEquals('.activity.HomePageActivity', self.driver.current_activity)
+        self.assertTrue('登录成功', toast)
+        self.assertTrue('.activity.HomePageActivity', self.driver.current_activity)
 
 

@@ -205,8 +205,8 @@ class action():
             if mode == "id":
                 el = self.driver.find_elements_by_android_uiautomator("new UiSelector().\
                 resourceId(\"" + matchStr + "\")")
-            print("获取到的数据类型为：{}".format(type(el)))
-            print("获取到的返回数据为：{}".format(el))
+            # print("获取到的数据类型为：{}".format(type(el)))
+            # print("获取到的返回数据为：{}".format(el))
             return el
         except EC.NoSuchElementException as e:
             raise e

@@ -14,15 +14,13 @@ class operate_yaml():
         :param desc_match: 元素的描述，对应yaml的desc字段
         :return: tuple('element','content')
         """
-        el = ""
+        el = None
         content = ""
         data_length = self.data.get_data_length()
         if data_length != 0:
             for i in range(data_length):
                 """判断取到的数据是否符合自己的要求"""
-                # print("获取到的描述为：" + self.data.get_desc(i))
                 if desc_match == self.data.get_desc(i):
-
                     if self.data.get_find_locator(i) == 'normal':
                         """调用action类中的方法实现元素操作"""
                         if self.data.get_return(i) == "single":

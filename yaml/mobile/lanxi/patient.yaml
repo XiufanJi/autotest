@@ -1,4 +1,5 @@
-# 关于元素的构成：desc-元素的描述，element_location-定位元素的字段，find_type-定位元素的方式(id,className...)，
+# 关于元素的构成：desc-元素的描述，element_location-定位元素的字段，find_type-定位元素的方式(id,className...,
+#  可查看action方法类)，
 # find_locator-现在支持两种，一种是常见的find.byxxx即描述的normal，一种是使用android_uiautomator来进行元素定位
 # operate-元素所需要进行的操作，click，sendkeys,或者是单纯的进行元素查找，即operate为None
 # content-sendkeys的输入内容，return_num-元素查找时是返回单个元素，还是多个元素（more-返多个，single-单个）
@@ -101,18 +102,18 @@ testcase:
     return_num: single
   -
     desc: 修改
-    element_location: com.conlin360.medical:id/fy
+    element_location: com.conlin360.medical:id/fs
     find_type: id
     find_locator: normal
     operate: click
-    return_num: single
+    return_num: more
   -
     desc: 删除
-    element_location: com.conlin360.medical:id/f1
+    element_location: com.conlin360.medical:id/ev
     find_type: id
     find_locator: normal
     operate: click
-    return_num: single
+    return_num: more
   -
     desc: 证件号码
     element_location: 证件号码

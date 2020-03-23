@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="20297c7b-1350-4ad9-b333-8c8d23acfea5" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_003_logout.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/logout.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.coverage" beforeDir="false" afterPath="$PROJECT_DIR$/.coverage" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/appium_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/appium_action.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/load_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/load_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/operate_yaml.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/operate_yaml.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Utils/public_action.py" beforeDir="false" afterPath="$PROJECT_DIR$/Utils/public_action.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/loginBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/patientBase.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_appium_action_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_appium_action_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/Utils_load_data_py.html" afterDir="false" />
@@ -17,15 +18,15 @@
       <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_loginBase_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/base_mobileApp_lanxi_patientBase_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/run_all_test_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/status.json" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/status.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_001_login_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_001_login_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_002_patient_py.html" beforeDir="false" afterPath="$PROJECT_DIR$/htmlcov/test_case_lanxi_mine_test_002_patient_py.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/Report.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/Report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/run_all_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/run_all_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_001_login.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_case/lanxi/mine/test_002_patient.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/login.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yaml/mobile/lanxi/patient.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/yaml/mobile/lanxi/patient.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yaml/path.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/mobileApp/lanxi/logoutBase.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -216,9 +217,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.test" />
         <item itemvalue="Python.operate_yaml" />
         <item itemvalue="Python.patientBase" />
-        <item itemvalue="Python.test" />
         <item itemvalue="Python.public_action (1)" />
         <item itemvalue="Python tests.Unittests in test_001_login.py" />
       </list>
@@ -406,42 +407,42 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="318" y="0" key="CommitChangelistDialog2/0.0.1360.728@0.0.1360.728" timestamp="1583725199899" />
-    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1583918386927">
+    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1584926291007">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1583918386927" />
-    <state width="1339" height="194" key="GridCell.Tab.0.bottom" timestamp="1584691911334">
+    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1584926291007" />
+    <state width="1339" height="194" key="GridCell.Tab.0.bottom" timestamp="1584956824229">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="194" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584691911334" />
-    <state width="1339" height="194" key="GridCell.Tab.0.center" timestamp="1584691911334">
+    <state width="1339" height="194" key="GridCell.Tab.0.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584956824229" />
+    <state width="1339" height="194" key="GridCell.Tab.0.center" timestamp="1584956824229">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="194" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584691911334" />
-    <state width="1339" height="194" key="GridCell.Tab.0.left" timestamp="1584691911334">
+    <state width="1339" height="194" key="GridCell.Tab.0.center/0.0.1360.728@0.0.1360.728" timestamp="1584956824229" />
+    <state width="1339" height="194" key="GridCell.Tab.0.left" timestamp="1584956824229">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="194" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584691911334" />
-    <state width="1339" height="194" key="GridCell.Tab.0.right" timestamp="1584691911334">
+    <state width="1339" height="194" key="GridCell.Tab.0.left/0.0.1360.728@0.0.1360.728" timestamp="1584956824229" />
+    <state width="1339" height="194" key="GridCell.Tab.0.right" timestamp="1584956824229">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="194" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584691911334" />
-    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584672816825">
+    <state width="1339" height="194" key="GridCell.Tab.0.right/0.0.1360.728@0.0.1360.728" timestamp="1584956824229" />
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom" timestamp="1584696356286">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584672816825" />
-    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584672816825">
+    <state width="1339" height="184" key="GridCell.Tab.1.bottom/0.0.1360.728@0.0.1360.728" timestamp="1584696356286" />
+    <state width="1339" height="184" key="GridCell.Tab.1.center" timestamp="1584696356286">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584672816825" />
-    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584672816824">
+    <state width="1339" height="184" key="GridCell.Tab.1.center/0.0.1360.728@0.0.1360.728" timestamp="1584696356286" />
+    <state width="1339" height="184" key="GridCell.Tab.1.left" timestamp="1584696356286">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584672816824" />
-    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584672816825">
+    <state width="1339" height="184" key="GridCell.Tab.1.left/0.0.1360.728@0.0.1360.728" timestamp="1584696356286" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right" timestamp="1584696356286">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584672816825" />
+    <state width="1339" height="184" key="GridCell.Tab.1.right/0.0.1360.728@0.0.1360.728" timestamp="1584696356286" />
     <state x="181" y="6" key="SettingsEditor" timestamp="1584589688976">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -450,13 +451,17 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1583725217753" />
-    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584665001500">
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584925058885">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1584665001500" />
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584326021150">
+    <state x="360" y="188" key="com.intellij.ide.util.TipDialog/0.0.1360.728@0.0.1360.728" timestamp="1584925058885" />
+    <state x="356" y="0" width="647" height="728" key="find.popup" timestamp="1584930333994">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1584326021150" />
+    <state x="356" y="0" width="647" height="728" key="find.popup/0.0.1360.728@0.0.1360.728" timestamp="1584930333994" />
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1584942038249">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="343" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1360.728@0.0.1360.728" timestamp="1584942038249" />
   </component>
 </project>

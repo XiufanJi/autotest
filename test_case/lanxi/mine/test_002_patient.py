@@ -10,9 +10,9 @@ class patientList(unittest.TestCase):
     def setUpClass(cls):
         cls.driver = DC().getDriver()
 
-    @classmethod
-    def tearDownClass(cls):
-        cls.driver.quit()
+    # @classmethod
+    # def tearDownClass(cls):
+    #     cls.driver.quit()
 
     @skip_dependon(depend="test_login")
     def test_01_add(self):
@@ -22,8 +22,12 @@ class patientList(unittest.TestCase):
             message = "//*[contains(@text,'添加成功')]"
             toast = pub_action().get_toast(message, self.driver)
             print("获取到的toast信息为：{}".format(toast))
-            self.assertEquals('添加成功', toast)
-        except:
+            self.assertEquals("添加成功", toast)
+            # self.assertEqual('添加成功', toast)
+            # print("用例是否成功：{}".format(self.assertEquals('添加成功', toast)))
+        except Exception as e:
+            raise e
+        finally:
             patientBase().back_home()
 
     @skip_dependon(depend="test_login")
@@ -36,21 +40,24 @@ class patientList(unittest.TestCase):
             toast = pub_action().get_toast(message, self.driver)
             print("获取到的toast信息为：{}".format(toast))
             self.assertEquals('编辑成功', toast)
-        except:
+        except Exception as e:
+            raise e
+        finally:
             patientBase().back_home()
 
     @skip_dependon(depend="test_login")
     @unittest.skip("skip it")
     def test_03_dele(self):
         try:
-            toast = None
             patient = patientBase()
             patient.dele_patient()
             message = "//*[@text='删除就诊人成功']"
             toast = pub_action().get_toast(message, self.driver)
             print("获取到的toast信息为：{}".format(toast))
-            self.assertEquals('删除就诊人成功', toast)
-        except:
+            self.assertTrue('删除就诊人成功', toast)
+        except Exception as e:
+            raise e
+        finally:
             patientBase().back_home()
 
 

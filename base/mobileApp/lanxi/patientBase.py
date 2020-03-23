@@ -4,6 +4,7 @@ from time import sleep
 from selenium.webdriver.support import expected_conditions as EC
 from Utils.appium_action import action
 from Utils.public_action import pub_action
+import random
 
 think_time = 3
 
@@ -18,9 +19,6 @@ class patientBase():
         try:
             operate = operate_yaml(self.path)
             fall_back = operate.operate_yaml('返回按钮')
-            # print("fall_back的数据类型：{}".format(type(fall_back)))
-            # print(fall_back)
-            # print(fall_back[0])
             fall_back[0].click()
             self.driver.wait_activity('.activity.HomePageActivity', think_time)
             home = operate.operate_yaml('首页')
@@ -34,16 +32,14 @@ class patientBase():
         try:
             operate = operate_yaml(self.path)
             data = operate.operate_yaml("证件号码")
-            # print("data[0]的数据类型为{}：".format(data[0]))
             num = len(data[0])
             print("定位到的元素总共有多少个：{}".format(num))
             if num >= 5:
                 return False
             else:
                 return True
-        except EC.NoSuchElementException as e:
-            action().get_screenShot()
-            raise e
+        except:
+            return False
 
     # 判断是否能进行就诊人的删除
     def can_dele(self):
@@ -53,12 +49,12 @@ class patientBase():
             data = operate.operate_yaml("证件号码")
             num = len(data[0])
             print("获取到的数据个数为：{}".format(num))
-            # print("获取到的data[0]的数据为：".format(data[0]))
-        except :
-            if num != 0:
+            if num > 0:
                 return True
             else:
                 return False
+        except:
+            return False
 
     def add_patient(self):
         try:
@@ -67,7 +63,6 @@ class patientBase():
             # operate.operate_yaml('我的')
             sleep(think_time)
             patients = operate.operate_yaml('就诊人管理')
-            # print("是否获取到元素就诊人管理：{}".format(patients[0]))
             patients[0].click()
             self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
             sleep(think_time)
@@ -81,6 +76,7 @@ class patientBase():
                 input_name[0].send_keys(input_name[1])
                 id_type = operate.operate_yaml('选择证件类型')
                 id_type[0].click()
+
                 identity = operate.operate_yaml('二代身份证')
                 identity[0].click()
                 id_no = operate.operate_yaml('证件号')
@@ -96,7 +92,7 @@ class patientBase():
         except EC.NoSuchElementException as e:
             action().get_screenShot()
             raise e
-"""
+
     def mod_patient(self):
         can_mod = patientBase().can_dele()
         try:
@@ -134,15 +130,15 @@ class patientBase():
             self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
             if can_dele:
                 dele = operate.operate_yaml('删除')
-                dele[0].click()
+                deleInfo = random.choice(dele[0])
+                deleInfo.click()
                 ok = operate.operate_yaml('确定')
                 ok[0].click()
             else:
                 print("就诊人列表为空，不能进行删除操作！")
         except EC.NoSuchElementException as e:
             action().get_screenShot()
-            raise e """
-
+            raise e
 
 
 # if __name__ == '__main__':

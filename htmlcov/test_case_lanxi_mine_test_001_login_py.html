@@ -156,8 +156,8 @@
 <p id="t39" class="stm run hide_run">        <span class="nam">message</span> <span class="op">=</span> <span class="str">"//*[contains(@text,'&#30331;&#24405;&#25104;&#21151;')]"</span><span class="strut">&nbsp;</span></p>
 <p id="t40" class="stm run hide_run">        <span class="nam">toast</span> <span class="op">=</span> <span class="nam">pub_action</span><span class="op">(</span><span class="op">)</span><span class="op">.</span><span class="nam">get_toast</span><span class="op">(</span><span class="nam">message</span><span class="op">,</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t41" class="stm run hide_run">        <span class="nam">print</span><span class="op">(</span><span class="str">"&#33719;&#21462;&#21040;&#30340;&#39029;&#38754;&#24377;&#20986;&#20449;&#24687;&#20026;&#65306;{}"</span><span class="op">.</span><span class="nam">format</span><span class="op">(</span><span class="nam">toast</span><span class="op">)</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t42" class="stm run hide_run">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEquals</span><span class="op">(</span><span class="str">'&#30331;&#24405;&#25104;&#21151;'</span><span class="op">,</span> <span class="nam">toast</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
-<p id="t43" class="stm run hide_run">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertEquals</span><span class="op">(</span><span class="str">'.activity.HomePageActivity'</span><span class="op">,</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">current_activity</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t42" class="stm run hide_run">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="str">'&#30331;&#24405;&#25104;&#21151;'</span><span class="op">,</span> <span class="nam">toast</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
+<p id="t43" class="stm run hide_run">        <span class="nam">self</span><span class="op">.</span><span class="nam">assertTrue</span><span class="op">(</span><span class="str">'.activity.HomePageActivity'</span><span class="op">,</span> <span class="nam">self</span><span class="op">.</span><span class="nam">driver</span><span class="op">.</span><span class="nam">current_activity</span><span class="op">)</span><span class="strut">&nbsp;</span></p>
 <p id="t44" class="pln"><span class="strut">&nbsp;</span></p>
 <p id="t45" class="pln"><span class="strut">&nbsp;</span></p>
 
@@ -170,7 +170,7 @@
     <div class="content">
         <p>
             <a class="nav" href="index.html">&#xab; index</a> &nbsp; &nbsp; <a class="nav" href="https://coverage.readthedocs.io">coverage.py v4.5.4</a>,
-            created at 2020-03-20 11:38
+            created at 2020-03-23 16:52
         </p>
     </div>
 </div>

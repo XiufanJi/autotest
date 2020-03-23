@@ -4,7 +4,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 import unittest
 from functools import wraps
-from tkinter import messagebox
+# from tkinter import messagebox
 
 
 class pub_action():
@@ -44,13 +44,13 @@ class pub_action():
         try:
             toast_element = WebDriverWait(driver, 0.001). \
                 until(EC.presence_of_element_located((By.XPATH, pattern)))
-        except EC.NoAlertPresentException as e:
-
-            raise e
-        return toast_element.text
+            print("获取到的toast数据类型为：{}".format(toast_element.text))
+            return toast_element.text
+        except:
+            return "未获取到toast信息"
 
     """判断元素是否出现在页面上"""
-    def element_is_present(self, driver, locator, pattern):
+    def element_is_present(self, driver, pattern):
         """
         :param driver: 使用的驱动
         :param locator: 定位的方式，id,classname ...
@@ -58,8 +58,8 @@ class pub_action():
         :return: web element
         """
         el = WebDriverWait(driver, 1).until\
-            (EC.presence_of_element_located(By.locator, pattern))
-        print("输出获取到的元素的类型：", type(el))
+            (EC.presence_of_element_located(By.XPATH, pattern))
+        # print("输出获取到的元素的类型：", type(el))
         return el
 
     """模拟手机发送广播信息"""
