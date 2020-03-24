@@ -6,6 +6,7 @@ from Utils.appium_action import action
 
 think_time = 3
 
+
 class logoutBase():
     def __init__(self):
         self.driver = DC().getDriver()
@@ -27,8 +28,6 @@ class logoutBase():
             ok[0].click()
             # loginButton = operate.operate_yaml("登录/注册")
             # loginButton[0].is_displayed()
-            battery = self.driver.battery_info
-            print("当前手机的电量信息为：{}".format(battery))
         except EC.NoSuchElementException as e:
             action().get_screenShot()
             raise e

@@ -44,10 +44,9 @@ class pub_action():
         try:
             toast_element = WebDriverWait(driver, 0.001). \
                 until(EC.presence_of_element_located((By.XPATH, pattern)))
-            print("获取到的toast数据类型为：{}".format(toast_element.text))
             return toast_element.text
         except:
-            return "未获取到toast信息"
+            return "页面未弹出toast信息！"
 
     """判断元素是否出现在页面上"""
     def element_is_present(self, driver, pattern):
@@ -61,6 +60,7 @@ class pub_action():
             (EC.presence_of_element_located(By.XPATH, pattern))
         # print("输出获取到的元素的类型：", type(el))
         return el
+
 
     """模拟手机发送广播信息"""
     """暂时没用，这样在手机上直接使用的时候没有任何效果，后续再看"""

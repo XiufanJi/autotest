@@ -15,6 +15,7 @@ class patientList(unittest.TestCase):
     #     cls.driver.quit()
 
     @skip_dependon(depend="test_login")
+    @unittest.skip("skip it")
     def test_01_add(self):
         try:
             patient = patientBase()
@@ -31,7 +32,7 @@ class patientList(unittest.TestCase):
             patientBase().back_home()
 
     @skip_dependon(depend="test_login")
-    @unittest.skip("skip it")
+    # @unittest.skip("skip it")
     def test_02_mod(self):
         try:
             patient = patientBase()
@@ -46,7 +47,7 @@ class patientList(unittest.TestCase):
             patientBase().back_home()
 
     @skip_dependon(depend="test_login")
-    @unittest.skip("skip it")
+    # @unittest.skip("skip it")
     def test_03_dele(self):
         try:
             patient = patientBase()
@@ -54,7 +55,7 @@ class patientList(unittest.TestCase):
             message = "//*[@text='删除就诊人成功']"
             toast = pub_action().get_toast(message, self.driver)
             print("获取到的toast信息为：{}".format(toast))
-            self.assertTrue('删除就诊人成功', toast)
+            self.assertEquals('删除就诊人成功', toast)
         except Exception as e:
             raise e
         finally:

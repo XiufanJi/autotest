@@ -53,7 +53,7 @@ testcase:
     find_type: text
     find_locator: android_uiautomator
     return_num: single
-    operate: click
+    operate: send_keys
     content: your id_num
   -
     desc: 手机号
@@ -61,7 +61,7 @@ testcase:
     find_type: text
     find_locator: android_uiautomator
     return_num: single
-    operate: click
+    operate: send_keys
     content: phone_num
   -
     desc: 邮箱
@@ -69,7 +69,7 @@ testcase:
     find_type: id
     find_locator: normal
     return_num: single
-    operate: click
+    operate: send_keys
     content: your email_address
   -
     desc: 居住地址
@@ -77,7 +77,7 @@ testcase:
     find_type: id
     find_locator: normal
     return_num: single
-    operate: click
+    operate: send_keys
     content: 居住地址巴拉巴拉
   -
     desc: 确定
@@ -114,14 +114,6 @@ testcase:
     find_locator: normal
     operate: click
     return_num: more
-  -
-    desc: 证件号码
-    element_location: 证件号码
-    find_type: textContains
-    find_locator: android_uiautomator
-    return_num: more
-    operate: send_keys
-    content: 123213213
 
 
 

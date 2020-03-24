@@ -17,4 +17,6 @@ class logout(unittest.TestCase):
     def test_logout(self):
         checkout = logoutBase()
         checkout.logout()
+        battery = self.driver.battery_info
+        print("手机当前的电量和状态为：{0}*100%,{1}".format(battery["level"], battery["state"]))
         self.assertEquals(".activity.HomePageActivity", self.driver.current_activity)

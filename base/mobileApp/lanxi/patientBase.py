@@ -94,7 +94,6 @@ class patientBase():
             raise e
 
     def mod_patient(self):
-        can_mod = patientBase().can_dele()
         try:
             sleep(think_time)
             operate = operate_yaml(self.path)
@@ -103,9 +102,11 @@ class patientBase():
             patients = operate.operate_yaml('就诊人管理')
             patients[0].click()
             self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
+            can_mod = patientBase().can_dele()
             if can_mod:
                 mod = operate.operate_yaml('修改')
-                mod[0].click()
+                modInfo = random.choice(mod[0])
+                modInfo.click()
                 self.driver.wait_activity(".mine.AddOrEditPatientActivity", think_time)
                 email = operate.operate_yaml('邮箱')
                 email[0].send_keys(email[1])
@@ -119,7 +120,6 @@ class patientBase():
             raise e
 
     def dele_patient(self):
-        can_dele = patientBase.can_dele(self)
         try:
             sleep(think_time)
             operate = operate_yaml(self.path)
@@ -128,6 +128,7 @@ class patientBase():
             patients = operate.operate_yaml('就诊人管理')
             patients[0].click()
             self.driver.wait_activity(".mine.PatientManagementActivity", think_time)
+            can_dele = patientBase.can_dele(self)
             if can_dele:
                 dele = operate.operate_yaml('删除')
                 deleInfo = random.choice(dele[0])

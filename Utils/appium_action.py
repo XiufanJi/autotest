@@ -314,6 +314,8 @@ class action():
             os.makedirs(filepath + './{}'.format(folder))
             self.driver.get_screenshot_as_file(filepath + "/{}/{}.png".format(folder, pic_name))\
 
+
+
 # if __name__ == '__main__':
 #     action().get_screenShot()
 
